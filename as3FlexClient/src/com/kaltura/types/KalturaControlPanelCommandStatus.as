@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaControlPanelCommandStatus
+	public class BorhanControlPanelCommandStatus
 	{
 		public static const PENDING : int = 1;
 		public static const HANDLED : int = 2;

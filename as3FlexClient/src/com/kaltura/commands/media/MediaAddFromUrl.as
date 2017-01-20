@@ -1,13 +1,13 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.vo.KalturaMediaEntry;
-	import com.kaltura.delegates.media.MediaAddFromUrlDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanMediaEntry;
+	import com.borhan.delegates.media.MediaAddFromUrlDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaAddFromUrl extends KalturaCall
+	public class MediaAddFromUrl extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MediaAddFromUrl( mediaEntry : KalturaMediaEntry,url : String )
+		public function MediaAddFromUrl( mediaEntry : BorhanMediaEntry,url : String )
 		{
 			service= 'media';
 			action= 'addFromUrl';
@@ -15,7 +15,7 @@ package com.kaltura.commands.media
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(mediaEntry,'mediaEntry');
+ 			keyValArr = borhanObject2Arrays(mediaEntry,'mediaEntry');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'url' );

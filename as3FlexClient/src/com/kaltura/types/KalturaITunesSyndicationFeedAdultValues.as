@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaITunesSyndicationFeedAdultValues
+	public class BorhanITunesSyndicationFeedAdultValues
 	{
 		public static const YES : String = 'yes';
 		public static const NO : String = 'no';

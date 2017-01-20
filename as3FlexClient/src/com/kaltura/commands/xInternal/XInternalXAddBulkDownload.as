@@ -1,9 +1,9 @@
-package com.kaltura.commands.xInternal
+package com.borhan.commands.xInternal
 {
-	import com.kaltura.delegates.xInternal.XInternalXAddBulkDownloadDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.xInternal.XInternalXAddBulkDownloadDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class XInternalXAddBulkDownload extends KalturaCall
+	public class XInternalXAddBulkDownload extends BorhanCall
 	{
 		public var filterFields : String;
 		public function XInternalXAddBulkDownload( entryIds : String,flavorParamsId : String='' )

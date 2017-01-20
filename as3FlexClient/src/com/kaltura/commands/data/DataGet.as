@@ -1,9 +1,9 @@
-package com.kaltura.commands.data
+package com.borhan.commands.data
 {
-	import com.kaltura.delegates.data.DataGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.data.DataGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class DataGet extends KalturaCall
+	public class DataGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function DataGet( entryId : String,version : int=-1 )

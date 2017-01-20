@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaStorageJobData;
+	import com.borhan.vo.BorhanStorageJobData;
 
 	[Bindable]
-	public dynamic class KalturaStorageExportJobData extends KalturaStorageJobData
+	public dynamic class BorhanStorageExportJobData extends BorhanStorageJobData
 	{
 		public var destFileSyncStoredPath : String;
 		public var force : Boolean;

@@ -1,13 +1,13 @@
-package com.kaltura.commands.playlist
+package com.borhan.commands.playlist
 {
-	import com.kaltura.vo.KalturaPlaylist;
-	import com.kaltura.delegates.playlist.PlaylistAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanPlaylist;
+	import com.borhan.delegates.playlist.PlaylistAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class PlaylistAdd extends KalturaCall
+	public class PlaylistAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function PlaylistAdd( playlist : KalturaPlaylist,updateStats : Boolean=false )
+		public function PlaylistAdd( playlist : BorhanPlaylist,updateStats : Boolean=false )
 		{
 			service= 'playlist';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.playlist
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(playlist,'playlist');
+ 			keyValArr = borhanObject2Arrays(playlist,'playlist');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'updateStats' );

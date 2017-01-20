@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaUpgradeMetadataResponse extends BaseFlexVo
+	public dynamic class BorhanUpgradeMetadataResponse extends BaseFlexVo
 	{
 		public var totalCount : int = int.MIN_VALUE;
 		public var lowerVersionCount : int = int.MIN_VALUE;

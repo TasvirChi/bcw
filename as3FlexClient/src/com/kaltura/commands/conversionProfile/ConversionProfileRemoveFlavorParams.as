@@ -1,9 +1,9 @@
-package com.kaltura.commands.conversionProfile
+package com.borhan.commands.conversionProfile
 {
-	import com.kaltura.delegates.conversionProfile.ConversionProfileRemoveFlavorParamsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.conversionProfile.ConversionProfileRemoveFlavorParamsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class ConversionProfileRemoveFlavorParams extends KalturaCall
+	public class ConversionProfileRemoveFlavorParams extends BorhanCall
 	{
 		public var filterFields : String;
 		public function ConversionProfileRemoveFlavorParams( conversionProfileId : int,conversionParamsId : int )

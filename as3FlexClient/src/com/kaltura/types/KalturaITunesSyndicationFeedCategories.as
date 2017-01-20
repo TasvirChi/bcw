@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaITunesSyndicationFeedCategories
+	public class BorhanITunesSyndicationFeedCategories
 	{
 		public static const ARTS : String = 'Arts';
 		public static const ARTS_DESIGN : String = 'Arts/Design';

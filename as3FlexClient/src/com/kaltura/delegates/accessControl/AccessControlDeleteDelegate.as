@@ -1,12 +1,12 @@
-package com.kaltura.delegates.accessControl
+package com.borhan.delegates.accessControl
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class AccessControlDeleteDelegate extends WebDelegateBase
 	{
-		public function AccessControlDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function AccessControlDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

@@ -1,9 +1,9 @@
-package com.kaltura.commands.notification
+package com.borhan.commands.notification
 {
-	import com.kaltura.delegates.notification.NotificationGetClientNotificationDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.notification.NotificationGetClientNotificationDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class NotificationGetClientNotification extends KalturaCall
+	public class NotificationGetClientNotification extends BorhanCall
 	{
 		public var filterFields : String;
 		public function NotificationGetClientNotification( entryId : String,type : int )

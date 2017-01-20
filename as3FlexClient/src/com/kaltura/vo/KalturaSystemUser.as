@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaSystemUser extends BaseFlexVo
+	public dynamic class BorhanSystemUser extends BaseFlexVo
 	{
 		public var id : int = int.MIN_VALUE;
 		public var email : String;

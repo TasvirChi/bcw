@@ -1,13 +1,13 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.vo.KalturaMediaInfo;
-	import com.kaltura.delegates.metadataBatch.MetadataBatchAddMediaInfoDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanMediaInfo;
+	import com.borhan.delegates.metadataBatch.MetadataBatchAddMediaInfoDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchAddMediaInfo extends KalturaCall
+	public class MetadataBatchAddMediaInfo extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MetadataBatchAddMediaInfo( mediaInfo : KalturaMediaInfo )
+		public function MetadataBatchAddMediaInfo( mediaInfo : BorhanMediaInfo )
 		{
 			service= 'metadata_metadatabatch';
 			action= 'addMediaInfo';
@@ -15,7 +15,7 @@ package com.kaltura.commands.metadataBatch
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(mediaInfo,'mediaInfo');
+ 			keyValArr = borhanObject2Arrays(mediaInfo,'mediaInfo');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

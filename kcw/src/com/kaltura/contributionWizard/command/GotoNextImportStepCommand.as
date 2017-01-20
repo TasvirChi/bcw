@@ -1,15 +1,15 @@
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 	import com.arc90.modular.ModuleSequenceCommand;
-	import com.kaltura.contributionWizard.enums.KCWWorkflowState;
-	import com.kaltura.contributionWizard.events.CategoryEvent;
-	import com.kaltura.contributionWizard.events.GotoNextImportStepEvent;
-	import com.kaltura.contributionWizard.events.ReportErrorEvent;
-	import com.kaltura.contributionWizard.events.WorkflowEvent;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.model.WorkflowState;
-	import com.kaltura.contributionWizard.vo.ErrorVO;
+	import com.borhan.contributionWizard.enums.BCWWorkflowState;
+	import com.borhan.contributionWizard.events.CategoryEvent;
+	import com.borhan.contributionWizard.events.GotoNextImportStepEvent;
+	import com.borhan.contributionWizard.events.ReportErrorEvent;
+	import com.borhan.contributionWizard.events.WorkflowEvent;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.model.WorkflowState;
+	import com.borhan.contributionWizard.vo.ErrorVO;
 
 	public class GotoNextImportStepCommand extends ModuleSequenceCommand
 	{
@@ -18,7 +18,7 @@ package com.kaltura.contributionWizard.command
 		override public function execute(event:CairngormEvent):void
 		{
 			//collects categories info before going to tags view
-			if (_model.workflowState == KCWWorkflowState.IMPORT_MEDIA) {
+			if (_model.workflowState == BCWWorkflowState.IMPORT_MEDIA) {
 				var listCategories:CategoryEvent = new CategoryEvent(CategoryEvent.LIST_CATEGORIES);
 				listCategories.dispatch();		
 			}	
@@ -44,7 +44,7 @@ package com.kaltura.contributionWizard.command
 			var nextStepIndex:int = currentStateIndex + direction;
 			var nextStepEvent:CairngormEvent = WorkflowState(_model.workflowStatesList.states[nextStepIndex]).cairngormEvent;
 			
-			//REPORT TO KALTURA TO TRACE PROBLEMS WITH UPLOAD
+			//REPORT TO BORHAN TO TRACE PROBLEMS WITH UPLOAD
 			///////////////////////////////////////////////////
 			var errorDescription : String = "currentState=" + _model.workflowStatesList.states[currentStateIndex].name;
 			errorDescription += "&nextState=" + _model.workflowStatesList.states[nextStepIndex].name;
@@ -58,30 +58,30 @@ package com.kaltura.contributionWizard.command
 			nextStepEvent.dispatch();
 			/* if (gotoNextStepEvent.backward)
 			{
-				if (currentState == KCWWorkflowState.FINISH_SCREEN)
+				if (currentState == BCWWorkflowState.FINISH_SCREEN)
 				{
-					changeWorkflow(KCWWorkflowState.TAGGING);
+					changeWorkflow(BCWWorkflowState.TAGGING);
 				}
-				else if (currentState == KCWWorkflowState.TAGGING)
+				else if (currentState == BCWWorkflowState.TAGGING)
 				{
-					changeWorkflow(KCWWorkflowState.IMPORT_MEDIA);
+					changeWorkflow(BCWWorkflowState.IMPORT_MEDIA);
 				}
 
 			}
 			else
 			{
-				if (currentState == KCWWorkflowState.IMPORT_MEDIA)
+				if (currentState == BCWWorkflowState.IMPORT_MEDIA)
 				{
-					changeWorkflow(KCWWorkflowState.TAGGING);
+					changeWorkflow(BCWWorkflowState.TAGGING);
 				}
-				else if (currentState == KCWWorkflowState.TAGGING)
+				else if (currentState == BCWWorkflowState.TAGGING)
 				{
 					var evtAddEntries:AddEntriesEvent = new AddEntriesEvent(AddEntriesEvent.ADD_ENTRIES);
 					var clearState:ClearImportStateEvent = new ClearImportStateEvent(ClearImportStateEvent.CLEAR_IMPORT_STATE);
 
 					var addEntriesAndClean:ChainEvent = EventChainFactory.chainEvents([evtAddEntries, clearState]);
 					addEntriesAndClean.dispatch();
-					//changeWorkflow(KCWWorkflowState.FINISH_SCREEN);
+					//changeWorkflow(BCWWorkflowState.FINISH_SCREEN);
 				}
 
 			} */
@@ -89,11 +89,11 @@ package com.kaltura.contributionWizard.command
 			{
 				if (event.target == finishScreen)
 				{
-					changeWorkflow(KCWWorkflowState.TAGGING);
+					changeWorkflow(BCWWorkflowState.TAGGING);
 				}
 				else if (event.target == taggingView)
 				{
-					changeWorkflow(KCWWorkflowState.IMPORT_MEDIA);
+					changeWorkflow(BCWWorkflowState.IMPORT_MEDIA);
 				}
 
 			}
@@ -101,11 +101,11 @@ package com.kaltura.contributionWizard.command
 			{
 				if (event.target == importTypesView)
 				{
-					changeWorkflow(KCWWorkflowState.TAGGING);
+					changeWorkflow(BCWWorkflowState.TAGGING);
 				}
 				else if (event.target == taggingView)
 				{
-					changeWorkflow(KCWWorkflowState.FINISH_SCREEN);
+					changeWorkflow(BCWWorkflowState.FINISH_SCREEN);
 				}
 
 			} */

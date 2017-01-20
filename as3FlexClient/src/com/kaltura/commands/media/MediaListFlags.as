@@ -1,15 +1,15 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.media.MediaListFlagsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.media.MediaListFlagsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaListFlags extends KalturaCall
+	public class MediaListFlags extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MediaListFlags( entryId : String,pager : KalturaFilterPager=null )
+		public function MediaListFlags( entryId : String,pager : BorhanFilterPager=null )
 		{
-			if(pager== null)pager= new KalturaFilterPager();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'media';
 			action= 'listFlags';
 
@@ -18,7 +18,7 @@ package com.kaltura.commands.media
 			var keyValArr : Array = new Array();
 			keyArr.push( 'entryId' );
 			valueArr.push( entryId );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

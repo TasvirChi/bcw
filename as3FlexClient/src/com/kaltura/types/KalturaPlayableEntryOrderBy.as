@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaPlayableEntryOrderBy
+	public class BorhanPlayableEntryOrderBy
 	{
 		public static const PLAYS_ASC : String = '+plays';
 		public static const PLAYS_DESC : String = '-plays';

@@ -1,27 +1,27 @@
-package com.kaltura.commands.uiConf
+package com.borhan.commands.uiConf
 {
-	import com.kaltura.vo.KalturaUiConfFilter;
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.uiConf.UiConfListDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanUiConfFilter;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.uiConf.UiConfListDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UiConfList extends KalturaCall
+	public class UiConfList extends BorhanCall
 	{
 		public var filterFields : String;
-		public function UiConfList( filter : KalturaUiConfFilter=null,pager : KalturaFilterPager=null )
+		public function UiConfList( filter : BorhanUiConfFilter=null,pager : BorhanFilterPager=null )
 		{
-			if(filter== null)filter= new KalturaUiConfFilter();
-			if(pager== null)pager= new KalturaFilterPager();
+			if(filter== null)filter= new BorhanUiConfFilter();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'uiconf';
 			action= 'list';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(filter,'filter');
+ 			keyValArr = borhanObject2Arrays(filter,'filter');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

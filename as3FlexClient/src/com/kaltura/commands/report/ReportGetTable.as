@@ -1,14 +1,14 @@
-package com.kaltura.commands.report
+package com.borhan.commands.report
 {
-	import com.kaltura.vo.KalturaReportInputFilter;
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.report.ReportGetTableDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanReportInputFilter;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.report.ReportGetTableDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class ReportGetTable extends KalturaCall
+	public class ReportGetTable extends BorhanCall
 	{
 		public var filterFields : String;
-		public function ReportGetTable( reportType : int,reportInputFilter : KalturaReportInputFilter,pager : KalturaFilterPager,order : String='',objectIds : String='' )
+		public function ReportGetTable( reportType : int,reportInputFilter : BorhanReportInputFilter,pager : BorhanFilterPager,order : String='',objectIds : String='' )
 		{
 			service= 'report';
 			action= 'getTable';
@@ -18,10 +18,10 @@ package com.kaltura.commands.report
 			var keyValArr : Array = new Array();
 			keyArr.push( 'reportType' );
 			valueArr.push( reportType );
- 			keyValArr = kalturaObject2Arrays(reportInputFilter,'reportInputFilter');
+ 			keyValArr = borhanObject2Arrays(reportInputFilter,'reportInputFilter');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'order' );

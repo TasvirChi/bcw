@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaAdminUser extends BaseFlexVo
+	public dynamic class BorhanAdminUser extends BaseFlexVo
 	{
 		public var password : String;
 		public var email : String;

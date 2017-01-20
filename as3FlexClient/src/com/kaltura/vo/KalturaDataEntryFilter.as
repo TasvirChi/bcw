@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseEntryFilter;
+	import com.borhan.vo.BorhanBaseEntryFilter;
 
 	[Bindable]
-	public dynamic class KalturaDataEntryFilter extends KalturaBaseEntryFilter
+	public dynamic class BorhanDataEntryFilter extends BorhanBaseEntryFilter
 	{
 		override protected function setupPropertyList():void
 		{

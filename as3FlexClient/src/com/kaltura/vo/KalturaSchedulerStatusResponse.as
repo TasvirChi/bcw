@@ -1,7 +1,7 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
-	public dynamic class KalturaSchedulerStatusResponse extends BaseFlexVo
+	import com.borhan.vo.BaseFlexVo;
+	public dynamic class BorhanSchedulerStatusResponse extends BaseFlexVo
 	{
 		public var queuesStatus : Array = new Array();
 		public var controlPanelCommands : Array = new Array();

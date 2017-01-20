@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaLiveStreamBitrate extends BaseFlexVo
+	public dynamic class BorhanLiveStreamBitrate extends BaseFlexVo
 	{
 		public var bitrate : int = int.MIN_VALUE;
 		public var width : int = int.MIN_VALUE;

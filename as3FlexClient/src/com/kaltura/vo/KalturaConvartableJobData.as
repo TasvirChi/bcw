@@ -1,18 +1,18 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaFlavorParamsOutput;
+	import com.borhan.vo.BorhanFlavorParamsOutput;
 
-	import com.kaltura.vo.KalturaJobData;
+	import com.borhan.vo.BorhanJobData;
 
 	[Bindable]
-	public dynamic class KalturaConvartableJobData extends KalturaJobData
+	public dynamic class BorhanConvartableJobData extends BorhanJobData
 	{
 		public var srcFileSyncLocalPath : String;
 		public var actualSrcFileSyncLocalPath : String;
 		public var srcFileSyncRemoteUrl : String;
 		public var engineVersion : int = int.MIN_VALUE;
 		public var flavorParamsOutputId : int = int.MIN_VALUE;
-		public var flavorParamsOutput : KalturaFlavorParamsOutput;
+		public var flavorParamsOutput : BorhanFlavorParamsOutput;
 		public var mediaInfoId : int = int.MIN_VALUE;
 		public var currentOperationSet : int = int.MIN_VALUE;
 		public var currentOperationIndex : int = int.MIN_VALUE;

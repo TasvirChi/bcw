@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaSearch;
+	import com.borhan.vo.BorhanSearch;
 
 	[Bindable]
-	public dynamic class KalturaSearchResult extends KalturaSearch
+	public dynamic class BorhanSearchResult extends BorhanSearch
 	{
 		public var id : String;
 		public var title : String;

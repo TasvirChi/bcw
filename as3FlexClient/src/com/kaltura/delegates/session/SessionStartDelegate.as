@@ -1,12 +1,12 @@
-package com.kaltura.delegates.session
+package com.borhan.delegates.session
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class SessionStartDelegate extends WebDelegateBase
 	{
-		public function SessionStartDelegate(call:KalturaCall, config:KalturaConfig)
+		public function SessionStartDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

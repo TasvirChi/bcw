@@ -1,12 +1,12 @@
-package com.kaltura.delegates.user
+package com.borhan.delegates.user
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class UserNotifyBanDelegate extends WebDelegateBase
 	{
-		public function UserNotifyBanDelegate(call:KalturaCall, config:KalturaConfig)
+		public function UserNotifyBanDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaCropDimensions extends BaseFlexVo
+	public dynamic class BorhanCropDimensions extends BaseFlexVo
 	{
 		public var left : int = int.MIN_VALUE;
 		public var top : int = int.MIN_VALUE;

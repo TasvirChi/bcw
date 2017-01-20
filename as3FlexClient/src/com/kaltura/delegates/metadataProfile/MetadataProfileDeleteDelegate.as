@@ -1,12 +1,12 @@
-package com.kaltura.delegates.metadataProfile
+package com.borhan.delegates.metadataProfile
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class MetadataProfileDeleteDelegate extends WebDelegateBase
 	{
-		public function MetadataProfileDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function MetadataProfileDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

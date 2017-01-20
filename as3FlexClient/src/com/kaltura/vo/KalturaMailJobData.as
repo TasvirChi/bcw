@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaJobData;
+	import com.borhan.vo.BorhanJobData;
 
 	[Bindable]
-	public dynamic class KalturaMailJobData extends KalturaJobData
+	public dynamic class BorhanMailJobData extends BorhanJobData
 	{
 		public var mailType : int = int.MIN_VALUE;
 		public var mailPriority : int = int.MIN_VALUE;

@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaGender
+	public class BorhanGender
 	{
 		public static const UNKNOWN : int = 0;
 		public static const MALE : int = 1;

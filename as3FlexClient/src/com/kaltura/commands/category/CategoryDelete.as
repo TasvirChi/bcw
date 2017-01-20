@@ -1,9 +1,9 @@
-package com.kaltura.commands.category
+package com.borhan.commands.category
 {
-	import com.kaltura.delegates.category.CategoryDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.category.CategoryDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class CategoryDelete extends KalturaCall
+	public class CategoryDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function CategoryDelete( id : int )

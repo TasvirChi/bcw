@@ -1,13 +1,13 @@
-package com.kaltura.commands.metadataProfile
+package com.borhan.commands.metadataProfile
 {
-	import com.kaltura.vo.KalturaMetadataProfile;
-	import com.kaltura.delegates.metadataProfile.MetadataProfileAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanMetadataProfile;
+	import com.borhan.delegates.metadataProfile.MetadataProfileAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataProfileAdd extends KalturaCall
+	public class MetadataProfileAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MetadataProfileAdd( metadataProfile : KalturaMetadataProfile,xsdData : String,viewsData : String='' )
+		public function MetadataProfileAdd( metadataProfile : BorhanMetadataProfile,xsdData : String,viewsData : String='' )
 		{
 			service= 'metadata_metadataprofile';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.metadataProfile
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(metadataProfile,'metadataProfile');
+ 			keyValArr = borhanObject2Arrays(metadataProfile,'metadataProfile');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'xsdData' );

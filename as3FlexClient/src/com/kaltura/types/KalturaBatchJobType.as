@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaBatchJobType
+	public class BorhanBatchJobType
 	{
 		public static const CONVERT : int = 0;
 		public static const IMPORT : int = 1;

@@ -1,13 +1,13 @@
-package com.kaltura.commands.accessControl
+package com.borhan.commands.accessControl
 {
-	import com.kaltura.vo.KalturaAccessControl;
-	import com.kaltura.delegates.accessControl.AccessControlAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanAccessControl;
+	import com.borhan.delegates.accessControl.AccessControlAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class AccessControlAdd extends KalturaCall
+	public class AccessControlAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function AccessControlAdd( accessControl : KalturaAccessControl )
+		public function AccessControlAdd( accessControl : BorhanAccessControl )
 		{
 			service= 'accesscontrol';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.accessControl
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(accessControl,'accessControl');
+ 			keyValArr = borhanObject2Arrays(accessControl,'accessControl');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

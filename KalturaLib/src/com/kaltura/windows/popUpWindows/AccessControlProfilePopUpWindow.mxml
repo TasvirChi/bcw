@@ -10,8 +10,8 @@
 
 <containers:HelpTitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" title="{rm.getString('windows', 'editAccessControlTitle')}" 
 	showCloseButton="true" close="closeWindow(event)" layout="vertical" creationComplete="onCreationComplete(event)"
-	width="700" height="550" xmlns:containers="com.kaltura.containers.*" xmlns:controllers="com.adobe.controllers.*" xmlns:controls="com.kaltura.controls.*"
-	verticalScrollPolicy="off" help="{navigateToURL( new URLRequest( 'http://'+rootUrl+'/'+ resourceManager.getString('kmc', 'generalHelp') ) )}" >
+	width="700" height="550" xmlns:containers="com.borhan.containers.*" xmlns:controllers="com.adobe.controllers.*" xmlns:controls="com.borhan.controls.*"
+	verticalScrollPolicy="off" help="{navigateToURL( new URLRequest( 'http://'+rootUrl+'/'+ resourceManager.getString('bmc', 'generalHelp') ) )}" >
 	<containers:states>
 		<mx:State name="newProfileState">
 			<mx:SetProperty name="title" value="{rm.getString('windows', 'newAccessControlTitle')}"/>
@@ -26,27 +26,27 @@
 			import mx.controls.Alert;
 			import mx.events.CloseEvent;
 			import flexlib.scheduling.scheduleClasses.lineRenderer.Line;
-			import com.kaltura.utils.KArrayUtil;
-			import com.kaltura.types.KalturaNullableBoolean;
+			import com.borhan.utils.KArrayUtil;
+			import com.borhan.types.BorhanNullableBoolean;
 			import mx.controls.LinkButton;
 			import mx.resources.IResourceManager;
 			import mx.resources.ResourceManager;
 			import mx.resources.ResourceBundle;
-			import com.kaltura.events.AccessControlProfileEvent;
-			import com.kaltura.vo.AccessControlProfileVO;
-			import com.kaltura.vo.KalturaCountryRestriction;
-			import com.kaltura.types.KalturaSessionType;
-			import com.kaltura.vo.KalturaPreviewRestriction;
-			import com.kaltura.types.KalturaDirectoryRestrictionType;
-			import com.kaltura.vo.KalturaDirectoryRestriction;
-			import com.kaltura.vo.KalturaSessionRestriction;
-			import com.kaltura.types.KalturaCountryRestrictionType;
-			import com.kaltura.types.KalturaSiteRestrictionType;
-			import com.kaltura.vo.KalturaSiteRestriction;
-			import com.kaltura.vo.KalturaBaseRestriction;
+			import com.borhan.events.AccessControlProfileEvent;
+			import com.borhan.vo.AccessControlProfileVO;
+			import com.borhan.vo.BorhanCountryRestriction;
+			import com.borhan.types.BorhanSessionType;
+			import com.borhan.vo.BorhanPreviewRestriction;
+			import com.borhan.types.BorhanDirectoryRestrictionType;
+			import com.borhan.vo.BorhanDirectoryRestriction;
+			import com.borhan.vo.BorhanSessionRestriction;
+			import com.borhan.types.BorhanCountryRestrictionType;
+			import com.borhan.types.BorhanSiteRestrictionType;
+			import com.borhan.vo.BorhanSiteRestriction;
+			import com.borhan.vo.BorhanBaseRestriction;
 			import mx.collections.ArrayCollection;
 		
-			import com.kaltura.utils.KCountriesUtil;
+			import com.borhan.utils.KCountriesUtil;
 			import mx.managers.PopUpManager;
 			
 			[ResourceBundle("windows")]
@@ -114,7 +114,7 @@
 			
 			private function setDefaultProfileSettings():void
 			{
-				profileNameTextInput.enabled = !(accessControlProfile.profile.isDefault == KalturaNullableBoolean.TRUE_VALUE) ;
+				profileNameTextInput.enabled = !(accessControlProfile.profile.isDefault == BorhanNullableBoolean.TRUE_VALUE) ;
 			}
 			
 			/**
@@ -133,13 +133,13 @@
 			private function setSiteRestrictions():void
 			{
 				var restrictionFound:Boolean = false;
-				for each(var restriction:KalturaBaseRestriction in accessControlProfile.profile.restrictions)
+				for each(var restriction:BorhanBaseRestriction in accessControlProfile.profile.restrictions)
 				{
-					if(restriction is KalturaSiteRestriction)
+					if(restriction is BorhanSiteRestriction)
 					{
 						restrictionFound = true;
 						var arr:ArrayCollection;
-						if((restriction as KalturaSiteRestriction).siteRestrictionType == KalturaSiteRestrictionType.ALLOW_SITE_LIST)
+						if((restriction as BorhanSiteRestriction).siteRestrictionType == BorhanSiteRestrictionType.ALLOW_SITE_LIST)
 						{
 							approvedSitesRadioBtn.selected = true;
 							arr = allowedSitesArr;
@@ -150,7 +150,7 @@
 							arr = notAllowedSitesArr;
 						}
 						
-						setSitesFromString(arr, (restriction as KalturaSiteRestriction).siteList);
+						setSitesFromString(arr, (restriction as BorhanSiteRestriction).siteList);
 						break;
 					}
 				}
@@ -174,13 +174,13 @@
 			private function setCountriesRestrictions():void
 			{
 				var restrictionFound:Boolean = false;
-				for each(var restriction:KalturaBaseRestriction in accessControlProfile.profile.restrictions)
+				for each(var restriction:BorhanBaseRestriction in accessControlProfile.profile.restrictions)
 				{
-					if(restriction is KalturaCountryRestriction)
+					if(restriction is BorhanCountryRestriction)
 					{
 						restrictionFound = true;
 						var arr:ArrayCollection;
-						if((restriction as KalturaCountryRestriction).countryRestrictionType == KalturaCountryRestrictionType.ALLOW_COUNTRY_LIST)
+						if((restriction as BorhanCountryRestriction).countryRestrictionType == BorhanCountryRestrictionType.ALLOW_COUNTRY_LIST)
 						{
 							approvedCountiesRadioBtn.selected = true;
 							arr = allowedCountriesArr;
@@ -191,7 +191,7 @@
 							arr = notAllowedCountriesArr;
 						}
 						
-						setCountriesFromString(arr, (restriction as KalturaCountryRestriction).countryList);
+						setCountriesFromString(arr, (restriction as BorhanCountryRestriction).countryList);
 						break;
 					}
 				}
@@ -205,9 +205,9 @@
 			private function setSessionRestriction():void
 			{
 				var restrictionFound:Boolean = false;
-				for each(var restriction:KalturaBaseRestriction in accessControlProfile.profile.restrictions)
+				for each(var restriction:BorhanBaseRestriction in accessControlProfile.profile.restrictions)
 				{
-					if(restriction is KalturaSessionRestriction)
+					if(restriction is BorhanSessionRestriction)
 					{
 						secureKSCBBtn.selected = true;
 						break;
@@ -221,12 +221,12 @@
 			/* private function setDirectoryRestrictions():void
 			{
 				var restrictionFound:Boolean = false;
-				for each(var restriction:KalturaBaseRestriction in accessControlProfile.profile.restrictions)
+				for each(var restriction:BorhanBaseRestriction in accessControlProfile.profile.restrictions)
 				{
-					if(restriction is KalturaDirectoryRestriction)
+					if(restriction is BorhanDirectoryRestriction)
 					{
 						restrictionFound = true;
-						if((restriction as KalturaDirectoryRestriction).directoryRestrictionType == KalturaDirectoryRestrictionType.DONT_DISPLAY)
+						if((restriction as BorhanDirectoryRestriction).directoryRestrictionType == BorhanDirectoryRestrictionType.DONT_DISPLAY)
 						{
 							noKalDevRadioBtn.selected = true;
 						}
@@ -248,12 +248,12 @@
 			private function setPreviewRestrictions():void
 			{
 				var restrictionFound:Boolean = false;
-				for each(var restriction:KalturaBaseRestriction in accessControlProfile.profile.restrictions)
+				for each(var restriction:BorhanBaseRestriction in accessControlProfile.profile.restrictions)
 				{
-					if(restriction is KalturaPreviewRestriction)
+					if(restriction is BorhanPreviewRestriction)
 					{
 						freePerviewCBBtn.selected = true;
-						var len:int = (restriction as KalturaPreviewRestriction).previewLength;
+						var len:int = (restriction as BorhanPreviewRestriction).previewLength;
 						freePreviewDuration.minute = Math.floor(len/60);
 						freePreviewDuration.second = len % 60;
 						break;
@@ -461,8 +461,8 @@
    			{
    				if(anySiteRaddioBtn.selected != true)
    				{
-   					var siteRestriction:KalturaSiteRestriction = new KalturaSiteRestriction();
-   					siteRestriction.siteRestrictionType = (approvedSitesRadioBtn.selected == true) ? KalturaSiteRestrictionType.ALLOW_SITE_LIST : KalturaSiteRestrictionType.RESTRICT_SITE_LIST;
+   					var siteRestriction:BorhanSiteRestriction = new BorhanSiteRestriction();
+   					siteRestriction.siteRestrictionType = (approvedSitesRadioBtn.selected == true) ? BorhanSiteRestrictionType.ALLOW_SITE_LIST : BorhanSiteRestrictionType.RESTRICT_SITE_LIST;
    					
    					var list:List = (approvedSitesRadioBtn.selected == true) ? approvedDomainsList : notApprovedDomainsList;
    					siteRestriction.siteList = getSitesList(list.dataProvider as ArrayCollection);
@@ -510,8 +510,8 @@
    			{
    				if(allCountriesRaddioBtn.selected != true)
    				{
-   					var countryRestriction:KalturaCountryRestriction = new KalturaCountryRestriction();
-   					countryRestriction.countryRestrictionType = (approvedCountiesRadioBtn.selected == true) ? KalturaCountryRestrictionType.ALLOW_COUNTRY_LIST : KalturaCountryRestrictionType.RESTRICT_COUNTRY_LIST;
+   					var countryRestriction:BorhanCountryRestriction = new BorhanCountryRestriction();
+   					countryRestriction.countryRestrictionType = (approvedCountiesRadioBtn.selected == true) ? BorhanCountryRestrictionType.ALLOW_COUNTRY_LIST : BorhanCountryRestrictionType.RESTRICT_COUNTRY_LIST;
    					
    					var list:List = (approvedCountiesRadioBtn.selected == true) ? approvedCountriesList : notApprovedCountriesList;
    					countryRestriction.countryList = getCountriesList(list.dataProvider as ArrayCollection);
@@ -556,7 +556,7 @@
    			{
    				if(secureKSCBBtn.selected == true)
    				{
-   					var sessionRestriction:KalturaSessionRestriction = new KalturaSessionRestriction();
+   					var sessionRestriction:BorhanSessionRestriction = new BorhanSessionRestriction();
    					accessControlProfile.profile.restrictions.push(sessionRestriction);
    				}
    			} 
@@ -568,7 +568,7 @@
    			{
    				if(freePerviewCBBtn.selected == true)
    				{
-   					var previewRestriction:KalturaPreviewRestriction = new KalturaPreviewRestriction();
+   					var previewRestriction:BorhanPreviewRestriction = new BorhanPreviewRestriction();
    					previewRestriction.previewLength = (freePreviewDuration.minute * 60) + freePreviewDuration.second;
    					
    					accessControlProfile.profile.restrictions.push(previewRestriction);
@@ -582,8 +582,8 @@
    			{
    				if(allowDirectToKalDevRadioBtn.selected != true)
    				{
-   					var directoryRestriction:KalturaDirectoryRestriction = new KalturaDirectoryRestriction();
-   					directoryRestriction.directoryRestrictionType = (noKalDevRadioBtn.selected == true) ? KalturaDirectoryRestrictionType.DONT_DISPLAY : KalturaDirectoryRestrictionType.DISPLAY_WITH_LINK;
+   					var directoryRestriction:BorhanDirectoryRestriction = new BorhanDirectoryRestriction();
+   					directoryRestriction.directoryRestrictionType = (noKalDevRadioBtn.selected == true) ? BorhanDirectoryRestrictionType.DONT_DISPLAY : BorhanDirectoryRestrictionType.DISPLAY_WITH_LINK;
    					accessControlProfile.profile.restrictions.push(directoryRestriction);
    				}
    			}  */
@@ -698,7 +698,7 @@
 						<mx:RadioButton label="{rm.getString('windows', 'authoCountriesRadioBtn')}" groupName="authoCountriesGroup" id="approvedCountiesRadioBtn" styleName="acpRadioButton"/>
 						<mx:HBox width="100%">
 							<mx:Label text="{rm.getString('windows', 'countriesLabel')}" enabled="{approvedCountiesRadioBtn.selected}"/>
-							<mx:List width="100%" id="approvedCountriesList" enabled="{approvedCountiesRadioBtn.selected}" dataProvider="{allowedCountriesArr}" rowCount="5" itemRenderer="com.kaltura.renderers.CountryListItemRenderer" selectable="false"/>
+							<mx:List width="100%" id="approvedCountriesList" enabled="{approvedCountiesRadioBtn.selected}" dataProvider="{allowedCountriesArr}" rowCount="5" itemRenderer="com.borhan.renderers.CountryListItemRenderer" selectable="false"/>
 						</mx:HBox>
 					</mx:VBox>
 					<mx:HBox>
@@ -714,7 +714,7 @@
 						</mx:Text>-->
 						<mx:HBox width="100%">
 							<mx:Label text="{rm.getString('windows', 'countriesLabel')}" enabled="{notApprovedCountiesRadioBtn.selected}"/>
-							<mx:List width="100%" id="notApprovedCountriesList" dataProvider="{notAllowedCountriesArr}" enabled="{notApprovedCountiesRadioBtn.selected}" rowCount="5" itemRenderer="com.kaltura.renderers.CountryListItemRenderer" selectable="false"/>
+							<mx:List width="100%" id="notApprovedCountriesList" dataProvider="{notAllowedCountriesArr}" enabled="{notApprovedCountiesRadioBtn.selected}" rowCount="5" itemRenderer="com.borhan.renderers.CountryListItemRenderer" selectable="false"/>
 						</mx:HBox>
 					</mx:VBox>
 					<mx:HBox>

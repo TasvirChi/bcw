@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadata
+package com.borhan.commands.metadata
 {
-	import com.kaltura.delegates.metadata.MetadataUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadata.MetadataUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataUpdate extends KalturaCall
+	public class MetadataUpdate extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataUpdate( id : int,xmlData : String='' )

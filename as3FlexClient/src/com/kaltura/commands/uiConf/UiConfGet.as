@@ -1,9 +1,9 @@
-package com.kaltura.commands.uiConf
+package com.borhan.commands.uiConf
 {
-	import com.kaltura.delegates.uiConf.UiConfGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.uiConf.UiConfGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UiConfGet extends KalturaCall
+	public class UiConfGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UiConfGet( id : int )

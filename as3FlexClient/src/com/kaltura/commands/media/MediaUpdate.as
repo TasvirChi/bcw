@@ -1,13 +1,13 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.vo.KalturaMediaEntry;
-	import com.kaltura.delegates.media.MediaUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanMediaEntry;
+	import com.borhan.delegates.media.MediaUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaUpdate extends KalturaCall
+	public class MediaUpdate extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MediaUpdate( entryId : String,mediaEntry : KalturaMediaEntry )
+		public function MediaUpdate( entryId : String,mediaEntry : BorhanMediaEntry )
 		{
 			service= 'media';
 			action= 'update';
@@ -17,7 +17,7 @@ package com.kaltura.commands.media
 			var keyValArr : Array = new Array();
 			keyArr.push( 'entryId' );
 			valueArr.push( entryId );
- 			keyValArr = kalturaObject2Arrays(mediaEntry,'mediaEntry');
+ 			keyValArr = borhanObject2Arrays(mediaEntry,'mediaEntry');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

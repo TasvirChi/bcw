@@ -1,13 +1,13 @@
-package com.kaltura.commands.flavorParams
+package com.borhan.commands.flavorParams
 {
-	import com.kaltura.vo.KalturaFlavorParams;
-	import com.kaltura.delegates.flavorParams.FlavorParamsUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanFlavorParams;
+	import com.borhan.delegates.flavorParams.FlavorParamsUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FlavorParamsUpdate extends KalturaCall
+	public class FlavorParamsUpdate extends BorhanCall
 	{
 		public var filterFields : String;
-		public function FlavorParamsUpdate( id : int,flavorParams : KalturaFlavorParams )
+		public function FlavorParamsUpdate( id : int,flavorParams : BorhanFlavorParams )
 		{
 			service= 'flavorparams';
 			action= 'update';
@@ -17,7 +17,7 @@ package com.kaltura.commands.flavorParams
 			var keyValArr : Array = new Array();
 			keyArr.push( 'id' );
 			valueArr.push( id );
- 			keyValArr = kalturaObject2Arrays(flavorParams,'flavorParams');
+ 			keyValArr = borhanObject2Arrays(flavorParams,'flavorParams');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

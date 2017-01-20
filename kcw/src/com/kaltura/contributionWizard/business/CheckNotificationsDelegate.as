@@ -1,8 +1,8 @@
-package com.kaltura.contributionWizard.business
+package com.borhan.contributionWizard.business
 {
 	import com.adobe_cw.adobe.cairngorm.business.ServiceLocator;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.net.TemplateURLVariables;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.net.TemplateURLVariables;
 
 	import flash.utils.clearInterval;
 	import flash.utils.setTimeout;

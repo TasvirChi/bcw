@@ -1,9 +1,9 @@
-package com.kaltura.contributionWizard.model
+package com.borhan.contributionWizard.model
 {
 	import com.bjorn.event.ChainEvent;
-	import com.kaltura.contributionWizard.enums.KCWWorkflowState;
-	import com.kaltura.contributionWizard.events.AddEntriesEvent;
-	import com.kaltura.contributionWizard.events.WorkflowEvent;
+	import com.borhan.contributionWizard.enums.BCWWorkflowState;
+	import com.borhan.contributionWizard.events.AddEntriesEvent;
+	import com.borhan.contributionWizard.events.WorkflowEvent;
 
 	import flash.events.MouseEvent;
 
@@ -11,22 +11,22 @@ package com.kaltura.contributionWizard.model
 	{
 		public function WorkflowStatesList(enableIntroScreen:Boolean, enableTagging:Boolean, enableFinishScreen:Boolean):void
 		{
-			var introScreen:WorkflowState = new WorkflowState(KCWWorkflowState.INTRO_SCREEN, 		new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, KCWWorkflowState.INTRO_SCREEN));
-			var importMedia:WorkflowState = new WorkflowState(KCWWorkflowState.IMPORT_MEDIA, 		new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, KCWWorkflowState.IMPORT_MEDIA));
-			var taggingScreen:WorkflowState = new WorkflowState(KCWWorkflowState.TAGGING,			new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, KCWWorkflowState.TAGGING));
-			var addEntrieshEvent:WorkflowState = new WorkflowState(KCWWorkflowState.ADD_ENTRIES,	new AddEntriesEvent(AddEntriesEvent.ADD_ENTRIES));
-			var finishScreenEvent:WorkflowState = new WorkflowState(KCWWorkflowState.FINISH_SCREEN, new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, KCWWorkflowState.FINISH_SCREEN));
+			var introScreen:WorkflowState = new WorkflowState(BCWWorkflowState.INTRO_SCREEN, 		new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, BCWWorkflowState.INTRO_SCREEN));
+			var importMedia:WorkflowState = new WorkflowState(BCWWorkflowState.IMPORT_MEDIA, 		new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, BCWWorkflowState.IMPORT_MEDIA));
+			var taggingScreen:WorkflowState = new WorkflowState(BCWWorkflowState.TAGGING,			new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, BCWWorkflowState.TAGGING));
+			var addEntrieshEvent:WorkflowState = new WorkflowState(BCWWorkflowState.ADD_ENTRIES,	new AddEntriesEvent(AddEntriesEvent.ADD_ENTRIES));
+			var finishScreenEvent:WorkflowState = new WorkflowState(BCWWorkflowState.FINISH_SCREEN, new WorkflowEvent(WorkflowEvent.CHANGE_WORKFLOW, BCWWorkflowState.FINISH_SCREEN));
 
 			states = [introScreen, importMedia, taggingScreen, addEntrieshEvent, finishScreenEvent];
 
 			if (!enableIntroScreen)
-				removeStateByName(KCWWorkflowState.INTRO_SCREEN);
+				removeStateByName(BCWWorkflowState.INTRO_SCREEN);
 
 			if (!enableTagging)
-				removeStateByName(KCWWorkflowState.TAGGING);
+				removeStateByName(BCWWorkflowState.TAGGING);
 
 			if (!enableFinishScreen)
-				removeStateByName(KCWWorkflowState.FINISH_SCREEN);
+				removeStateByName(BCWWorkflowState.FINISH_SCREEN);
 
 			mergeStates();
 		}
@@ -55,7 +55,7 @@ package com.kaltura.contributionWizard.model
 		 */
 		private function mergeStates():void
 		{
-			var addEntriesState:WorkflowState = getStateByName(KCWWorkflowState.ADD_ENTRIES);
+			var addEntriesState:WorkflowState = getStateByName(BCWWorkflowState.ADD_ENTRIES);
 			var addEntriesIndex:int = states.indexOf(addEntriesState);
 			var nextState:WorkflowState =  addEntriesIndex < states.length - 1 ? states[addEntriesIndex + 1] : null;
 

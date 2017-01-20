@@ -1,8 +1,8 @@
-package com.kaltura.contributionWizard.command.webcam
+package com.borhan.contributionWizard.command.webcam
 {
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 	import com.arc90.modular.ModuleSequenceCommand;
-	import com.kaltura.contributionWizard.model.WebcamModelLocator;
+	import com.borhan.contributionWizard.model.WebcamModelLocator;
 
 	public class SaveCameraNameCommand extends ModuleSequenceCommand
 	{

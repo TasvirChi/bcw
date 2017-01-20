@@ -1,9 +1,9 @@
-package com.kaltura.commands.baseEntry
+package com.borhan.commands.baseEntry
 {
-	import com.kaltura.delegates.baseEntry.BaseEntryUpdateThumbnailFromSourceEntryDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.baseEntry.BaseEntryUpdateThumbnailFromSourceEntryDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BaseEntryUpdateThumbnailFromSourceEntry extends KalturaCall
+	public class BaseEntryUpdateThumbnailFromSourceEntry extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BaseEntryUpdateThumbnailFromSourceEntry( entryId : String,sourceEntryId : String,timeOffset : int )

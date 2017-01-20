@@ -1,9 +1,9 @@
-package com.kaltura.commands.upload
+package com.borhan.commands.upload
 {
-	import com.kaltura.delegates.upload.UploadGetUploadTokenIdDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.upload.UploadGetUploadTokenIdDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UploadGetUploadTokenId extends KalturaCall
+	public class UploadGetUploadTokenId extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UploadGetUploadTokenId(  )

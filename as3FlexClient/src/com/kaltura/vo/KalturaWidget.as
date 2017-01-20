@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaWidget extends BaseFlexVo
+	public dynamic class BorhanWidget extends BaseFlexVo
 	{
 		public var id : String;
 		public var sourceWidgetId : String;

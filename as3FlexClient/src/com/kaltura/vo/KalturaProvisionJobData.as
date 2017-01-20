@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaJobData;
+	import com.borhan.vo.BorhanJobData;
 
 	[Bindable]
-	public dynamic class KalturaProvisionJobData extends KalturaJobData
+	public dynamic class BorhanProvisionJobData extends BorhanJobData
 	{
 		public var streamID : String;
 		public var backupStreamID : String;

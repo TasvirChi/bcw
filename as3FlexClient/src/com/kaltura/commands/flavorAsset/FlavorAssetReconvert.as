@@ -1,9 +1,9 @@
-package com.kaltura.commands.flavorAsset
+package com.borhan.commands.flavorAsset
 {
-	import com.kaltura.delegates.flavorAsset.FlavorAssetReconvertDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.flavorAsset.FlavorAssetReconvertDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FlavorAssetReconvert extends KalturaCall
+	public class FlavorAssetReconvert extends BorhanCall
 	{
 		public var filterFields : String;
 		public function FlavorAssetReconvert( id : String )

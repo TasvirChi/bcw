@@ -1,12 +1,12 @@
-package com.kaltura.delegates.stats
+package com.borhan.delegates.stats
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class StatsCollectDelegate extends WebDelegateBase
 	{
-		public function StatsCollectDelegate(call:KalturaCall, config:KalturaConfig)
+		public function StatsCollectDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

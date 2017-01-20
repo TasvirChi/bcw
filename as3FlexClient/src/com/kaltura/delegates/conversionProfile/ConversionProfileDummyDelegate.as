@@ -1,12 +1,12 @@
-package com.kaltura.delegates.conversionProfile
+package com.borhan.delegates.conversionProfile
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class ConversionProfileDummyDelegate extends WebDelegateBase
 	{
-		public function ConversionProfileDummyDelegate(call:KalturaCall, config:KalturaConfig)
+		public function ConversionProfileDummyDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

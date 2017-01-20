@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaPartnerStatus
+	public class BorhanPartnerStatus
 	{
 		public static const ACTIVE : int = 1;
 		public static const BLOCKED : int = 2;

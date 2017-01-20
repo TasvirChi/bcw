@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseSyndicationFeedFilter;
+	import com.borhan.vo.BorhanBaseSyndicationFeedFilter;
 
-	public dynamic class TubeMogulSyndicationFeedFilter extends KalturaBaseSyndicationFeedFilter
+	public dynamic class TubeMogulSyndicationFeedFilter extends BorhanBaseSyndicationFeedFilter
 	{
 		override protected function setupPropertyList():void
 		{

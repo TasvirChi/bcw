@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.delegates.metadataBatch.MetadataBatchCleanExclusiveJobsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadataBatch.MetadataBatchCleanExclusiveJobsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchCleanExclusiveJobs extends KalturaCall
+	public class MetadataBatchCleanExclusiveJobs extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataBatchCleanExclusiveJobs(  )

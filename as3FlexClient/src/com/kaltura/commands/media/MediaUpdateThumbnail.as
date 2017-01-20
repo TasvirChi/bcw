@@ -1,9 +1,9 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.delegates.media.MediaUpdateThumbnailDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.media.MediaUpdateThumbnailDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaUpdateThumbnail extends KalturaCall
+	public class MediaUpdateThumbnail extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MediaUpdateThumbnail( entryId : String,timeOffset : int )

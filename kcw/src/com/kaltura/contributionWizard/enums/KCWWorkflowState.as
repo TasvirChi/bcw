@@ -1,6 +1,6 @@
-package com.kaltura.contributionWizard.enums
+package com.borhan.contributionWizard.enums
 {
-	public class KCWWorkflowState
+	public class BCWWorkflowState
 	{
 		public static const PRELOADING:String		= "preloading";
 		public static const INTRO_SCREEN:String 	= "introScreen";

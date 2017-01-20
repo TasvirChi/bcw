@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,16 +20,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.business.factories.serialization
+package com.borhan.contributionWizard.business.factories.serialization
 {
 	import com.adobe.cairngorm.vo.IValueObject;
-	import com.kaltura.contributionWizard.business.Services;
-	import com.kaltura.contributionWizard.business.factories.serialization.importUrlVo.concrete.ImportFileDecoder;
-	import com.kaltura.contributionWizard.business.factories.serialization.importUrlVo.concrete.ImportURLDecoder;
-	import com.kaltura.contributionWizard.model.Context;
-	import com.kaltura.net.TemplateURLVariables;
-	import com.kaltura.vo.importees.ImportFileVO;
-	import com.kaltura.vo.importees.ImportURLVO;
+	import com.borhan.contributionWizard.business.Services;
+	import com.borhan.contributionWizard.business.factories.serialization.importUrlVo.concrete.ImportFileDecoder;
+	import com.borhan.contributionWizard.business.factories.serialization.importUrlVo.concrete.ImportURLDecoder;
+	import com.borhan.contributionWizard.model.Context;
+	import com.borhan.net.TemplateURLVariables;
+	import com.borhan.vo.importees.ImportFileVO;
+	import com.borhan.vo.importees.ImportURLVO;
 	
 	import flash.net.URLVariables;
 	import flash.utils.getDefinitionByName;

@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseRestriction;
+	import com.borhan.vo.BorhanBaseRestriction;
 
 	[Bindable]
-	public dynamic class KalturaSessionRestriction extends KalturaBaseRestriction
+	public dynamic class BorhanSessionRestriction extends BorhanBaseRestriction
 	{
 		override protected function setupPropertyList():void
 		{

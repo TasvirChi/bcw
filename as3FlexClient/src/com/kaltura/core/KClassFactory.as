@@ -1,4 +1,4 @@
-package com.kaltura.core
+package com.borhan.core
 {
 	import flash.utils.getDefinitionByName;
 	
@@ -45,14 +45,14 @@ package com.kaltura.core
 	        			
 	        			for each( var item:XML in prop.children() )
 	        			{
-	        				cls = getDefinitionByName('com.kaltura.vo.'+ item.objectType) as Class;
+	        				cls = getDefinitionByName('com.borhan.vo.'+ item.objectType) as Class;
 	        				obj = (new KClassFactory( cls )).newInstanceFromXML( XMLList(item) );
 	        				instance[arrName].push(obj);		
 	        			}
 	        		}
 	        		else //if complex object and not an array
 	        		{
-	        			cls = getDefinitionByName('com.kaltura.vo.'+ prop.objectType) as Class;
+	        			cls = getDefinitionByName('com.borhan.vo.'+ prop.objectType) as Class;
 	        			obj = (new KClassFactory( cls )).newInstanceFromXML(  XMLList(prop) );
 	        			instance[prop.name()] = obj;
 	        		}

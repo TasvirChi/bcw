@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaMediaEntry;
+	import com.borhan.vo.BorhanMediaEntry;
 
 	[Bindable]
-	public dynamic class KalturaLiveStreamEntry extends KalturaMediaEntry
+	public dynamic class BorhanLiveStreamEntry extends BorhanMediaEntry
 	{
 		public var offlineMessage : String;
 		public var streamRemoteId : String;

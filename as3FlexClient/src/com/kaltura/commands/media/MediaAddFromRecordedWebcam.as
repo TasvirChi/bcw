@@ -1,13 +1,13 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.vo.KalturaMediaEntry;
-	import com.kaltura.delegates.media.MediaAddFromRecordedWebcamDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanMediaEntry;
+	import com.borhan.delegates.media.MediaAddFromRecordedWebcamDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaAddFromRecordedWebcam extends KalturaCall
+	public class MediaAddFromRecordedWebcam extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MediaAddFromRecordedWebcam( mediaEntry : KalturaMediaEntry,webcamTokenId : String )
+		public function MediaAddFromRecordedWebcam( mediaEntry : BorhanMediaEntry,webcamTokenId : String )
 		{
 			service= 'media';
 			action= 'addFromRecordedWebcam';
@@ -15,7 +15,7 @@ package com.kaltura.commands.media
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(mediaEntry,'mediaEntry');
+ 			keyValArr = borhanObject2Arrays(mediaEntry,'mediaEntry');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'webcamTokenId' );

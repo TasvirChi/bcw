@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaMediaType
+	public class BorhanMediaType
 	{
 		public static const VIDEO : int = 1;
 		public static const IMAGE : int = 2;

@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaConvartableJobData;
+	import com.borhan.vo.BorhanConvartableJobData;
 
 	[Bindable]
-	public dynamic class KalturaExtractMediaJobData extends KalturaConvartableJobData
+	public dynamic class BorhanExtractMediaJobData extends BorhanConvartableJobData
 	{
 		public var flavorAssetId : String;
 		override protected function setupPropertyList():void

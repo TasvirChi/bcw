@@ -1,9 +1,9 @@
-package com.kaltura.commands.conversionProfile
+package com.borhan.commands.conversionProfile
 {
-	import com.kaltura.delegates.conversionProfile.ConversionProfileDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.conversionProfile.ConversionProfileDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class ConversionProfileDelete extends KalturaCall
+	public class ConversionProfileDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function ConversionProfileDelete( id : int )

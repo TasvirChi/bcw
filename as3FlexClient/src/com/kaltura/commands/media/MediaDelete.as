@@ -1,9 +1,9 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.delegates.media.MediaDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.media.MediaDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaDelete extends KalturaCall
+	public class MediaDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MediaDelete( entryId : String )

@@ -1,9 +1,9 @@
-package com.kaltura.commands.adminUser
+package com.borhan.commands.adminUser
 {
-	import com.kaltura.delegates.adminUser.AdminUserResetPasswordDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.adminUser.AdminUserResetPasswordDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class AdminUserResetPassword extends KalturaCall
+	public class AdminUserResetPassword extends BorhanCall
 	{
 		public var filterFields : String;
 		public function AdminUserResetPassword( email : String )

@@ -1,11 +1,11 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBatchJob;
+	import com.borhan.vo.BorhanBatchJob;
 
-	import com.kaltura.vo.BaseFlexVo;
-	public dynamic class KalturaBatchJobResponse extends BaseFlexVo
+	import com.borhan.vo.BaseFlexVo;
+	public dynamic class BorhanBatchJobResponse extends BaseFlexVo
 	{
-		public var batchJob : KalturaBatchJob;
+		public var batchJob : BorhanBatchJob;
 		public var childBatchJobs : Array = new Array();
 		override protected function setupPropertyList():void
 		{

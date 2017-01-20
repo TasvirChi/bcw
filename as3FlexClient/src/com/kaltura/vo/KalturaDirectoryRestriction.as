@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseRestriction;
+	import com.borhan.vo.BorhanBaseRestriction;
 
 	[Bindable]
-	public dynamic class KalturaDirectoryRestriction extends KalturaBaseRestriction
+	public dynamic class BorhanDirectoryRestriction extends BorhanBaseRestriction
 	{
 		public var directoryRestrictionType : int = int.MIN_VALUE;
 		override protected function setupPropertyList():void

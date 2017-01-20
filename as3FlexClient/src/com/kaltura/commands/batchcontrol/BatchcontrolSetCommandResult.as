@@ -1,9 +1,9 @@
-package com.kaltura.commands.batchcontrol
+package com.borhan.commands.batchcontrol
 {
-	import com.kaltura.delegates.batchcontrol.BatchcontrolSetCommandResultDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.batchcontrol.BatchcontrolSetCommandResultDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BatchcontrolSetCommandResult extends KalturaCall
+	public class BatchcontrolSetCommandResult extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BatchcontrolSetCommandResult( commandId : int,status : int,error_description : String='' )

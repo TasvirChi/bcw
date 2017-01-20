@@ -1,13 +1,13 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaSearchItem;
+	import com.borhan.vo.BorhanSearchItem;
 
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaFilter extends BaseFlexVo
+	public dynamic class BorhanFilter extends BaseFlexVo
 	{
 		public var orderBy : String;
-		public var advancedSearch : KalturaSearchItem;
+		public var advancedSearch : BorhanSearchItem;
 		override protected function setupPropertyList():void
 		{
 			super.setupPropertyList();

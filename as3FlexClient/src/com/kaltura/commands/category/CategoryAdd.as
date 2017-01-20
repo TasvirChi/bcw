@@ -1,13 +1,13 @@
-package com.kaltura.commands.category
+package com.borhan.commands.category
 {
-	import com.kaltura.vo.KalturaCategory;
-	import com.kaltura.delegates.category.CategoryAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanCategory;
+	import com.borhan.delegates.category.CategoryAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class CategoryAdd extends KalturaCall
+	public class CategoryAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function CategoryAdd( category : KalturaCategory )
+		public function CategoryAdd( category : BorhanCategory )
 		{
 			service= 'category';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.category
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(category,'category');
+ 			keyValArr = borhanObject2Arrays(category,'category');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

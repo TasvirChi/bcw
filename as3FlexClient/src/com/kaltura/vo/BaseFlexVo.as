@@ -1,4 +1,4 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
 	import mx.utils.ObjectProxy;
 	

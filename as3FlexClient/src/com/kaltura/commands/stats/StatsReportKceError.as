@@ -1,13 +1,13 @@
-package com.kaltura.commands.stats
+package com.borhan.commands.stats
 {
-	import com.kaltura.vo.KalturaCEError;
-	import com.kaltura.delegates.stats.StatsReportKceErrorDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanCEError;
+	import com.borhan.delegates.stats.StatsReportKceErrorDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class StatsReportKceError extends KalturaCall
+	public class StatsReportKceError extends BorhanCall
 	{
 		public var filterFields : String;
-		public function StatsReportKceError( kalturaCEError : KalturaCEError )
+		public function StatsReportKceError( borhanCEError : BorhanCEError )
 		{
 			service= 'stats';
 			action= 'reportKceError';
@@ -15,7 +15,7 @@ package com.kaltura.commands.stats
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(kalturaCEError,'kalturaCEError');
+ 			keyValArr = borhanObject2Arrays(borhanCEError,'borhanCEError');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

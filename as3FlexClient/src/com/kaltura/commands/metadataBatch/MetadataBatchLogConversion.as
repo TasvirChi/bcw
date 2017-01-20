@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.delegates.metadataBatch.MetadataBatchLogConversionDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadataBatch.MetadataBatchLogConversionDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchLogConversion extends KalturaCall
+	public class MetadataBatchLogConversion extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataBatchLogConversion( flavorAssetId : String,data : String )

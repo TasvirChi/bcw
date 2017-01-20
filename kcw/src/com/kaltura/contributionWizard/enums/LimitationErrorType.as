@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.enums
+package com.borhan.contributionWizard.enums
 {
 	public class LimitationErrorType
 	{

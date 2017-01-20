@@ -1,12 +1,12 @@
-package com.kaltura.delegates.uiConf
+package com.borhan.delegates.uiConf
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class UiConfDeleteDelegate extends WebDelegateBase
 	{
-		public function UiConfDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function UiConfDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

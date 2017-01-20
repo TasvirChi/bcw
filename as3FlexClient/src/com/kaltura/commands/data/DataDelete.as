@@ -1,9 +1,9 @@
-package com.kaltura.commands.data
+package com.borhan.commands.data
 {
-	import com.kaltura.delegates.data.DataDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.data.DataDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class DataDelete extends KalturaCall
+	public class DataDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function DataDelete( entryId : String )

@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaSessionRestriction;
+	import com.borhan.vo.BorhanSessionRestriction;
 
 	[Bindable]
-	public dynamic class KalturaPreviewRestriction extends KalturaSessionRestriction
+	public dynamic class BorhanPreviewRestriction extends BorhanSessionRestriction
 	{
 		public var previewLength : int = int.MIN_VALUE;
 		override protected function setupPropertyList():void

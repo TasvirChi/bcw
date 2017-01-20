@@ -1,9 +1,9 @@
-package com.kaltura.commands.liveStream
+package com.borhan.commands.liveStream
 {
-	import com.kaltura.delegates.liveStream.LiveStreamDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.liveStream.LiveStreamDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class LiveStreamDelete extends KalturaCall
+	public class LiveStreamDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function LiveStreamDelete( entryId : String )

@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaStartWidgetSessionResponse extends BaseFlexVo
+	public dynamic class BorhanStartWidgetSessionResponse extends BaseFlexVo
 	{
 		public var partnerId : int = int.MIN_VALUE;
 		public var ks : String;

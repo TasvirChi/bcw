@@ -1,9 +1,9 @@
-package com.kaltura.commands
+package com.borhan.commands
 {
-	import com.kaltura.delegates.MultiRequestDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.MultiRequestDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MultiRequest extends KalturaCall
+	public class MultiRequest extends BorhanCall
 	{
 		private var _addedParams:Object = new Object();
 		private var _mapParamArr : Array = new Array();
@@ -14,9 +14,9 @@ package com.kaltura.commands
 			service = 'multirequest';
 		}
 		
-		public function addAction( kalturaCall : KalturaCall ) :void
+		public function addAction( borhanCall : BorhanCall ) :void
 		{
-			actions.push( kalturaCall );
+			actions.push( borhanCall );
 		}
 		
 		public function mapMultiRequestParam( fromRequestIndex : int , 
@@ -45,7 +45,7 @@ package com.kaltura.commands
 				keyArray.push((j+1)+":action");
 				valueArr.push( actions[j].action );
 
-				var argsArr : Array = ((actions[j] as KalturaCall).args.toString()).split('&');
+				var argsArr : Array = ((actions[j] as BorhanCall).args.toString()).split('&');
 				for(var k:int=0; k< argsArr.length; k++)
 				{
 					var inMap : Boolean = false;

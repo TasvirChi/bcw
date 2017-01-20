@@ -1,10 +1,10 @@
-package com.kaltura.commands.fileSync
+package com.borhan.commands.fileSync
 {
-	import com.kaltura.vo.File;
-	import com.kaltura.delegates.fileSync.FileSyncSyncDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.File;
+	import com.borhan.delegates.fileSync.FileSyncSyncDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FileSyncSync extends KalturaCall
+	public class FileSyncSync extends BorhanCall
 	{
 		public var filterFields : String;
 		public function FileSyncSync( fileSyncId : int,fileData : file )
@@ -17,7 +17,7 @@ package com.kaltura.commands.fileSync
 			var keyValArr : Array = new Array();
 			keyArr.push( 'fileSyncId' );
 			valueArr.push( fileSyncId );
- 			keyValArr = kalturaObject2Arrays(fileData,'fileData');
+ 			keyValArr = borhanObject2Arrays(fileData,'fileData');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

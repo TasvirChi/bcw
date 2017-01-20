@@ -1,9 +1,9 @@
-package com.kaltura.commands.widget
+package com.borhan.commands.widget
 {
-	import com.kaltura.delegates.widget.WidgetGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.widget.WidgetGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class WidgetGet extends KalturaCall
+	public class WidgetGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function WidgetGet( id : String )

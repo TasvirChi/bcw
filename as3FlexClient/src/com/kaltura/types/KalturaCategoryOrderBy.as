@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaCategoryOrderBy
+	public class BorhanCategoryOrderBy
 	{
 		public static const DEPTH_ASC : String = '+depth';
 		public static const DEPTH_DESC : String = '-depth';

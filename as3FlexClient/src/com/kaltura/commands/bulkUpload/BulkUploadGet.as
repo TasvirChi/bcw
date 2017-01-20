@@ -1,9 +1,9 @@
-package com.kaltura.commands.bulkUpload
+package com.borhan.commands.bulkUpload
 {
-	import com.kaltura.delegates.bulkUpload.BulkUploadGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.bulkUpload.BulkUploadGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BulkUploadGet extends KalturaCall
+	public class BulkUploadGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BulkUploadGet( id : int )

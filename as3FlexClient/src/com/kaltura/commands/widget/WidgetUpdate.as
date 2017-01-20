@@ -1,13 +1,13 @@
-package com.kaltura.commands.widget
+package com.borhan.commands.widget
 {
-	import com.kaltura.vo.KalturaWidget;
-	import com.kaltura.delegates.widget.WidgetUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanWidget;
+	import com.borhan.delegates.widget.WidgetUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class WidgetUpdate extends KalturaCall
+	public class WidgetUpdate extends BorhanCall
 	{
 		public var filterFields : String;
-		public function WidgetUpdate( id : String,widget : KalturaWidget )
+		public function WidgetUpdate( id : String,widget : BorhanWidget )
 		{
 			service= 'widget';
 			action= 'update';
@@ -17,7 +17,7 @@ package com.kaltura.commands.widget
 			var keyValArr : Array = new Array();
 			keyArr.push( 'id' );
 			valueArr.push( id );
- 			keyValArr = kalturaObject2Arrays(widget,'widget');
+ 			keyValArr = borhanObject2Arrays(widget,'widget');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

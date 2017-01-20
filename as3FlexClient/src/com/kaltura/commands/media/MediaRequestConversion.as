@@ -1,9 +1,9 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.delegates.media.MediaRequestConversionDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.media.MediaRequestConversionDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaRequestConversion extends KalturaCall
+	public class MediaRequestConversion extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MediaRequestConversion( entryId : String,fileFormat : String )

@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaPartnerUsage extends BaseFlexVo
+	public dynamic class BorhanPartnerUsage extends BaseFlexVo
 	{
 		public var hostingGB : Number = NaN;
 		public var Percent : Number = NaN;

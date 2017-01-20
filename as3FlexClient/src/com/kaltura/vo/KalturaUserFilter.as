@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaFilter;
+	import com.borhan.vo.BorhanFilter;
 
 	[Bindable]
-	public dynamic class KalturaUserFilter extends KalturaFilter
+	public dynamic class BorhanUserFilter extends BorhanFilter
 	{
 		public var idEqual : String;
 		public var idIn : String;

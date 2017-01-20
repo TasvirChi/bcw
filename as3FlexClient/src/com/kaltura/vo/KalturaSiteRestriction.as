@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseRestriction;
+	import com.borhan.vo.BorhanBaseRestriction;
 
 	[Bindable]
-	public dynamic class KalturaSiteRestriction extends KalturaBaseRestriction
+	public dynamic class BorhanSiteRestriction extends BorhanBaseRestriction
 	{
 		public var siteRestrictionType : int = int.MIN_VALUE;
 		public var siteList : String;

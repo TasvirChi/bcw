@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,25 +20,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.business.factories
+package com.borhan.contributionWizard.business.factories
 {
-	import com.kaltura.contributionWizard.model.MediaProviders;
-	import com.kaltura.contributionWizard.model.StartupDefaultsVO;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.ImportTypesConfig;
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.search.ModerationFilter;
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.search.SearchConfig;
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.tagging.TaggingConfig;
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.upload.UploadConfig;
-	import com.kaltura.contributionWizard.vo.ImportScreenVO;
-	import com.kaltura.contributionWizard.vo.UIConfigVO;
-	import com.kaltura.contributionWizard.vo.limitations.*;
-	import com.kaltura.contributionWizard.vo.providers.AuthenticationMethod;
-	import com.kaltura.contributionWizard.vo.providers.AuthenticationMethodList;
-	import com.kaltura.contributionWizard.vo.providers.MediaInfo;
-	import com.kaltura.contributionWizard.vo.providers.MediaProviderVO;
-	import com.kaltura.contributionWizard.vo.providers.WebcamParametersVO;
-	import com.kaltura.utils.PathUtil;
+	import com.borhan.contributionWizard.model.MediaProviders;
+	import com.borhan.contributionWizard.model.StartupDefaultsVO;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.ImportTypesConfig;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.search.ModerationFilter;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.search.SearchConfig;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.tagging.TaggingConfig;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.upload.UploadConfig;
+	import com.borhan.contributionWizard.vo.ImportScreenVO;
+	import com.borhan.contributionWizard.vo.UIConfigVO;
+	import com.borhan.contributionWizard.vo.limitations.*;
+	import com.borhan.contributionWizard.vo.providers.AuthenticationMethod;
+	import com.borhan.contributionWizard.vo.providers.AuthenticationMethodList;
+	import com.borhan.contributionWizard.vo.providers.MediaInfo;
+	import com.borhan.contributionWizard.vo.providers.MediaProviderVO;
+	import com.borhan.contributionWizard.vo.providers.WebcamParametersVO;
+	import com.borhan.utils.PathUtil;
 	
 	import flash.net.FileFilter;
 	import flash.utils.Dictionary;

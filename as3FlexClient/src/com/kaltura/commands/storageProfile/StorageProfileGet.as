@@ -1,9 +1,9 @@
-package com.kaltura.commands.storageProfile
+package com.borhan.commands.storageProfile
 {
-	import com.kaltura.delegates.storageProfile.StorageProfileGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.storageProfile.StorageProfileGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class StorageProfileGet extends KalturaCall
+	public class StorageProfileGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function StorageProfileGet( storageProfileId : int )

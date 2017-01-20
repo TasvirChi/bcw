@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.model.importTypesConfiguration.search
+package com.borhan.contributionWizard.model.importTypesConfiguration.search
 {
 	[Bindable]
 	public class ModerationFilter

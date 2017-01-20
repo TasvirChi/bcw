@@ -1,9 +1,9 @@
-package com.kaltura.commands.mixing
+package com.borhan.commands.mixing
 {
-	import com.kaltura.delegates.mixing.MixingGetReadyMediaEntriesDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.mixing.MixingGetReadyMediaEntriesDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MixingGetReadyMediaEntries extends KalturaCall
+	public class MixingGetReadyMediaEntries extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MixingGetReadyMediaEntries( mixId : String,version : int=-1 )

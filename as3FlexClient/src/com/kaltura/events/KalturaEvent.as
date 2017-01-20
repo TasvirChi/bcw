@@ -1,24 +1,24 @@
-package com.kaltura.events {
+package com.borhan.events {
 	
-	import com.kaltura.errors.KalturaError;
+	import com.borhan.errors.BorhanError;
 	
 	import flash.events.Event;
 
-	public class KalturaEvent extends Event {
+	public class BorhanEvent extends Event {
 		
 		public static const COMPLETE:String = 'complete';
 		public static const FAILED:String = 'failed';
 
 		public var success:Boolean;
 		public var data:Object;
-		public var error:KalturaError;
+		public var error:BorhanError;
 		
-		public function KalturaEvent(type:String,
+		public function BorhanEvent(type:String,
 									 bubbles:Boolean=false,
 									 cancelable:Boolean=false,
 									 success:Boolean = false,
 									 data:Object = null, 
-									 error:KalturaError = null) 
+									 error:BorhanError = null) 
 		{
 			this.success = success;
 			this.data = data;
@@ -28,11 +28,11 @@ package com.kaltura.events {
 		}
 		
 		override public function clone():Event {
-			return new KalturaEvent(type, bubbles, cancelable, success, data, error);
+			return new BorhanEvent(type, bubbles, cancelable, success, data, error);
 		}
 		
 		override public function toString():String {
-			return formatToString('KalturaEvent', 'type', 'success', 'data', 'error');
+			return formatToString('BorhanEvent', 'type', 'success', 'data', 'error');
 		}
 		
 	}

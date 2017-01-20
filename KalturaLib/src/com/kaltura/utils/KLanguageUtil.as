@@ -1,6 +1,6 @@
-package com.kaltura.utils
+package com.borhan.utils
 {
-	import com.kaltura.dataStructures.HashMap;
+	import com.borhan.dataStructures.HashMap;
 	
 	import mx.collections.ArrayCollection;
 	import mx.collections.Sort;

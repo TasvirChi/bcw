@@ -1,12 +1,12 @@
-package com.kaltura.delegates.xInternal
+package com.borhan.delegates.xInternal
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class XInternalXAddBulkDownloadDelegate extends WebDelegateBase
 	{
-		public function XInternalXAddBulkDownloadDelegate(call:KalturaCall, config:KalturaConfig)
+		public function XInternalXAddBulkDownloadDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

@@ -1,9 +1,9 @@
-package com.kaltura.commands.mixing
+package com.borhan.commands.mixing
 {
-	import com.kaltura.delegates.mixing.MixingDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.mixing.MixingDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MixingDelete extends KalturaCall
+	public class MixingDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MixingDelete( entryId : String )

@@ -1,27 +1,27 @@
-package com.kaltura.commands.systemPartner
+package com.borhan.commands.systemPartner
 {
-	import com.kaltura.vo.KalturaPartnerFilter;
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.systemPartner.SystemPartnerListDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanPartnerFilter;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.systemPartner.SystemPartnerListDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemPartnerList extends KalturaCall
+	public class SystemPartnerList extends BorhanCall
 	{
 		public var filterFields : String;
-		public function SystemPartnerList( filter : KalturaPartnerFilter=null,pager : KalturaFilterPager=null )
+		public function SystemPartnerList( filter : BorhanPartnerFilter=null,pager : BorhanFilterPager=null )
 		{
-			if(filter== null)filter= new KalturaPartnerFilter();
-			if(pager== null)pager= new KalturaFilterPager();
+			if(filter== null)filter= new BorhanPartnerFilter();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'systempartner_systempartner';
 			action= 'list';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(filter,'filter');
+ 			keyValArr = borhanObject2Arrays(filter,'filter');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

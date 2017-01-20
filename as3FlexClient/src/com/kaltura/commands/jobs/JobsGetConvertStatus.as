@@ -1,9 +1,9 @@
-package com.kaltura.commands.jobs
+package com.borhan.commands.jobs
 {
-	import com.kaltura.delegates.jobs.JobsGetConvertStatusDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.jobs.JobsGetConvertStatusDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class JobsGetConvertStatus extends KalturaCall
+	public class JobsGetConvertStatus extends BorhanCall
 	{
 		public var filterFields : String;
 		public function JobsGetConvertStatus( job_id : int )

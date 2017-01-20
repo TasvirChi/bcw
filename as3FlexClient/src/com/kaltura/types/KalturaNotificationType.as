@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaNotificationType
+	public class BorhanNotificationType
 	{
 		public static const ENTRY_ADD : int = 1;
 		public static const ENTR_UPDATE_PERMISSIONS : int = 2;

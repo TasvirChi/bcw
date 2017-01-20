@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaControlCommandTargetType
+	public class BorhanControlCommandTargetType
 	{
 		public static const SCHEDULER : int = 0;
 		public static const JOB : int = 1;

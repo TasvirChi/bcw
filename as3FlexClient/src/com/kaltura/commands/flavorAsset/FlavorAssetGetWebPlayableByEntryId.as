@@ -1,9 +1,9 @@
-package com.kaltura.commands.flavorAsset
+package com.borhan.commands.flavorAsset
 {
-	import com.kaltura.delegates.flavorAsset.FlavorAssetGetWebPlayableByEntryIdDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.flavorAsset.FlavorAssetGetWebPlayableByEntryIdDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FlavorAssetGetWebPlayableByEntryId extends KalturaCall
+	public class FlavorAssetGetWebPlayableByEntryId extends BorhanCall
 	{
 		public var filterFields : String;
 		public function FlavorAssetGetWebPlayableByEntryId( entryId : String )

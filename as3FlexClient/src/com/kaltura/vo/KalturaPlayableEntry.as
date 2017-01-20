@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseEntry;
+	import com.borhan.vo.BorhanBaseEntry;
 
 	[Bindable]
-	public dynamic class KalturaPlayableEntry extends KalturaBaseEntry
+	public dynamic class BorhanPlayableEntry extends BorhanBaseEntry
 	{
 		public var plays : int = int.MIN_VALUE;
 		public var views : int = int.MIN_VALUE;

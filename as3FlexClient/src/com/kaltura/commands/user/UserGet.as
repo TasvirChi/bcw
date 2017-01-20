@@ -1,9 +1,9 @@
-package com.kaltura.commands.user
+package com.borhan.commands.user
 {
-	import com.kaltura.delegates.user.UserGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.user.UserGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UserGet extends KalturaCall
+	public class UserGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UserGet( userId : String )

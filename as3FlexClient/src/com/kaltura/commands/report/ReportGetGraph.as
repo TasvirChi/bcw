@@ -1,9 +1,9 @@
-package com.kaltura.commands.report
+package com.borhan.commands.report
 {
-	import com.kaltura.delegates.report.ReportGetGraphDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.report.ReportGetGraphDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class ReportGetGraph extends KalturaCall
+	public class ReportGetGraph extends BorhanCall
 	{
 		public var filterFields : String;
 		public function ReportGetGraph(  )

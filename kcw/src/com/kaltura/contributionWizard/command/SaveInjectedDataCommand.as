@@ -1,16 +1,16 @@
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.commands.ICommand;
 	import com.adobe_cw.adobe.cairngorm.commands.SequenceCommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
-	import com.kaltura.contributionWizard.events.SaveInjectedDataEvent;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.util.ContextDecorator;
-	import com.kaltura.contributionWizard.vo.ImportScreenVO;
-	import com.kaltura.utils.KConfigUtil;
-	import com.kaltura.utils.KUtils;
-	import com.kaltura.utils.ObjectHelpers;
-	import com.kaltura.utils.PathUtil;
+	import com.borhan.contributionWizard.events.SaveInjectedDataEvent;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.util.ContextDecorator;
+	import com.borhan.contributionWizard.vo.ImportScreenVO;
+	import com.borhan.utils.KConfigUtil;
+	import com.borhan.utils.KUtils;
+	import com.borhan.utils.ObjectHelpers;
+	import com.borhan.utils.PathUtil;
 	
 	import mx.utils.ObjectUtil;
 	import mx.utils.URLUtil;
@@ -113,7 +113,7 @@ package com.kaltura.contributionWizard.command
 		{
 			var path:String = "/p/" + _model.context.partnerId + "/sp/" + _model.context.subPartnerId + "/kpreloader/ui_conf_id/" + _model.context.uiConfigId;
 			//var url:String = PathUtil.getAbsoluteUrl(_model.context.sourceUrl, path);
-			var host:String = _model.context.cdnHost ? _model.context.cdnHost : "cdn.kaltura.com";
+			var host:String = _model.context.cdnHost ? _model.context.cdnHost : "cdn.borhan.com";
 			var url:String = _model.context.protocol + host + path;
 			return url;
 		}

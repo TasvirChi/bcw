@@ -1,9 +1,9 @@
-package com.kaltura.commands.batchcontrol
+package com.borhan.commands.batchcontrol
 {
-	import com.kaltura.delegates.batchcontrol.BatchcontrolStartDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.batchcontrol.BatchcontrolStartDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BatchcontrolStart extends KalturaCall
+	public class BatchcontrolStart extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BatchcontrolStart( schedulerId : int,schedulerName : String,targetType : int,adminId : int,adminName : String,workerId : int,workerName : String,cause : String='' )

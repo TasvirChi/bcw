@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaFileSyncObjectType
+	public class BorhanFileSyncObjectType
 	{
 		public static const ENTRY : int = 1;
 		public static const UICONF : int = 2;

@@ -1,9 +1,9 @@
-package com.kaltura.commands.partner
+package com.borhan.commands.partner
 {
-	import com.kaltura.delegates.partner.PartnerGetUsageDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.partner.PartnerGetUsageDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class PartnerGetUsage extends KalturaCall
+	public class PartnerGetUsage extends BorhanCall
 	{
 		public var filterFields : String;
 		public function PartnerGetUsage( year : int=undefined,month : int=1,resolution : String='days' )

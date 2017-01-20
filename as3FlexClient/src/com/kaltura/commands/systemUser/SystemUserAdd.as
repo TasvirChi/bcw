@@ -1,13 +1,13 @@
-package com.kaltura.commands.systemUser
+package com.borhan.commands.systemUser
 {
-	import com.kaltura.vo.KalturaSystemUser;
-	import com.kaltura.delegates.systemUser.SystemUserAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanSystemUser;
+	import com.borhan.delegates.systemUser.SystemUserAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemUserAdd extends KalturaCall
+	public class SystemUserAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function SystemUserAdd( systemUser : KalturaSystemUser )
+		public function SystemUserAdd( systemUser : BorhanSystemUser )
 		{
 			service= 'systemuser_systemuser';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.systemUser
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(systemUser,'systemUser');
+ 			keyValArr = borhanObject2Arrays(systemUser,'systemUser');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

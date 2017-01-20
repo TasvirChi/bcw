@@ -1,9 +1,9 @@
-package com.kaltura.commands.search
+package com.borhan.commands.search
 {
-	import com.kaltura.delegates.search.SearchExternalLoginDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.search.SearchExternalLoginDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SearchExternalLogin extends KalturaCall
+	public class SearchExternalLogin extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SearchExternalLogin( searchSource : int,userName : String,password : String )

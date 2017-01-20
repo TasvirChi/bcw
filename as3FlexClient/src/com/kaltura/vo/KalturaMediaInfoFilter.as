@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaFilter;
+	import com.borhan.vo.BorhanFilter;
 
 	[Bindable]
-	public dynamic class KalturaMediaInfoFilter extends KalturaFilter
+	public dynamic class BorhanMediaInfoFilter extends BorhanFilter
 	{
 		public var flavorAssetIdEqual : String;
 		override protected function setupPropertyList():void

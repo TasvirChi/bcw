@@ -1,4 +1,4 @@
- package com.kaltura.contributionWizard.model
+ package com.borhan.contributionWizard.model
 {
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 

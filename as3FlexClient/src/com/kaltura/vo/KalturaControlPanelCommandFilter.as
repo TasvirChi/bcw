@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaFilter;
+	import com.borhan.vo.BorhanFilter;
 
 	[Bindable]
-	public dynamic class KalturaControlPanelCommandFilter extends KalturaFilter
+	public dynamic class BorhanControlPanelCommandFilter extends BorhanFilter
 	{
 		public var idEqual : int = int.MIN_VALUE;
 		public var idIn : String;

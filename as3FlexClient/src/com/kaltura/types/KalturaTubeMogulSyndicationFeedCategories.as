@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaTubeMogulSyndicationFeedCategories
+	public class BorhanTubeMogulSyndicationFeedCategories
 	{
 		public static const ARTS_AND_ANIMATION : String = 'Arts &amp; Animation';
 		public static const COMEDY : String = 'Comedy';

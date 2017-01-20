@@ -1,9 +1,9 @@
-package com.kaltura.commands.accessControl
+package com.borhan.commands.accessControl
 {
-	import com.kaltura.delegates.accessControl.AccessControlDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.accessControl.AccessControlDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class AccessControlDelete extends KalturaCall
+	public class AccessControlDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function AccessControlDelete( id : int )

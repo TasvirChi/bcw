@@ -1,9 +1,9 @@
-package com.kaltura.commands.user
+package com.borhan.commands.user
 {
-	import com.kaltura.delegates.user.UserDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.user.UserDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UserDelete extends KalturaCall
+	public class UserDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UserDelete( userId : String )

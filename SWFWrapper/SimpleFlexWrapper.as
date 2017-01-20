@@ -1,7 +1,7 @@
 package
 {
-	import com.kaltura.events.WrapperEvent;
-	import com.kaltura.wrapper.IFlexWrapper;
+	import com.borhan.events.WrapperEvent;
+	import com.borhan.wrapper.IFlexWrapper;
 	
 	import flash.display.Loader;
 	import flash.display.MovieClip;

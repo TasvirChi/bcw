@@ -1,11 +1,11 @@
-package com.kaltura.delegates.baseEntry
+package com.borhan.delegates.baseEntry
 {
-	import com.kaltura.commands.baseEntry.BaseEntryUpdateThumbnailImage;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.core.KClassFactory;
-	import com.kaltura.delegates.WebDelegateBase;
-	import com.kaltura.errors.KalturaError;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.commands.baseEntry.BaseEntryUpdateThumbnailImage;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.core.KClassFactory;
+	import com.borhan.delegates.WebDelegateBase;
+	import com.borhan.errors.BorhanError;
+	import com.borhan.net.BorhanCall;
 	
 	import flash.events.DataEvent;
 	import flash.events.Event;
@@ -18,14 +18,14 @@ package com.kaltura.delegates.baseEntry
 	{
 		protected var mrloader:MultipartURLLoader;
 		
-		public function BaseEntryUpdateThumbnailImageDelegate(call:KalturaCall, config:KalturaConfig)
+		public function BaseEntryUpdateThumbnailImageDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}
 
 		override public function parse( result : XML ) : *
 		{
-			var cls : Class = getDefinitionByName('com.kaltura.vo.'+ result.result.objectType) as Class;
+			var cls : Class = getDefinitionByName('com.borhan.vo.'+ result.result.objectType) as Class;
 			var obj : * = (new KClassFactory( cls )).newInstanceFromXML( result.result );
 			return obj;
 		}
@@ -54,7 +54,7 @@ package com.kaltura.delegates.baseEntry
 			}
 			catch( e:Error )
 			{
-				var kErr : KalturaError = new KalturaError();
+				var kErr : BorhanError = new BorhanError();
 				kErr.errorCode = String(e.errorID);
 				kErr.errorMsg = e.message;
 				_call.handleError( kErr );

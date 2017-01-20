@@ -1,9 +1,9 @@
-package com.kaltura.commands.conversionProfile
+package com.borhan.commands.conversionProfile
 {
-	import com.kaltura.delegates.conversionProfile.ConversionProfileGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.conversionProfile.ConversionProfileGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class ConversionProfileGet extends KalturaCall
+	public class ConversionProfileGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function ConversionProfileGet( id : int )

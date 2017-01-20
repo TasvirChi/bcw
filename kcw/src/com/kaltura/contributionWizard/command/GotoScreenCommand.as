@@ -1,21 +1,21 @@
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.commands.SequenceCommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 	import com.bjorn.event.ChainEvent;
-	import com.kaltura.contributionWizard.enums.KCWWorkflowState;
-	import com.kaltura.contributionWizard.events.ClearImportStateEvent;
-	import com.kaltura.contributionWizard.events.GotoScreenEvent;
-	import com.kaltura.contributionWizard.events.WorkflowEvent;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.vo.ImportScreenVO;
+	import com.borhan.contributionWizard.enums.BCWWorkflowState;
+	import com.borhan.contributionWizard.events.ClearImportStateEvent;
+	import com.borhan.contributionWizard.events.GotoScreenEvent;
+	import com.borhan.contributionWizard.events.WorkflowEvent;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.vo.ImportScreenVO;
 	/**
 	 * Navigates a specific media provider described in the GotoScreenEvent.importScreenVo
 	 * The valid values of the ImportScreenVO object are:
 	 * ImportScreenVO = null							The default media provider is selected
 	 * mediaType: null, 	mediaProvider: null			The default media provider is selected
 	 * mediaType: "video", 	mediaProvider: null			The first provider in the video section is selected
-	 * mediaType: "video", 	mediaProvider: "kaltura"	Kaltura-video is selected
+	 * mediaType: "video", 	mediaProvider: "borhan"	Borhan-video is selected
 	 *
 	 * Invalid values:
 	 * ImportScreenVO = [null, youtube] 				The media type must be defined, otherwise the mediaProvider might not be fully qualified
@@ -35,13 +35,13 @@ package com.kaltura.contributionWizard.command
 			if (!screenVo || !screenVo.mediaType)
 			{
 				var defaultScreenVo:ImportScreenVO = _model.startupDefaults.defaultScreenVo;
-				changeWorkflow(KCWWorkflowState.INTRO_SCREEN);
+				changeWorkflow(BCWWorkflowState.INTRO_SCREEN);
 			}
 			else
 			{
 				_model.mediaProviders.setActiveMediaType(screenVo.mediaType);
 				_model.mediaProviders.setProviderByName(screenVo.mediaProviderName);
-				changeWorkflow(KCWWorkflowState.IMPORT_MEDIA);
+				changeWorkflow(BCWWorkflowState.IMPORT_MEDIA);
 			}
 			clearState();
 			nextEvent = gotoScreenEvent.nextChainedEvent;

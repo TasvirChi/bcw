@@ -1,6 +1,6 @@
-package com.kaltura.contributionWizard.vo.limitations
+package com.borhan.contributionWizard.vo.limitations
 {
-	import com.kaltura.contributionWizard.enums.LimitationErrorType;
+	import com.borhan.contributionWizard.enums.LimitationErrorType;
 	
 	public class LimitationError
 	{

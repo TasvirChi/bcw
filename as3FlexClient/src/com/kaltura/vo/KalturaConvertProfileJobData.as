@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaJobData;
+	import com.borhan.vo.BorhanJobData;
 
 	[Bindable]
-	public dynamic class KalturaConvertProfileJobData extends KalturaJobData
+	public dynamic class BorhanConvertProfileJobData extends BorhanJobData
 	{
 		public var inputFileSyncLocalPath : String;
 		public var thumbHeight : int = int.MIN_VALUE;

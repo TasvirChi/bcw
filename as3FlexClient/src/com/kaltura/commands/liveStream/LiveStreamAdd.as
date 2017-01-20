@@ -1,13 +1,13 @@
-package com.kaltura.commands.liveStream
+package com.borhan.commands.liveStream
 {
-	import com.kaltura.vo.KalturaLiveStreamAdminEntry;
-	import com.kaltura.delegates.liveStream.LiveStreamAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanLiveStreamAdminEntry;
+	import com.borhan.delegates.liveStream.LiveStreamAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class LiveStreamAdd extends KalturaCall
+	public class LiveStreamAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function LiveStreamAdd( liveStreamEntry : KalturaLiveStreamAdminEntry )
+		public function LiveStreamAdd( liveStreamEntry : BorhanLiveStreamAdminEntry )
 		{
 			service= 'livestream';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.liveStream
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(liveStreamEntry,'liveStreamEntry');
+ 			keyValArr = borhanObject2Arrays(liveStreamEntry,'liveStreamEntry');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

@@ -1,9 +1,9 @@
-package com.kaltura.commands.system
+package com.borhan.commands.system
 {
-	import com.kaltura.delegates.system.SystemPingDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.system.SystemPingDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemPing extends KalturaCall
+	public class SystemPing extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SystemPing(  )

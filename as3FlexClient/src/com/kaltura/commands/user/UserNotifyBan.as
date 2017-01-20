@@ -1,9 +1,9 @@
-package com.kaltura.commands.user
+package com.borhan.commands.user
 {
-	import com.kaltura.delegates.user.UserNotifyBanDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.user.UserNotifyBanDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UserNotifyBan extends KalturaCall
+	public class UserNotifyBan extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UserNotifyBan( userId : String )

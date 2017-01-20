@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaSessionType
+	public class BorhanSessionType
 	{
 		public static const USER : int = 0;
 		public static const ADMIN : int = 2;

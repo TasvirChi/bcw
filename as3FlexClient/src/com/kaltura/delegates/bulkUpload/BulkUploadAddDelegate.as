@@ -1,10 +1,10 @@
-package com.kaltura.delegates.bulkUpload
+package com.borhan.delegates.bulkUpload
 {
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.core.KClassFactory;
-	import com.kaltura.delegates.WebDelegateBase;
-	import com.kaltura.errors.KalturaError;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.core.KClassFactory;
+	import com.borhan.delegates.WebDelegateBase;
+	import com.borhan.errors.BorhanError;
+	import com.borhan.net.BorhanCall;
 	
 	import flash.events.DataEvent;
 	import flash.events.Event;
@@ -18,9 +18,9 @@ package com.kaltura.delegates.bulkUpload
 	{
 		private var _fr : FileReference;
 		private var _urlReq : URLRequest;
-		private var _hasError : KalturaError;
+		private var _hasError : BorhanError;
 		
-		public function BulkUploadAddDelegate(call:KalturaCall, config:KalturaConfig ,fr : FileReference)
+		public function BulkUploadAddDelegate(call:BorhanCall, config:BorhanConfig ,fr : FileReference)
 		{
 			super(call, config);
 			_fr = fr;
@@ -29,7 +29,7 @@ package com.kaltura.delegates.bulkUpload
 
 		override public function parse( result : XML ) : *
 		{
-			var cls : Class = getDefinitionByName('com.kaltura.vo.'+ result.result.objectType) as Class;
+			var cls : Class = getDefinitionByName('com.borhan.vo.'+ result.result.objectType) as Class;
 			var obj : * = (new KClassFactory( cls )).newInstanceFromXML( result.result );
 			return obj;
 		}
@@ -44,7 +44,7 @@ package com.kaltura.delegates.bulkUpload
 			}
 			catch( e:Error )
 			{
-				var kErr : KalturaError = new KalturaError();
+				var kErr : BorhanError = new BorhanError();
 				kErr.errorCode = String(e.errorID);
 				kErr.errorMsg = e.message;
 				_call.handleError( kErr );
@@ -77,7 +77,7 @@ package com.kaltura.delegates.bulkUpload
 		
 		private function onIOError( e : IOErrorEvent ) : void
 		{
-			_hasError = new KalturaError();
+			_hasError = new BorhanError();
 			_hasError.errorCode = "-1";
 			_hasError.errorMsg = e.text;
 			_call.handleError( _hasError );
@@ -85,7 +85,7 @@ package com.kaltura.delegates.bulkUpload
 		
 		private function onSecurityError( e : SecurityErrorEvent ) : void
 		{
-			_hasError = new KalturaError();
+			_hasError = new BorhanError();
 			_hasError.errorCode = "-1";
 			_hasError.errorMsg = e.text;
 			_call.handleError( _hasError );
@@ -93,7 +93,7 @@ package com.kaltura.delegates.bulkUpload
 		
 		private function onCancel( e : Event )  : void
 		{
-			_hasError = new KalturaError();
+			_hasError = new BorhanError();
 			_hasError.errorCode = "-1";
 			_hasError.errorMsg = e.type;
 			_call.handleError( _hasError );

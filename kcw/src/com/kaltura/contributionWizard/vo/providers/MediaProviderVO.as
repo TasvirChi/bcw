@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,27 +20,27 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.vo.providers
+package com.borhan.contributionWizard.vo.providers
 {
 	import com.adobe.cairngorm.vo.IValueObject;
-	import com.kaltura.contributionWizard.vo.UIConfigVO;
+	import com.borhan.contributionWizard.vo.UIConfigVO;
 
 	[Bindable]
 	public class MediaProviderVO implements IValueObject
 	{
 		/**
-		 * Represents the media provider none-unique name, for example Kaltura-videos & Kaltura-images has the same name, "kaltura".
-		 * This property is the textual name of the media provider, e.g "kaltura", "youtube", etc..
+		 * Represents the media provider none-unique name, for example Borhan-videos & Borhan-images has the same name, "borhan".
+		 * This property is the textual name of the media provider, e.g "borhan", "youtube", etc..
 		 */
 		public var providerName:String;
 
 		/**
-		 * Exactly the same as the providerName, however, the providerCode value has no textual meaning, if providerName's value is "kaltura" the providerCode is "20"
+		 * Exactly the same as the providerName, however, the providerCode value has no textual meaning, if providerName's value is "borhan" the providerCode is "20"
 		 */
 		public var providerCode:String;
 		
 		/**
-		 * (3rd party content) If true addSeawrchEntry will be used and entries won't be physically copied to kaltura's server 
+		 * (3rd party content) If true addSeawrchEntry will be used and entries won't be physically copied to borhan's server 
 		 */
 		public var addSearchResult:Boolean;
 		/**

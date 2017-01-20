@@ -1,13 +1,13 @@
-package com.kaltura.commands.syndicationFeed
+package com.borhan.commands.syndicationFeed
 {
-	import com.kaltura.vo.KalturaBaseSyndicationFeed;
-	import com.kaltura.delegates.syndicationFeed.SyndicationFeedUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanBaseSyndicationFeed;
+	import com.borhan.delegates.syndicationFeed.SyndicationFeedUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SyndicationFeedUpdate extends KalturaCall
+	public class SyndicationFeedUpdate extends BorhanCall
 	{
 		public var filterFields : String;
-		public function SyndicationFeedUpdate( id : String,syndicationFeed : KalturaBaseSyndicationFeed )
+		public function SyndicationFeedUpdate( id : String,syndicationFeed : BorhanBaseSyndicationFeed )
 		{
 			service= 'syndicationfeed';
 			action= 'update';
@@ -17,7 +17,7 @@ package com.kaltura.commands.syndicationFeed
 			var keyValArr : Array = new Array();
 			keyArr.push( 'id' );
 			valueArr.push( id );
- 			keyValArr = kalturaObject2Arrays(syndicationFeed,'syndicationFeed');
+ 			keyValArr = borhanObject2Arrays(syndicationFeed,'syndicationFeed');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

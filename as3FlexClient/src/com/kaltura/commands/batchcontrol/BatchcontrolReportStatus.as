@@ -1,9 +1,9 @@
-package com.kaltura.commands.batchcontrol
+package com.borhan.commands.batchcontrol
 {
-	import com.kaltura.delegates.batchcontrol.BatchcontrolReportStatusDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.batchcontrol.BatchcontrolReportStatusDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BatchcontrolReportStatus extends KalturaCall
+	public class BatchcontrolReportStatus extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BatchcontrolReportStatus( schedulerConfigId : int,schedulerName : String,schedulerStatuses : Array )

@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseSyndicationFeedFilter;
+	import com.borhan.vo.BorhanBaseSyndicationFeedFilter;
 
 	[Bindable]
-	public dynamic class KalturaYahooSyndicationFeedFilter extends KalturaBaseSyndicationFeedFilter
+	public dynamic class BorhanYahooSyndicationFeedFilter extends BorhanBaseSyndicationFeedFilter
 	{
 		override protected function setupPropertyList():void
 		{

@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaPartnerOrderBy
+	public class BorhanPartnerOrderBy
 	{
 		public static const ID_ASC : String = '+id';
 		public static const ID_DESC : String = '-id';

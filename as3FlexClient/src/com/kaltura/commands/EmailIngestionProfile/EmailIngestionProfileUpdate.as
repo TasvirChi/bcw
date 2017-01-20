@@ -1,13 +1,13 @@
-package com.kaltura.commands.EmailIngestionProfile
+package com.borhan.commands.EmailIngestionProfile
 {
-	import com.kaltura.vo.KalturaEmailIngestionProfile;
-	import com.kaltura.delegates.EmailIngestionProfile.EmailIngestionProfileUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanEmailIngestionProfile;
+	import com.borhan.delegates.EmailIngestionProfile.EmailIngestionProfileUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class EmailIngestionProfileUpdate extends KalturaCall
+	public class EmailIngestionProfileUpdate extends BorhanCall
 	{
 		public var filterFields : String;
-		public function EmailIngestionProfileUpdate( id : int,EmailIP : KalturaEmailIngestionProfile )
+		public function EmailIngestionProfileUpdate( id : int,EmailIP : BorhanEmailIngestionProfile )
 		{
 			service= 'emailingestionprofile';
 			action= 'update';
@@ -17,7 +17,7 @@ package com.kaltura.commands.EmailIngestionProfile
 			var keyValArr : Array = new Array();
 			keyArr.push( 'id' );
 			valueArr.push( id );
- 			keyValArr = kalturaObject2Arrays(EmailIP,'EmailIP');
+ 			keyValArr = borhanObject2Arrays(EmailIP,'EmailIP');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

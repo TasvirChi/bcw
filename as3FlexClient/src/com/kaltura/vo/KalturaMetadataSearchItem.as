@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaSearchOperator;
+	import com.borhan.vo.BorhanSearchOperator;
 
 	[Bindable]
-	public dynamic class KalturaMetadataSearchItem extends KalturaSearchOperator
+	public dynamic class BorhanMetadataSearchItem extends BorhanSearchOperator
 	{
 		public var metadataProfileId : int = int.MIN_VALUE;
 		override protected function setupPropertyList():void

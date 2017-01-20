@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,17 +20,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 	import com.adobe_cw.adobe.cairngorm.commands.ICommand;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
 	import flash.media.Sound;
-	import com.kaltura.contributionWizard.events.SoundToggleEvent;
+	import com.borhan.contributionWizard.events.SoundToggleEvent;
 	import flash.net.URLRequest;
 	import flash.media.SoundChannel;
-	import com.kaltura.vo.importees.BaseImportVO;
-	import com.kaltura.vo.importees.ImportURLVO;
+	import com.borhan.vo.importees.BaseImportVO;
+	import com.borhan.vo.importees.ImportURLVO;
 
 	public class StopSoundCommand implements ICommand
 	{

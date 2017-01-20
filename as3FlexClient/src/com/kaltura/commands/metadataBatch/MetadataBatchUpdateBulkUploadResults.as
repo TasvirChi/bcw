@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.delegates.metadataBatch.MetadataBatchUpdateBulkUploadResultsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadataBatch.MetadataBatchUpdateBulkUploadResultsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchUpdateBulkUploadResults extends KalturaCall
+	public class MetadataBatchUpdateBulkUploadResults extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataBatchUpdateBulkUploadResults( bulkUploadJobId : int )

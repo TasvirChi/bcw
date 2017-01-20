@@ -1,10 +1,10 @@
-package com.kaltura.commands.baseEntry
+package com.borhan.commands.baseEntry
 {
-	import com.kaltura.delegates.baseEntry.BaseEntryUpdateThumbnailJpegDelegate;
-	import com.kaltura.net.KalturaFileCall;
+	import com.borhan.delegates.baseEntry.BaseEntryUpdateThumbnailJpegDelegate;
+	import com.borhan.net.BorhanFileCall;
 	import flash.utils.ByteArray;
 
-	public class BaseEntryUpdateThumbnailJpeg extends KalturaFileCall
+	public class BaseEntryUpdateThumbnailJpeg extends BorhanFileCall
 	{
 		public function BaseEntryUpdateThumbnailJpeg( entryId : String, fileData : ByteArray )
 		{

@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaMetadataProfile extends BaseFlexVo
+	public dynamic class BorhanMetadataProfile extends BaseFlexVo
 	{
 		public var id : int = int.MIN_VALUE;
 		public var partnerId : int = int.MIN_VALUE;

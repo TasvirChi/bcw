@@ -1,12 +1,12 @@
-package com.kaltura.delegates.media
+package com.borhan.delegates.media
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class MediaCountDelegate extends WebDelegateBase
 	{
-		public function MediaCountDelegate(call:KalturaCall, config:KalturaConfig)
+		public function MediaCountDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

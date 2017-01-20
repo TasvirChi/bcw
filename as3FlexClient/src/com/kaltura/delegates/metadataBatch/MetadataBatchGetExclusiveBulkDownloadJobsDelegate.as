@@ -1,16 +1,16 @@
-package com.kaltura.delegates.metadataBatch
+package com.borhan.delegates.metadataBatch
 {
-	import com.kaltura.vo.KalturaBatchJob;KalturaBatchJob;;
+	import com.borhan.vo.BorhanBatchJob;BorhanBatchJob;;
 
-	import com.kaltura.core.KClassFactory;
+	import com.borhan.core.KClassFactory;
 
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class MetadataBatchGetExclusiveBulkDownloadJobsDelegate extends WebDelegateBase
 	{
-		public function MetadataBatchGetExclusiveBulkDownloadJobsDelegate(call:KalturaCall, config:KalturaConfig)
+		public function MetadataBatchGetExclusiveBulkDownloadJobsDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}
@@ -20,7 +20,7 @@ package com.kaltura.delegates.metadataBatch
 			var arr : Array = new Array();
 			for( var i:int=0; i<result.result.children().length() ; i++)
 			{
-				var cls : Class = getDefinitionByName('com.kaltura.vo.'+ result.result.children()[i].objectType) as Class;
+				var cls : Class = getDefinitionByName('com.borhan.vo.'+ result.result.children()[i].objectType) as Class;
 				var obj : * = (new KClassFactory( cls )).newInstanceFromXML( XMLList(result.result.children()[i]) );
 				arr.push(obj);
 			}

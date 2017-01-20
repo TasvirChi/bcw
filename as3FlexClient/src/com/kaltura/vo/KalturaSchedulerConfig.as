@@ -1,7 +1,7 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
-	public dynamic class KalturaSchedulerConfig extends BaseFlexVo
+	import com.borhan.vo.BaseFlexVo;
+	public dynamic class BorhanSchedulerConfig extends BaseFlexVo
 	{
 		public var id : int = int.MIN_VALUE;
 		public var createdAt : int = int.MIN_VALUE;

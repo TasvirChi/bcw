@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaPlayableEntry;
+	import com.borhan.vo.BorhanPlayableEntry;
 
 	[Bindable]
-	public dynamic class KalturaMediaEntry extends KalturaPlayableEntry
+	public dynamic class BorhanMediaEntry extends BorhanPlayableEntry
 	{
 		public var mediaType : int = int.MIN_VALUE;
 		public var conversionQuality : String;

@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaModerationObjectType
+	public class BorhanModerationObjectType
 	{
 		public static const ENTRY : int = 2;
 		public static const USER : int = 3;

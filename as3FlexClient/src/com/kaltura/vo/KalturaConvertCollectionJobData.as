@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaConvartableJobData;
+	import com.borhan.vo.BorhanConvartableJobData;
 
 	[Bindable]
-	public dynamic class KalturaConvertCollectionJobData extends KalturaConvartableJobData
+	public dynamic class BorhanConvertCollectionJobData extends BorhanConvartableJobData
 	{
 		public var destDirLocalPath : String;
 		public var destDirRemoteUrl : String;

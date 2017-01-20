@@ -1,26 +1,26 @@
-package com.kaltura.commands.search
+package com.borhan.commands.search
 {
-	import com.kaltura.vo.KalturaSearch;
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.search.SearchSearchDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanSearch;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.search.SearchSearchDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SearchSearch extends KalturaCall
+	public class SearchSearch extends BorhanCall
 	{
 		public var filterFields : String;
-		public function SearchSearch( search : KalturaSearch,pager : KalturaFilterPager=null )
+		public function SearchSearch( search : BorhanSearch,pager : BorhanFilterPager=null )
 		{
-			if(pager== null)pager= new KalturaFilterPager();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'search';
 			action= 'search';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(search,'search');
+ 			keyValArr = borhanObject2Arrays(search,'search');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

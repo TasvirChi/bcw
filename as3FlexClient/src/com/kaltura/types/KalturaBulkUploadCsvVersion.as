@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaBulkUploadCsvVersion
+	public class BorhanBulkUploadCsvVersion
 	{
 		public static const V1 : String = '1';
 		public static const V2 : String = '2';

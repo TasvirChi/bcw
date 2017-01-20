@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaMediaEntryFilter;
+	import com.borhan.vo.BorhanMediaEntryFilter;
 
 	[Bindable]
-	public dynamic class KalturaMediaEntryFilterForPlaylist extends KalturaMediaEntryFilter
+	public dynamic class BorhanMediaEntryFilterForPlaylist extends BorhanMediaEntryFilter
 	{
 		public var limit : int = int.MIN_VALUE;
 		override protected function setupPropertyList():void

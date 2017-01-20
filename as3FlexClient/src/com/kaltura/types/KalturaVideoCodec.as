@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaVideoCodec
+	public class BorhanVideoCodec
 	{
 		public static const NONE : String = '';
 		public static const VP6 : String = 'vp6';

@@ -1,11 +1,11 @@
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 
 	import com.adobe_cw.adobe.cairngorm.commands.ICommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
-	import com.kaltura.contributionWizard.business.ReportErrorDelegate;
-	import com.kaltura.contributionWizard.events.ReportErrorEvent;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.business.ReportErrorDelegate;
+	import com.borhan.contributionWizard.events.ReportErrorEvent;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
 	
 	import flash.system.Capabilities;
 	
@@ -39,7 +39,7 @@ package com.kaltura.contributionWizard.command
 		
 		private function addDefaults( str : String ) : String
 		{
-			str += "&KCWSessionId=" + _model.context.kcwSessionId;
+			str += "&BCWSessionId=" + _model.context.bcwSessionId;
 			str += "&FlashVersion=" + Capabilities.version;
 			str += "&os=" + Capabilities.os;
 			str += "&playerType=" + Capabilities.playerType;

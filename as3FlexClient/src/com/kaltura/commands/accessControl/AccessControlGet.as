@@ -1,9 +1,9 @@
-package com.kaltura.commands.accessControl
+package com.borhan.commands.accessControl
 {
-	import com.kaltura.delegates.accessControl.AccessControlGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.accessControl.AccessControlGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class AccessControlGet extends KalturaCall
+	public class AccessControlGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function AccessControlGet( id : int )

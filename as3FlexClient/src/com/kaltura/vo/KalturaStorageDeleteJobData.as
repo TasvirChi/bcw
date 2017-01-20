@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaStorageJobData;
+	import com.borhan.vo.BorhanStorageJobData;
 
 	[Bindable]
-	public dynamic class KalturaStorageDeleteJobData extends KalturaStorageJobData
+	public dynamic class BorhanStorageDeleteJobData extends BorhanStorageJobData
 	{
 		override protected function setupPropertyList():void
 		{

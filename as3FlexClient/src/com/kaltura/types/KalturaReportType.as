@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaReportType
+	public class BorhanReportType
 	{
 		public static const TOP_CONTENT : int = 1;
 		public static const CONTENT_DROPOFF : int = 2;

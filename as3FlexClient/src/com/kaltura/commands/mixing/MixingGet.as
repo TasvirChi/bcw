@@ -1,9 +1,9 @@
-package com.kaltura.commands.mixing
+package com.borhan.commands.mixing
 {
-	import com.kaltura.delegates.mixing.MixingGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.mixing.MixingGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MixingGet extends KalturaCall
+	public class MixingGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MixingGet( entryId : String,version : int=-1 )

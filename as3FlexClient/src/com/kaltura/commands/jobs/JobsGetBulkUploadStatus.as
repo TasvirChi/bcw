@@ -1,9 +1,9 @@
-package com.kaltura.commands.jobs
+package com.borhan.commands.jobs
 {
-	import com.kaltura.delegates.jobs.JobsGetBulkUploadStatusDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.jobs.JobsGetBulkUploadStatusDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class JobsGetBulkUploadStatus extends KalturaCall
+	public class JobsGetBulkUploadStatus extends BorhanCall
 	{
 		public var filterFields : String;
 		public function JobsGetBulkUploadStatus( job_id : int )

@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaAccessControl extends BaseFlexVo
+	public dynamic class BorhanAccessControl extends BaseFlexVo
 	{
 		public var id : int = int.MIN_VALUE;
 		public var partnerId : int = int.MIN_VALUE;

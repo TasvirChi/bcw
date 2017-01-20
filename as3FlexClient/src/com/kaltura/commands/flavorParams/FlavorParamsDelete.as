@@ -1,9 +1,9 @@
-package com.kaltura.commands.flavorParams
+package com.borhan.commands.flavorParams
 {
-	import com.kaltura.delegates.flavorParams.FlavorParamsDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.flavorParams.FlavorParamsDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FlavorParamsDelete extends KalturaCall
+	public class FlavorParamsDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function FlavorParamsDelete( id : int )

@@ -1,15 +1,15 @@
-package com.kaltura.commands.baseEntry
+package com.borhan.commands.baseEntry
 {
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.baseEntry.BaseEntryListFlagsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.baseEntry.BaseEntryListFlagsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BaseEntryListFlags extends KalturaCall
+	public class BaseEntryListFlags extends BorhanCall
 	{
 		public var filterFields : String;
-		public function BaseEntryListFlags( entryId : String,pager : KalturaFilterPager=null )
+		public function BaseEntryListFlags( entryId : String,pager : BorhanFilterPager=null )
 		{
-			if(pager== null)pager= new KalturaFilterPager();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'baseentry';
 			action= 'listFlags';
 
@@ -18,7 +18,7 @@ package com.kaltura.commands.baseEntry
 			var keyValArr : Array = new Array();
 			keyArr.push( 'entryId' );
 			valueArr.push( entryId );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

@@ -1,13 +1,13 @@
-package com.kaltura.commands.storageProfile
+package com.borhan.commands.storageProfile
 {
-	import com.kaltura.vo.KalturaStorageProfile;
-	import com.kaltura.delegates.storageProfile.StorageProfileUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanStorageProfile;
+	import com.borhan.delegates.storageProfile.StorageProfileUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class StorageProfileUpdate extends KalturaCall
+	public class StorageProfileUpdate extends BorhanCall
 	{
 		public var filterFields : String;
-		public function StorageProfileUpdate( storageProfileId : int,storageProfile : KalturaStorageProfile )
+		public function StorageProfileUpdate( storageProfileId : int,storageProfile : BorhanStorageProfile )
 		{
 			service= 'storageprofile_storageprofile';
 			action= 'update';
@@ -17,7 +17,7 @@ package com.kaltura.commands.storageProfile
 			var keyValArr : Array = new Array();
 			keyArr.push( 'storageProfileId' );
 			valueArr.push( storageProfileId );
- 			keyValArr = kalturaObject2Arrays(storageProfile,'storageProfile');
+ 			keyValArr = borhanObject2Arrays(storageProfile,'storageProfile');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

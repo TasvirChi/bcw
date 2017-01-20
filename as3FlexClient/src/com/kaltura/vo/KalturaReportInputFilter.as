@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaReportInputFilter extends BaseFlexVo
+	public dynamic class BorhanReportInputFilter extends BaseFlexVo
 	{
 		public var fromDate : int = int.MIN_VALUE;
 		public var toDate : int = int.MIN_VALUE;

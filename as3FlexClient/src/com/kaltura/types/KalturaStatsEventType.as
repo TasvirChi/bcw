@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaStatsEventType
+	public class BorhanStatsEventType
 	{
 		public static const WIDGET_LOADED : int = 1;
 		public static const MEDIA_LOADED : int = 2;

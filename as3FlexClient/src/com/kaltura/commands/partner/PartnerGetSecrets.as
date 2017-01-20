@@ -1,9 +1,9 @@
-package com.kaltura.commands.partner
+package com.borhan.commands.partner
 {
-	import com.kaltura.delegates.partner.PartnerGetSecretsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.partner.PartnerGetSecretsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class PartnerGetSecrets extends KalturaCall
+	public class PartnerGetSecrets extends BorhanCall
 	{
 		public var filterFields : String;
 		public function PartnerGetSecrets( partnerId : int,adminEmail : String,cmsPassword : String )

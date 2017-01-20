@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaFilter;
+	import com.borhan.vo.BorhanFilter;
 
 	[Bindable]
-	public dynamic class KalturaSystemPartnerUsageFilter extends KalturaFilter
+	public dynamic class BorhanSystemPartnerUsageFilter extends BorhanFilter
 	{
 		public var fromDate : int = int.MIN_VALUE;
 		public var toDate : int = int.MIN_VALUE;

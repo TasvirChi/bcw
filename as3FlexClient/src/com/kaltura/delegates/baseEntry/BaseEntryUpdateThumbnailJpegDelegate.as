@@ -1,11 +1,11 @@
-package com.kaltura.delegates.baseEntry
+package com.borhan.delegates.baseEntry
 {
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.core.KClassFactory;
-	import com.kaltura.delegates.WebDelegateBase;
-	import com.kaltura.errors.KalturaError;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.net.KalturaFileCall;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.core.KClassFactory;
+	import com.borhan.delegates.WebDelegateBase;
+	import com.borhan.errors.BorhanError;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.net.BorhanFileCall;
 	
 	import flash.events.Event;
 	import flash.net.URLLoaderDataFormat;
@@ -19,14 +19,14 @@ package com.kaltura.delegates.baseEntry
 	{
 		protected var mrloader:MultipartURLLoader;
 		
-		public function BaseEntryUpdateThumbnailJpegDelegate(call:KalturaCall, config:KalturaConfig)
+		public function BaseEntryUpdateThumbnailJpegDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}
 
 		override public function parse( result : XML ) : *
 		{
-			var cls : Class = getDefinitionByName('com.kaltura.vo.'+ result.result.objectType) as Class;
+			var cls : Class = getDefinitionByName('com.borhan.vo.'+ result.result.objectType) as Class;
 			var obj : * = (new KClassFactory( cls )).newInstanceFromXML( result.result );
 			return obj;
 		}
@@ -38,7 +38,7 @@ package com.kaltura.delegates.baseEntry
 			//create the service request for normal calls
 			var variables:String = decodeURIComponent(call.args.toString());
 			var req:String = _config.domain +"/"+_config.srvUrl+"?service="+call.service+"&action="+call.action +'&'+variables;
-			mrloader.addFile((call as KalturaFileCall).bytes, UIDUtil.createUID(), 'fileData');
+			mrloader.addFile((call as BorhanFileCall).bytes, UIDUtil.createUID(), 'fileData');
 
 			mrloader.dataFormat = URLLoaderDataFormat.TEXT;
 			mrloader.load(req);
@@ -51,7 +51,7 @@ package com.kaltura.delegates.baseEntry
 			}
 			catch( e:Error )
 			{
-				var kErr : KalturaError = new KalturaError();
+				var kErr : BorhanError = new BorhanError();
 				kErr.errorCode = String(e.errorID);
 				kErr.errorMsg = e.message;
 				_call.handleError( kErr );

@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadataProfile
+package com.borhan.commands.metadataProfile
 {
-	import com.kaltura.delegates.metadataProfile.MetadataProfileDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadataProfile.MetadataProfileDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataProfileDelete extends KalturaCall
+	public class MetadataProfileDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataProfileDelete( id : int )

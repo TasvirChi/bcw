@@ -1,6 +1,6 @@
-package com.kaltura.contributionWizard.model
+package com.borhan.contributionWizard.model
 {
-	import com.kaltura.contributionWizard.vo.providers.MediaProviderVO;
+	import com.borhan.contributionWizard.vo.providers.MediaProviderVO;
 
 	import flash.events.Event;
 	import flash.events.EventDispatcher;

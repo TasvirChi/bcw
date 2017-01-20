@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaJobData;
+	import com.borhan.vo.BorhanJobData;
 
 	[Bindable]
-	public dynamic class KalturaFlattenJobData extends KalturaJobData
+	public dynamic class BorhanFlattenJobData extends BorhanJobData
 	{
 		override protected function setupPropertyList():void
 		{

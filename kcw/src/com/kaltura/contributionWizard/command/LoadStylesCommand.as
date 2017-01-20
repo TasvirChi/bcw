@@ -1,11 +1,11 @@
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.commands.SequenceCommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 	import com.bjorn.event.ChainEvent;
-	import com.kaltura.contributionWizard.events.LoadUIEvent;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.vo.UIConfigVO;
+	import com.borhan.contributionWizard.events.LoadUIEvent;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.vo.UIConfigVO;
 	
 	import flash.events.IEventDispatcher;
 	import flash.system.ApplicationDomain;
@@ -32,7 +32,7 @@ package com.kaltura.contributionWizard.command
 			{
 				var styleUrl : String = uiConfigVo.styleUrl;
 				
-				//if we want to test the kcw in file system mode
+				//if we want to test the bcw in file system mode
 				if(_model.context.fileSystemMode)
 				{ 
 					styleUrl = "assets/style.swf";

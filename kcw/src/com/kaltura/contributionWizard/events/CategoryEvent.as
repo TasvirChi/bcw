@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.events
+package com.borhan.contributionWizard.events
 {
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 	

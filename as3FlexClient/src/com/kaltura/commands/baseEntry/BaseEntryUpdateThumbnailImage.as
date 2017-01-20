@@ -1,11 +1,11 @@
-package com.kaltura.commands.baseEntry
+package com.borhan.commands.baseEntry
 {
-	import com.kaltura.delegates.baseEntry.BaseEntryUpdateThumbnailImageDelegate;
-	import com.kaltura.net.KalturaFileCall;
+	import com.borhan.delegates.baseEntry.BaseEntryUpdateThumbnailImageDelegate;
+	import com.borhan.net.BorhanFileCall;
 	
 	import flash.net.FileReference;
 
-	public class BaseEntryUpdateThumbnailImage extends KalturaFileCall
+	public class BaseEntryUpdateThumbnailImage extends BorhanFileCall
 	{
 		
 		

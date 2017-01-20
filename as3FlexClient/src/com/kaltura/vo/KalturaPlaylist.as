@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseEntry;
+	import com.borhan.vo.BorhanBaseEntry;
 
 	[Bindable]
-	public dynamic class KalturaPlaylist extends KalturaBaseEntry
+	public dynamic class BorhanPlaylist extends BorhanBaseEntry
 	{
 		public var playlistContent : String;
 		public var filters : Array = new Array();

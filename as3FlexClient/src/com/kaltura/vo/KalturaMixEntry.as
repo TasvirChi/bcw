@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaPlayableEntry;
+	import com.borhan.vo.BorhanPlayableEntry;
 
 	[Bindable]
-	public dynamic class KalturaMixEntry extends KalturaPlayableEntry
+	public dynamic class BorhanMixEntry extends BorhanPlayableEntry
 	{
 		public var hasRealThumbnail : Boolean;
 		public var editorType : int = int.MIN_VALUE;

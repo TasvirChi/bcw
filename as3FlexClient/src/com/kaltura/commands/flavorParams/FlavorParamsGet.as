@@ -1,9 +1,9 @@
-package com.kaltura.commands.flavorParams
+package com.borhan.commands.flavorParams
 {
-	import com.kaltura.delegates.flavorParams.FlavorParamsGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.flavorParams.FlavorParamsGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FlavorParamsGet extends KalturaCall
+	public class FlavorParamsGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function FlavorParamsGet( id : int )

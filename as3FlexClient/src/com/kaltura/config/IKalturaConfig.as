@@ -1,8 +1,8 @@
-package com.kaltura.config {
+package com.borhan.config {
 	
 	import flash.events.IEventDispatcher;
 	
-	public interface IKalturaConfig extends IEventDispatcher 
+	public interface IBorhanConfig extends IEventDispatcher 
 	{	
 		function get partnerId():String; 
 		function set partnerId(value:String):void;

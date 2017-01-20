@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadata
+package com.borhan.commands.metadata
 {
-	import com.kaltura.delegates.metadata.MetadataAddFromUrlDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadata.MetadataAddFromUrlDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataAddFromUrl extends KalturaCall
+	public class MetadataAddFromUrl extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataAddFromUrl( metadataProfileId : int,objectType : int,objectId : String,url : String )

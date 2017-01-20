@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaBatchJobOrderBy
+	public class BorhanBatchJobOrderBy
 	{
 		public static const STATUS_ASC : String = '+status';
 		public static const STATUS_DESC : String = '-status';

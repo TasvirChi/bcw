@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaStatsEvent extends BaseFlexVo
+	public dynamic class BorhanStatsEvent extends BaseFlexVo
 	{
 		public var clientVer : String;
 		public var eventType : int = int.MIN_VALUE;

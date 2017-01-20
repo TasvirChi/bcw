@@ -1,9 +1,9 @@
-package com.kaltura.commands.system
+package com.borhan.commands.system
 {
-	import com.kaltura.delegates.system.SystemGetUserByEmailDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.system.SystemGetUserByEmailDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemGetUserByEmail extends KalturaCall
+	public class SystemGetUserByEmail extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SystemGetUserByEmail( email : String )

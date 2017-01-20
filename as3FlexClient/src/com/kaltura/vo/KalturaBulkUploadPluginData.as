@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaBulkUploadPluginData extends BaseFlexVo
+	public dynamic class BorhanBulkUploadPluginData extends BaseFlexVo
 	{
 		public var field : String;
 		public var value : String;

@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseSyndicationFeed;
+	import com.borhan.vo.BorhanBaseSyndicationFeed;
 
 	[Bindable]
-	public dynamic class KalturaGoogleVideoSyndicationFeed extends KalturaBaseSyndicationFeed
+	public dynamic class BorhanGoogleVideoSyndicationFeed extends BorhanBaseSyndicationFeed
 	{
 		public var adultContent : String;
 		public var familyFriendly : String;

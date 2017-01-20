@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaLiveStreamEntry;
+	import com.borhan.vo.BorhanLiveStreamEntry;
 
 	[Bindable]
-	public dynamic class KalturaLiveStreamAdminEntry extends KalturaLiveStreamEntry
+	public dynamic class BorhanLiveStreamAdminEntry extends BorhanLiveStreamEntry
 	{
 		public var encodingIP1 : String;
 		public var encodingIP2 : String;

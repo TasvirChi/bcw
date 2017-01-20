@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaAccessControlOrderBy
+	public class BorhanAccessControlOrderBy
 	{
 		public static const CREATED_AT_ASC : String = '+createdAt';
 		public static const CREATED_AT_DESC : String = '-createdAt';

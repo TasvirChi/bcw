@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,15 +20,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.commands.SequenceCommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
-	import com.kaltura.contributionWizard.events.ExternalInterfaceEvent;
-	import com.kaltura.contributionWizard.events.NotifyShellEvent;
-	import com.kaltura.contributionWizard.events.shell.WizardShellEvent;
-	import com.kaltura.contributionWizard.model.ExternalFunctionIds;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.events.ExternalInterfaceEvent;
+	import com.borhan.contributionWizard.events.NotifyShellEvent;
+	import com.borhan.contributionWizard.events.shell.WizardShellEvent;
+	import com.borhan.contributionWizard.model.ExternalFunctionIds;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
 
 	import mx.managers.SystemManager;
 	import mx.utils.ObjectUtil;
@@ -79,7 +79,7 @@ package com.kaltura.contributionWizard.command
 				break;
 
 				case NotifyShellEvent.PENDING:
-					_externalFunctionToCall = _externalFucntionsIds.kcwPendingChangeHandler;
+					_externalFunctionToCall = _externalFucntionsIds.bcwPendingChangeHandler;
 					_parameters = [_model.pendingActions.isPending];
 				break;
 			}

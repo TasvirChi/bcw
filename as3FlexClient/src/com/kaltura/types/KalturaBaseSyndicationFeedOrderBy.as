@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaBaseSyndicationFeedOrderBy
+	public class BorhanBaseSyndicationFeedOrderBy
 	{
 		public static const PLAYLIST_ID_ASC : String = '+playlistId';
 		public static const PLAYLIST_ID_DESC : String = '-playlistId';

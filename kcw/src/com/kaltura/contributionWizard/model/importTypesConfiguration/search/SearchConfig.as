@@ -1,6 +1,6 @@
-package com.kaltura.contributionWizard.model.importTypesConfiguration.search
+package com.borhan.contributionWizard.model.importTypesConfiguration.search
 {
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.search.ModerationFilter;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.search.ModerationFilter;
 
 	[Bindable]
 	public class SearchConfig

@@ -1,9 +1,9 @@
-package com.kaltura.commands.partner
+package com.borhan.commands.partner
 {
-	import com.kaltura.delegates.partner.PartnerGetInfoDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.partner.PartnerGetInfoDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class PartnerGetInfo extends KalturaCall
+	public class PartnerGetInfo extends BorhanCall
 	{
 		public var filterFields : String;
 		public function PartnerGetInfo(  )

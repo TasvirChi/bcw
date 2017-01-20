@@ -1,12 +1,12 @@
-package com.kaltura.delegates.baseEntry
+package com.borhan.delegates.baseEntry
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class BaseEntryRejectDelegate extends WebDelegateBase
 	{
-		public function BaseEntryRejectDelegate(call:KalturaCall, config:KalturaConfig)
+		public function BaseEntryRejectDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

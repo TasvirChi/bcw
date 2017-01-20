@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaLiveStreamEntryFilter;
+	import com.borhan.vo.BorhanLiveStreamEntryFilter;
 
 	[Bindable]
-	public dynamic class KalturaLiveStreamAdminEntryFilter extends KalturaLiveStreamEntryFilter
+	public dynamic class BorhanLiveStreamAdminEntryFilter extends BorhanLiveStreamEntryFilter
 	{
 		override protected function setupPropertyList():void
 		{

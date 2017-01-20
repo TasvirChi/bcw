@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBatchJobFilter;
+	import com.borhan.vo.BorhanBatchJobFilter;
 
 	[Bindable]
-	public dynamic class KalturaBatchJobFilterExt extends KalturaBatchJobFilter
+	public dynamic class BorhanBatchJobFilterExt extends BorhanBatchJobFilter
 	{
 		public var jobTypeAndSubTypeIn : String;
 		override protected function setupPropertyList():void

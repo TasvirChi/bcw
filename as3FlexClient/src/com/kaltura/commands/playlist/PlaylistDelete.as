@@ -1,9 +1,9 @@
-package com.kaltura.commands.playlist
+package com.borhan.commands.playlist
 {
-	import com.kaltura.delegates.playlist.PlaylistDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.playlist.PlaylistDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class PlaylistDelete extends KalturaCall
+	public class PlaylistDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function PlaylistDelete( id : String )

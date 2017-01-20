@@ -1,9 +1,9 @@
-package com.kaltura.commands.batchcontrol
+package com.borhan.commands.batchcontrol
 {
-	import com.kaltura.delegates.batchcontrol.BatchcontrolSetConfigDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.batchcontrol.BatchcontrolSetConfigDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BatchcontrolSetConfig extends KalturaCall
+	public class BatchcontrolSetConfig extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BatchcontrolSetConfig( schedulerId : int,schedulerName : String,adminId : int,adminName : String,configParam : String,configValue : String,configParamPart : String='',workerId : int=undefined,workerName : String='' )

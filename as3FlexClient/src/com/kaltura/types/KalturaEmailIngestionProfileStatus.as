@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaEmailIngestionProfileStatus
+	public class BorhanEmailIngestionProfileStatus
 	{
 		public static const INACTIVE : int = 0;
 		public static const ACTIVE : int = 1;

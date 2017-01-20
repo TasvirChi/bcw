@@ -1,13 +1,13 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.vo.KalturaExclusiveLockKey;
-	import com.kaltura.delegates.metadataBatch.MetadataBatchFreeExclusiveBulkDownloadJobDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanExclusiveLockKey;
+	import com.borhan.delegates.metadataBatch.MetadataBatchFreeExclusiveBulkDownloadJobDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchFreeExclusiveBulkDownloadJob extends KalturaCall
+	public class MetadataBatchFreeExclusiveBulkDownloadJob extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MetadataBatchFreeExclusiveBulkDownloadJob( id : int,lockKey : KalturaExclusiveLockKey,resetExecutionAttempts : Boolean=false )
+		public function MetadataBatchFreeExclusiveBulkDownloadJob( id : int,lockKey : BorhanExclusiveLockKey,resetExecutionAttempts : Boolean=false )
 		{
 			service= 'metadata_metadatabatch';
 			action= 'freeExclusiveBulkDownloadJob';
@@ -17,7 +17,7 @@ package com.kaltura.commands.metadataBatch
 			var keyValArr : Array = new Array();
 			keyArr.push( 'id' );
 			valueArr.push( id );
- 			keyValArr = kalturaObject2Arrays(lockKey,'lockKey');
+ 			keyValArr = borhanObject2Arrays(lockKey,'lockKey');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'resetExecutionAttempts' );

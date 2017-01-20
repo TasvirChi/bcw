@@ -1,19 +1,19 @@
-package com.kaltura.delegates {
+package com.borhan.delegates {
 	
-	import com.kaltura.config.IKalturaConfig;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.config.IBorhanConfig;
+	import com.borhan.net.BorhanCall;
 	
 	import flash.events.IEventDispatcher;
 	
-	public interface IKalturaCallDelegate extends IEventDispatcher {
+	public interface IBorhanCallDelegate extends IEventDispatcher {
 		
 		function close():void;
 		
-		function get call():KalturaCall;
-		function set call(newVal:KalturaCall):void;
+		function get call():BorhanCall;
+		function set call(newVal:BorhanCall):void;
 		
-		function get config():IKalturaConfig;
-		function set config(newVal:IKalturaConfig):void;
+		function get config():IBorhanConfig;
+		function set config(newVal:IBorhanConfig):void;
 	}
 	
 }

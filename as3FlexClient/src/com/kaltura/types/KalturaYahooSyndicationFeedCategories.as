@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaYahooSyndicationFeedCategories
+	public class BorhanYahooSyndicationFeedCategories
 	{
 		public static const ACTION : String = 'Action';
 		public static const ART_AND_ANIMATION : String = 'Art &amp; Animation';

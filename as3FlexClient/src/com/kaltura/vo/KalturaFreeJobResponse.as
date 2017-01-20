@@ -1,12 +1,12 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBatchJob;
+	import com.borhan.vo.BorhanBatchJob;
 
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaFreeJobResponse extends BaseFlexVo
+	public dynamic class BorhanFreeJobResponse extends BaseFlexVo
 	{
-		public var job : KalturaBatchJob;
+		public var job : BorhanBatchJob;
 		public var jobType : int = int.MIN_VALUE;
 		public var queueSize : int = int.MIN_VALUE;
 		override protected function setupPropertyList():void

@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaBatchJobStatus
+	public class BorhanBatchJobStatus
 	{
 		public static const PENDING : int = 0;
 		public static const QUEUED : int = 1;

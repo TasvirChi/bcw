@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaMailJobStatus
+	public class BorhanMailJobStatus
 	{
 		public static const PENDING : int = 1;
 		public static const SENT : int = 2;

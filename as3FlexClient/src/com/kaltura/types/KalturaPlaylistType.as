@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaPlaylistType
+	public class BorhanPlaylistType
 	{
 		public static const DYNAMIC : int = 10;
 		public static const STATIC_LIST : int = 3;

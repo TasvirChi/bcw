@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaSearchItem;
+	import com.borhan.vo.BorhanSearchItem;
 
 	[Bindable]
-	public dynamic class KalturaSearchOperator extends KalturaSearchItem
+	public dynamic class BorhanSearchOperator extends BorhanSearchItem
 	{
 		public var type : int = int.MIN_VALUE;
 		public var items : Array = new Array();

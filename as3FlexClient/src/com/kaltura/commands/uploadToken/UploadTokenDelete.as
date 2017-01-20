@@ -1,9 +1,9 @@
-package com.kaltura.commands.uploadToken
+package com.borhan.commands.uploadToken
 {
-	import com.kaltura.delegates.uploadToken.UploadTokenDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.uploadToken.UploadTokenDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UploadTokenDelete extends KalturaCall
+	public class UploadTokenDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UploadTokenDelete( uploadTokenId : String )

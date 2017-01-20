@@ -1,9 +1,9 @@
-package com.kaltura.commands.system
+package com.borhan.commands.system
 {
-	import com.kaltura.delegates.system.SystemDeleteUserDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.system.SystemDeleteUserDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemDeleteUser extends KalturaCall
+	public class SystemDeleteUser extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SystemDeleteUser( userId : int )

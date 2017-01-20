@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaLiveStreamListResponse extends BaseFlexVo
+	public dynamic class BorhanLiveStreamListResponse extends BaseFlexVo
 	{
 		public var objects : Array = new Array();
 		public var totalCount : int = int.MIN_VALUE;

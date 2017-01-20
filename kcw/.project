@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>kcw</name>
+	<name>bcw</name>
 	<comment></comment>
 	<projects>
 		<project>as3FlexClient</project>
 		<project>Common</project>
-		<project>KalturaLib</project>
+		<project>BorhanLib</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

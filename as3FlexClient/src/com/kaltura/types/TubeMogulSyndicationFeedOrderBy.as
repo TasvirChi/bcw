@@ -1,4 +1,4 @@
-package com.kaltura.types
+package com.borhan.types
 {
 	public class TubeMogulSyndicationFeedOrderBy
 	{

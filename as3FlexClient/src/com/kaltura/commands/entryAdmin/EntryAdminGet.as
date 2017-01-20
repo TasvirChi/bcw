@@ -1,9 +1,9 @@
-package com.kaltura.commands.entryAdmin
+package com.borhan.commands.entryAdmin
 {
-	import com.kaltura.delegates.entryAdmin.EntryAdminGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.entryAdmin.EntryAdminGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class EntryAdminGet extends KalturaCall
+	public class EntryAdminGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function EntryAdminGet( entryId : String,version : int=-1 )

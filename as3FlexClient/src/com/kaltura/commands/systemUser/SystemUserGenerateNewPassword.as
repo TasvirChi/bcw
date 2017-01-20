@@ -1,9 +1,9 @@
-package com.kaltura.commands.systemUser
+package com.borhan.commands.systemUser
 {
-	import com.kaltura.delegates.systemUser.SystemUserGenerateNewPasswordDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.systemUser.SystemUserGenerateNewPasswordDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemUserGenerateNewPassword extends KalturaCall
+	public class SystemUserGenerateNewPassword extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SystemUserGenerateNewPassword(  )

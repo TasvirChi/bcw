@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,11 +20,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.view.importViews.webcam.controler {
-	import com.kaltura.contributionWizard.model.WebcamModelLocator;
-	import com.kaltura.contributionWizard.view.importViews.webcam.events.RecorderEvent;
-	import com.kaltura.contributionWizard.view.importViews.webcam.view.VideoContainer;
-	import com.kaltura.contributionWizard.view.resources.ResourceBundleNames;
+package com.borhan.contributionWizard.view.importViews.webcam.controler {
+	import com.borhan.contributionWizard.model.WebcamModelLocator;
+	import com.borhan.contributionWizard.view.importViews.webcam.events.RecorderEvent;
+	import com.borhan.contributionWizard.view.importViews.webcam.view.VideoContainer;
+	import com.borhan.contributionWizard.view.resources.ResourceBundleNames;
 	
 	import flash.events.ActivityEvent;
 	import flash.events.AsyncErrorEvent;
@@ -75,7 +75,7 @@ package com.kaltura.contributionWizard.view.importViews.webcam.controler {
 		
 		/**
 		 * url of the recording app, 
-		 * i.e. "rtmp://www.kaltura.com/oflaDemo" 
+		 * i.e. "rtmp://www.borhan.com/oflaDemo" 
 		 */
 		public var videoURL:String;
 		

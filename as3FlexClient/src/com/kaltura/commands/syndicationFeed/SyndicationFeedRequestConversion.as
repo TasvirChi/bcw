@@ -1,9 +1,9 @@
-package com.kaltura.commands.syndicationFeed
+package com.borhan.commands.syndicationFeed
 {
-	import com.kaltura.delegates.syndicationFeed.SyndicationFeedRequestConversionDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.syndicationFeed.SyndicationFeedRequestConversionDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SyndicationFeedRequestConversion extends KalturaCall
+	public class SyndicationFeedRequestConversion extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SyndicationFeedRequestConversion( feedId : String )

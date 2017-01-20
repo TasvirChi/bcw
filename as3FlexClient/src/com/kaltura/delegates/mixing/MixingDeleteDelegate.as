@@ -1,12 +1,12 @@
-package com.kaltura.delegates.mixing
+package com.borhan.delegates.mixing
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class MixingDeleteDelegate extends WebDelegateBase
 	{
-		public function MixingDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function MixingDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

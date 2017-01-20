@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseEntry;
+	import com.borhan.vo.BorhanBaseEntry;
 
 	[Bindable]
-	public dynamic class KalturaDocumentEntry extends KalturaBaseEntry
+	public dynamic class BorhanDocumentEntry extends BorhanBaseEntry
 	{
 		public var documentType : int = int.MIN_VALUE;
 		override protected function setupPropertyList():void

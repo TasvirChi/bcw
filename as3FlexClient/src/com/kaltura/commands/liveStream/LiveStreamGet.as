@@ -1,9 +1,9 @@
-package com.kaltura.commands.liveStream
+package com.borhan.commands.liveStream
 {
-	import com.kaltura.delegates.liveStream.LiveStreamGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.liveStream.LiveStreamGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class LiveStreamGet extends KalturaCall
+	public class LiveStreamGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function LiveStreamGet( entryId : String,version : int=-1 )

@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaMetadataProfileStatus
+	public class BorhanMetadataProfileStatus
 	{
 		public static const ACTIVE : int = 1;
 		public static const DEPRECATED : int = 2;

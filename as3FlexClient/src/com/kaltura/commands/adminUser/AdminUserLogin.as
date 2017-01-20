@@ -1,9 +1,9 @@
-package com.kaltura.commands.adminUser
+package com.borhan.commands.adminUser
 {
-	import com.kaltura.delegates.adminUser.AdminUserLoginDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.adminUser.AdminUserLoginDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class AdminUserLogin extends KalturaCall
+	public class AdminUserLogin extends BorhanCall
 	{
 		public var filterFields : String;
 		public function AdminUserLogin( email : String,password : String )

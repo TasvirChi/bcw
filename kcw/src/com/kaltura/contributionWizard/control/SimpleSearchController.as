@@ -1,14 +1,14 @@
-package com.kaltura.contributionWizard.control
+package com.borhan.contributionWizard.control
 {
-	import com.kaltura.contributionWizard.command.GetMediaInfoCommand;
-	import com.kaltura.contributionWizard.command.LoginToProviderCommand;
-	import com.kaltura.contributionWizard.command.ModerateSearchTermsCommand;
-	import com.kaltura.contributionWizard.command.SearchMediaCommand;
-	import com.kaltura.contributionWizard.command.ToggleAuthMethodCommand;
-	import com.kaltura.contributionWizard.events.AuthMethodEvent;
-	import com.kaltura.contributionWizard.events.LoginEvent;
-	import com.kaltura.contributionWizard.events.MediaInfoEvent;
-	import com.kaltura.contributionWizard.events.SearchMediaEvent;
+	import com.borhan.contributionWizard.command.GetMediaInfoCommand;
+	import com.borhan.contributionWizard.command.LoginToProviderCommand;
+	import com.borhan.contributionWizard.command.ModerateSearchTermsCommand;
+	import com.borhan.contributionWizard.command.SearchMediaCommand;
+	import com.borhan.contributionWizard.command.ToggleAuthMethodCommand;
+	import com.borhan.contributionWizard.events.AuthMethodEvent;
+	import com.borhan.contributionWizard.events.LoginEvent;
+	import com.borhan.contributionWizard.events.MediaInfoEvent;
+	import com.borhan.contributionWizard.events.SearchMediaEvent;
 
 	public class SimpleSearchController extends BaseSearchController
 	{

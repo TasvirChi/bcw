@@ -1,29 +1,29 @@
-package com.kaltura.net {
+package com.borhan.net {
 	
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.delegates.IKalturaCallDelegate;
-	import com.kaltura.errors.KalturaError;
-	import com.kaltura.events.KalturaEvent;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.delegates.IBorhanCallDelegate;
+	import com.borhan.errors.BorhanError;
+	import com.borhan.events.BorhanEvent;
 	
 	import flash.events.EventDispatcher;
 	import flash.net.URLRequestMethod;
 	import flash.net.URLVariables;
 	import flash.utils.getQualifiedClassName;
 	
-	public class KalturaCall extends EventDispatcher {
+	public class BorhanCall extends EventDispatcher {
 		
 		public var args:URLVariables = new URLVariables();
 		public var result:Object;
-		public var error:KalturaError;
-		public var config:KalturaConfig;
+		public var error:BorhanError;
+		public var config:BorhanConfig;
 		public var success:Boolean = false;
 		public var action : String;
 		public var service : String;
 		public var method : String = URLRequestMethod.POST;
 		
-		public var delegate : IKalturaCallDelegate;
+		public var delegate : IBorhanCallDelegate;
 		
-		public function KalturaCall() {}
+		public function BorhanCall() {}
 		
 		//OVERRIDE this function in case something needs to be initialized prior to execution
 		public function initialize():void {}
@@ -47,29 +47,29 @@ package com.kaltura.net {
 		public function handleResult(result:Object):void {
 			this.result = result;
 			success = true;
-			dispatchEvent(new KalturaEvent(KalturaEvent.COMPLETE, false, false, true, result));
+			dispatchEvent(new BorhanEvent(BorhanEvent.COMPLETE, false, false, true, result));
 		}
 		/**
 		 * dispatch an Error when a request has faild for any reasone  
 		 * @param error
 		 * 
 		 */		
-		public function handleError(error:KalturaError):void {
+		public function handleError(error:BorhanError):void {
 			this.error = error;
 			success = false;
 			error.requestArgs = args;
-			dispatchEvent(new KalturaEvent(KalturaEvent.FAILED, false, false, false, null, error));
+			dispatchEvent(new BorhanEvent(BorhanEvent.FAILED, false, false, false, null, error));
 		}
 		
 		/**
-		 * Create from prefix and kaltura object an arry of key value arrays that ready to be send to the server request API 
+		 * Create from prefix and borhan object an arry of key value arrays that ready to be send to the server request API 
 		 * can deal with nesting objects and arrays
-		 * @param any Kaltura object 
+		 * @param any Borhan object 
 		 * @prefix added before the original params to format the params to send
-		 * @return Array of formated params that supported by kaltura server
+		 * @return Array of formated params that supported by borhan server
 		 * 
 		 */		
-		protected function kalturaObject2Arrays( obj : Object , prefix : String = null) : Array {	
+		protected function borhanObject2Arrays( obj : Object , prefix : String = null) : Array {	
 			var keyValArr : Array = new Array();
 			var valArray : Array = new Array();
 			var keyArray : Array = new Array();
@@ -96,11 +96,11 @@ package com.kaltura.net {
 					valArray = valArray.concat( arr[1] );
 					j = valArray.length;
 				}
-				else if( obj[objKeys[i].toString()] != null ) //must be a Kaltura Object
+				else if( obj[objKeys[i].toString()] != null ) //must be a Borhan Object
 				{
 					objArr= getQualifiedClassName(obj[objKeys[i].toString()]).split("::");
 					var tempPrefix : String = objKeys[i].toString();
-					var tempKeyValArr : Array = kalturaObject2Arrays( obj[objKeys[i].toString()] , prefix + ":" + tempPrefix );
+					var tempKeyValArr : Array = borhanObject2Arrays( obj[objKeys[i].toString()] , prefix + ":" + tempPrefix );
 					keyArray = keyArray.concat(tempKeyValArr[0]);
 					valArray = valArray.concat(tempKeyValArr[1]);
 					j = valArray.length;
@@ -149,7 +149,7 @@ package com.kaltura.net {
 				{
 					//var objArr : Array = getQualifiedClassName(arr[i]).split("::");
 					//var tempPrefix : String = objArr[objArr.length-1];
-					tempArr  = kalturaObject2Arrays( arr[i] , newPrefix ); //  + ":" +tempPrefix
+					tempArr  = borhanObject2Arrays( arr[i] , newPrefix ); //  + ":" +tempPrefix
 
 					keyArray = keyArray.concat( tempArr[0] );
 					valArray = valArray.concat( tempArr[1] );

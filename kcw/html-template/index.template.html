@@ -69,7 +69,7 @@ function onWizardReady()
 function next()
 {
 	console.log("next");
-	var flashObj = document.getElementById("kcw");
+	var flashObj = document.getElementById("bcw");
 	flashObj.goNextStep();
 
 }
@@ -78,7 +78,7 @@ function next()
 function prev()
 {
 	console.log("prev");
-	var flashObj = document.getElementById("kcw");
+	var flashObj = document.getElementById("bcw");
 	flashObj.goPrevStep();
 
 }
@@ -103,7 +103,7 @@ function setButtonMode(buttonObj, isEnabled, label)
 	buttonObj.value = label;
 }
 
-function kcwPendingChangeHandler(pending)
+function bcwPendingChangeHandler(pending)
 {
     document.getElementById("nextButton").disabled = pending ?
     	true :
@@ -117,7 +117,7 @@ function kcwPendingChangeHandler(pending)
 function changePData()
 {
 	var pData = document.getElementById("partnerData").value;
-	var flashObj = document.getElementById("kcw");
+	var flashObj = document.getElementById("bcw");
 	flashObj.setPartnerData(pData);
 }
 
@@ -159,23 +159,23 @@ if ( hasProductInstall && !hasRequestedVersion ) {
 			"width", "720", 
 			"height", "420",
 			"align", "middle",
-			"id", "kcw",
+			"id", "bcw",
 			"quality", "high",
 			"flashvars",
 						// 'defaultMediaType=video' + // default media type screen to show at startup (image/video/audio)
-						// '&defaultMediaProviderName=2' + // default selected media provider, e.g "kaltura"
+						// '&defaultMediaProviderName=2' + // default selected media provider, e.g "borhan"
 			
 			
 //						Production
 // ======================================================			
-						'&host=www.kaltura.com' +
-						// '&cdnHost=kaltura.com' +
+						'&host=www.borhan.com' +
+						// '&cdnHost=borhan.com' +
 						'&partnerId=' +
 						'&ks=' + 
 						'&uiConfId=' + 
 						
 						'&fileSystemMode=true'+
-						'&localStyle=./../../kcwStyleProject/bin-debug/css/styles.swf' + 
+						'&localStyle=./../../bcwStyleProject/bin-debug/css/styles.swf' + 
 						
 						'&isAnonymous=false' +	// "term of use" show different texts for anonymous/known users.
 						// '&protocol=http' + // http / https
@@ -194,15 +194,15 @@ if ( hasProductInstall && !hasRequestedVersion ) {
 						
 						'&quick_edit=1' + // if false, entries are automatically added to the roughcut end,
 										  // otherwise, entries will not be automatically added to the roughcut
-						// '&uploadUrl=http://www.kaltura.com/index.php/partnerservices2/upload' + // the url to which files will be uploaded, 
-																								   // deafults to Kaltura's API v3 service
+						// '&uploadUrl=http://www.borhan.com/index.php/partnerservices2/upload' + // the url to which files will be uploaded, 
+																								   // deafults to Borhan's API v3 service
 						// '&showCloseButton=true'+	// show "close" butto on the main view
 						// '&partnerData=partnerDataData' +
 						'&permissions=public' + // permissions==privacy
 						'&credits_screen_name=1001' +
 						'&credits_site_url=1001' +
 						'&permission=5' +
-						'&groupId=kaltura' +	// groupId to set to created entry
+						'&groupId=borhan' +	// groupId to set to created entry
 						'&screenName=Almog' +
 						'&siteUrl=' +
 						'&load_thumbnail_with_ks=false' +

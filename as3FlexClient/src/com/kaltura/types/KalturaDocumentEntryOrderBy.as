@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaDocumentEntryOrderBy
+	public class BorhanDocumentEntryOrderBy
 	{
 		public static const NAME_ASC : String = '+name';
 		public static const NAME_DESC : String = '-name';

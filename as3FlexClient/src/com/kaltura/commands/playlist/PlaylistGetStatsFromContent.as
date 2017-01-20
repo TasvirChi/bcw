@@ -1,9 +1,9 @@
-package com.kaltura.commands.playlist
+package com.borhan.commands.playlist
 {
-	import com.kaltura.delegates.playlist.PlaylistGetStatsFromContentDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.playlist.PlaylistGetStatsFromContentDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class PlaylistGetStatsFromContent extends KalturaCall
+	public class PlaylistGetStatsFromContent extends BorhanCall
 	{
 		public var filterFields : String;
 		public function PlaylistGetStatsFromContent( playlistType : int,playlistContent : String )

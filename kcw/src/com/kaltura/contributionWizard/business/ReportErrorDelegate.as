@@ -1,7 +1,7 @@
-package com.kaltura.contributionWizard.business
+package com.borhan.contributionWizard.business
 {
 	import com.adobe_cw.adobe.cairngorm.business.ServiceLocator;
-	import com.kaltura.contributionWizard.vo.ErrorVO;
+	import com.borhan.contributionWizard.vo.ErrorVO;
 	
 	import flash.net.URLVariables;
 	

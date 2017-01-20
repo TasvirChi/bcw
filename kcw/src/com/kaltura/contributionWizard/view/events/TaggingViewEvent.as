@@ -1,6 +1,6 @@
-package com.kaltura.contributionWizard.view.events
+package com.borhan.contributionWizard.view.events
 {
-	import com.kaltura.vo.MediaMetaDataVO;
+	import com.borhan.vo.MediaMetaDataVO;
 	
 	import flash.events.Event;
 

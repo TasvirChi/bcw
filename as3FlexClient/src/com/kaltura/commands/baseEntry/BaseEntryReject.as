@@ -1,9 +1,9 @@
-package com.kaltura.commands.baseEntry
+package com.borhan.commands.baseEntry
 {
-	import com.kaltura.delegates.baseEntry.BaseEntryRejectDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.baseEntry.BaseEntryRejectDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BaseEntryReject extends KalturaCall
+	public class BaseEntryReject extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BaseEntryReject( entryId : String )

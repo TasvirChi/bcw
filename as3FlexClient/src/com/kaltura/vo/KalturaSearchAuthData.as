@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaSearchAuthData extends BaseFlexVo
+	public dynamic class BorhanSearchAuthData extends BaseFlexVo
 	{
 		public var authData : String;
 		public var loginUrl : String;

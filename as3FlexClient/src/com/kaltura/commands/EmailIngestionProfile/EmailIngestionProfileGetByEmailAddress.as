@@ -1,9 +1,9 @@
-package com.kaltura.commands.EmailIngestionProfile
+package com.borhan.commands.EmailIngestionProfile
 {
-	import com.kaltura.delegates.EmailIngestionProfile.EmailIngestionProfileGetByEmailAddressDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.EmailIngestionProfile.EmailIngestionProfileGetByEmailAddressDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class EmailIngestionProfileGetByEmailAddress extends KalturaCall
+	public class EmailIngestionProfileGetByEmailAddress extends BorhanCall
 	{
 		public var filterFields : String;
 		public function EmailIngestionProfileGetByEmailAddress( emailAddress : String )

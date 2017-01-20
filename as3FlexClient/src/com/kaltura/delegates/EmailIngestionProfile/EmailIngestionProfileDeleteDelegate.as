@@ -1,12 +1,12 @@
-package com.kaltura.delegates.EmailIngestionProfile
+package com.borhan.delegates.EmailIngestionProfile
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class EmailIngestionProfileDeleteDelegate extends WebDelegateBase
 	{
-		public function EmailIngestionProfileDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function EmailIngestionProfileDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

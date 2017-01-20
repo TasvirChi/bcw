@@ -1,9 +1,9 @@
-package com.kaltura.commands.syndicationFeed
+package com.borhan.commands.syndicationFeed
 {
-	import com.kaltura.delegates.syndicationFeed.SyndicationFeedDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.syndicationFeed.SyndicationFeedDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SyndicationFeedDelete extends KalturaCall
+	public class SyndicationFeedDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SyndicationFeedDelete( id : String )

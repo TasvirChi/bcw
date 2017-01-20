@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseSyndicationFeed;
+	import com.borhan.vo.BorhanBaseSyndicationFeed;
 
 	[Bindable]
-	public dynamic class KalturaTubeMogulSyndicationFeed extends KalturaBaseSyndicationFeed
+	public dynamic class BorhanTubeMogulSyndicationFeed extends BorhanBaseSyndicationFeed
 	{
 		public var category : String;
 		override protected function setupPropertyList():void

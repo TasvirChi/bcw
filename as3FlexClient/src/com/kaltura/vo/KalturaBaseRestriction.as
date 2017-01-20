@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaBaseRestriction extends BaseFlexVo
+	public dynamic class BorhanBaseRestriction extends BaseFlexVo
 	{
 		override protected function setupPropertyList():void
 		{

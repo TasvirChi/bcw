@@ -1,9 +1,9 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.delegates.media.MediaRejectDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.media.MediaRejectDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaReject extends KalturaCall
+	public class MediaReject extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MediaReject( entryId : String )

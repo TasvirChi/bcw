@@ -1,9 +1,9 @@
-package com.kaltura.commands.systemPartner
+package com.borhan.commands.systemPartner
 {
-	import com.kaltura.delegates.systemPartner.SystemPartnerGetAdminSessionDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.systemPartner.SystemPartnerGetAdminSessionDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemPartnerGetAdminSession extends KalturaCall
+	public class SystemPartnerGetAdminSession extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SystemPartnerGetAdminSession( partnerId : int )

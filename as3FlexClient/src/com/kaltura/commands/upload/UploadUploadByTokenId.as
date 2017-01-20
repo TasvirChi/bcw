@@ -1,10 +1,10 @@
-package com.kaltura.commands.upload
+package com.borhan.commands.upload
 {
-	import com.kaltura.vo.File;
-	import com.kaltura.delegates.upload.UploadUploadByTokenIdDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.File;
+	import com.borhan.delegates.upload.UploadUploadByTokenIdDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UploadUploadByTokenId extends KalturaCall
+	public class UploadUploadByTokenId extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UploadUploadByTokenId( fileData : file,uploadTokenId : String )
@@ -15,7 +15,7 @@ package com.kaltura.commands.upload
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(fileData,'fileData');
+ 			keyValArr = borhanObject2Arrays(fileData,'fileData');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'uploadTokenId' );

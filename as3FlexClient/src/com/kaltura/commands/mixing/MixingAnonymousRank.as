@@ -1,9 +1,9 @@
-package com.kaltura.commands.mixing
+package com.borhan.commands.mixing
 {
-	import com.kaltura.delegates.mixing.MixingAnonymousRankDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.mixing.MixingAnonymousRankDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MixingAnonymousRank extends KalturaCall
+	public class MixingAnonymousRank extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MixingAnonymousRank( entryId : String,rank : int )

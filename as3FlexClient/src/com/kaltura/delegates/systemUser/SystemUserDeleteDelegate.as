@@ -1,12 +1,12 @@
-package com.kaltura.delegates.systemUser
+package com.borhan.delegates.systemUser
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class SystemUserDeleteDelegate extends WebDelegateBase
 	{
-		public function SystemUserDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function SystemUserDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

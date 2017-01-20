@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaFlavorAsset extends BaseFlexVo
+	public dynamic class BorhanFlavorAsset extends BaseFlexVo
 	{
 		public var id : String;
 		public var entryId : String;

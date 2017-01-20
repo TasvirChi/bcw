@@ -1,9 +1,9 @@
-package com.kaltura.commands.syndicationFeed
+package com.borhan.commands.syndicationFeed
 {
-	import com.kaltura.delegates.syndicationFeed.SyndicationFeedGetEntryCountDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.syndicationFeed.SyndicationFeedGetEntryCountDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SyndicationFeedGetEntryCount extends KalturaCall
+	public class SyndicationFeedGetEntryCount extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SyndicationFeedGetEntryCount( feedId : String )

@@ -1,27 +1,27 @@
-package com.kaltura.commands.flavorParamsOutput
+package com.borhan.commands.flavorParamsOutput
 {
-	import com.kaltura.vo.KalturaFlavorParamsOutputFilter;
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.flavorParamsOutput.FlavorParamsOutputListDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanFlavorParamsOutputFilter;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.flavorParamsOutput.FlavorParamsOutputListDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FlavorParamsOutputList extends KalturaCall
+	public class FlavorParamsOutputList extends BorhanCall
 	{
 		public var filterFields : String;
-		public function FlavorParamsOutputList( filter : KalturaFlavorParamsOutputFilter=null,pager : KalturaFilterPager=null )
+		public function FlavorParamsOutputList( filter : BorhanFlavorParamsOutputFilter=null,pager : BorhanFilterPager=null )
 		{
-			if(filter== null)filter= new KalturaFlavorParamsOutputFilter();
-			if(pager== null)pager= new KalturaFilterPager();
+			if(filter== null)filter= new BorhanFlavorParamsOutputFilter();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'adminconsole_flavorparamsoutput';
 			action= 'list';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(filter,'filter');
+ 			keyValArr = borhanObject2Arrays(filter,'filter');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

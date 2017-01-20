@@ -1,10 +1,10 @@
-package com.kaltura.delegates {
+package com.borhan.delegates {
 	
-	import com.kaltura.config.IKalturaConfig;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.errors.KalturaError;
-	import com.kaltura.events.KalturaEvent;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.config.IBorhanConfig;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.errors.BorhanError;
+	import com.borhan.events.BorhanEvent;
+	import com.borhan.net.BorhanCall;
 	
 	import flash.events.ErrorEvent;
 	import flash.events.Event;
@@ -20,27 +20,27 @@ package com.kaltura.delegates {
 	import flash.net.URLRequestMethod;
 	import flash.utils.Timer;
 	
-	public class WebDelegateBase extends EventDispatcher implements IKalturaCallDelegate {
+	public class WebDelegateBase extends EventDispatcher implements IBorhanCallDelegate {
 		
 		private static const CONNECT_TIME : int = 120000; //60 secs
 		private static const LOAD_TIME : int = 120000; //60 secs
 		protected var connectTimer:Timer;
 		protected var loadTimer:Timer;
 		
-		protected var _call:KalturaCall;
-		protected var _config:KalturaConfig;
+		protected var _call:BorhanCall;
+		protected var _config:BorhanConfig;
 		
 		protected var loader:URLLoader;
 		protected var fileRef:FileReference;
 		
 		//Setters & getters 
-		public function get call():KalturaCall { return _call; }
-		public function set call(newVal:KalturaCall):void { _call = newVal; }
+		public function get call():BorhanCall { return _call; }
+		public function set call(newVal:BorhanCall):void { _call = newVal; }
 
-		public function get config():IKalturaConfig { return _config; }
-		public function set config(newVal:IKalturaConfig):void { _config = newVal as KalturaConfig; }
+		public function get config():IBorhanConfig { return _config; }
+		public function set config(newVal:IBorhanConfig):void { _config = newVal as BorhanConfig; }
 		
-		public function WebDelegateBase(call:KalturaCall = null , config:KalturaConfig = null) 
+		public function WebDelegateBase(call:BorhanCall = null , config:BorhanConfig = null) 
 		{
 			this.call = call;
 			this.config = config;
@@ -64,11 +64,11 @@ package com.kaltura.delegates {
 		}
 		
 		protected function onConnectTimeout(event:TimerEvent):void {
-			var kError:KalturaError = new KalturaError();
+			var kError:BorhanError = new BorhanError();
 			//kError.errorCode =
-			kError.errorMsg = "Connection Timeout: " + CONNECT_TIME/1000 + " sec with no post command from kaltura client.";
+			kError.errorMsg = "Connection Timeout: " + CONNECT_TIME/1000 + " sec with no post command from borhan client.";
 			_call.handleError(kError);
-			dispatchEvent(new KalturaEvent(KalturaEvent.FAILED, false, false, false, null, kError));
+			dispatchEvent(new BorhanEvent(BorhanEvent.FAILED, false, false, false, null, kError));
 			
 			loadTimer.stop();
 			close();
@@ -79,10 +79,10 @@ package com.kaltura.delegates {
 			
 			close();
 			
-			var kError:KalturaError = new KalturaError();
+			var kError:BorhanError = new BorhanError();
 			kError.errorMsg = "Post Timeout: "+ LOAD_TIME/1000 + " sec with no post result.";
 			_call.handleError(kError);
-			dispatchEvent(new KalturaEvent(KalturaEvent.FAILED, false, false, false, null, kError));
+			dispatchEvent(new BorhanEvent(BorhanEvent.FAILED, false, false, false, null, kError));
 		}
 
 		protected function execute():void {
@@ -167,7 +167,7 @@ package com.kaltura.delegates {
 			}
 			catch( e:Error )
 			{
-				var kErr : KalturaError = new KalturaError();
+				var kErr : BorhanError = new BorhanError();
 				kErr.errorCode = String(e.errorID);
 				kErr.errorMsg = e.message;
 				_call.handleError( kErr );
@@ -176,7 +176,7 @@ package com.kaltura.delegates {
 		
 		protected function onError( event:ErrorEvent ):void {
 			clean();
-			var kError:KalturaError = createKalturaError( event, loader.data);
+			var kError:BorhanError = createBorhanError( event, loader.data);
 			
 			if(!kError)
 			{
@@ -186,13 +186,13 @@ package com.kaltura.delegates {
 				
 			call.handleError(kError);
 			
-			dispatchEvent(new KalturaEvent(KalturaEvent.FAILED, false, false, false, null, kError));
+			dispatchEvent(new BorhanEvent(BorhanEvent.FAILED, false, false, false, null, kError));
 		}
 		
 		protected function handleResult(result:XML):void {
 			clean();
 			
-			var error:KalturaError = validateKalturaResponse(result);
+			var error:BorhanError = validateBorhanResponse(result);
 			
 			if (error == null) {
 				var digestedResult : Object = parse(result);
@@ -218,24 +218,24 @@ package com.kaltura.delegates {
 		public function parse( result : XML ) : * { return null; }
 		
 		//Overide this to create validation object and fill it
-		protected function validateKalturaResponse(result:String) : KalturaError 
+		protected function validateBorhanResponse(result:String) : BorhanError 
 		{ 
-			var kError : KalturaError = null;
+			var kError : BorhanError = null;
 			var xml : XML = XML(result);
 			if(xml.result.hasOwnProperty('error')){
-				kError = new KalturaError();
+				kError = new BorhanError();
 				kError.errorCode = String(xml.result.error.code);
 				kError.errorMsg = xml.result.error.message;
-				dispatchEvent(new KalturaEvent(KalturaEvent.FAILED, false, false, false, null, kError));	
+				dispatchEvent(new BorhanEvent(BorhanEvent.FAILED, false, false, false, null, kError));	
 			}
 			
 			return kError;
 		}
 		
 		//Overide this to create error object and fill it
-		protected function createKalturaError( event : ErrorEvent , loaderData : * ) : KalturaError 
+		protected function createBorhanError( event : ErrorEvent , loaderData : * ) : BorhanError 
 		{ 
-			var ke : KalturaError = new KalturaError();
+			var ke : BorhanError = new BorhanError();
 			return ke; 
 		}
 	}

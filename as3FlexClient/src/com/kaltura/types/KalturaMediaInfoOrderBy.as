@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaMediaInfoOrderBy
+	public class BorhanMediaInfoOrderBy
 	{
 	}
 }

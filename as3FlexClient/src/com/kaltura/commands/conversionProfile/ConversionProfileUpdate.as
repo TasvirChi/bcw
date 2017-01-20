@@ -1,13 +1,13 @@
-package com.kaltura.commands.conversionProfile
+package com.borhan.commands.conversionProfile
 {
-	import com.kaltura.vo.KalturaConversionProfile;
-	import com.kaltura.delegates.conversionProfile.ConversionProfileUpdateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanConversionProfile;
+	import com.borhan.delegates.conversionProfile.ConversionProfileUpdateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class ConversionProfileUpdate extends KalturaCall
+	public class ConversionProfileUpdate extends BorhanCall
 	{
 		public var filterFields : String;
-		public function ConversionProfileUpdate( id : int,conversionProfile : KalturaConversionProfile )
+		public function ConversionProfileUpdate( id : int,conversionProfile : BorhanConversionProfile )
 		{
 			service= 'conversionprofile';
 			action= 'update';
@@ -17,7 +17,7 @@ package com.kaltura.commands.conversionProfile
 			var keyValArr : Array = new Array();
 			keyArr.push( 'id' );
 			valueArr.push( id );
- 			keyValArr = kalturaObject2Arrays(conversionProfile,'conversionProfile');
+ 			keyValArr = borhanObject2Arrays(conversionProfile,'conversionProfile');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

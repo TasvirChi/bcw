@@ -1,9 +1,9 @@
-package com.kaltura.commands.search
+package com.borhan.commands.search
 {
-	import com.kaltura.delegates.search.SearchSearchUrlDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.search.SearchSearchUrlDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SearchSearchUrl extends KalturaCall
+	public class SearchSearchUrl extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SearchSearchUrl( mediaType : int,url : String )

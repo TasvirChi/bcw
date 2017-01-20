@@ -1,9 +1,9 @@
-package com.kaltura.commands.EmailIngestionProfile
+package com.borhan.commands.EmailIngestionProfile
 {
-	import com.kaltura.delegates.EmailIngestionProfile.EmailIngestionProfileDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.EmailIngestionProfile.EmailIngestionProfileDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class EmailIngestionProfileDelete extends KalturaCall
+	public class EmailIngestionProfileDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function EmailIngestionProfileDelete( id : int )

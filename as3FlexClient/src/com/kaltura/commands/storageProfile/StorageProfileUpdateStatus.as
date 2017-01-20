@@ -1,9 +1,9 @@
-package com.kaltura.commands.storageProfile
+package com.borhan.commands.storageProfile
 {
-	import com.kaltura.delegates.storageProfile.StorageProfileUpdateStatusDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.storageProfile.StorageProfileUpdateStatusDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class StorageProfileUpdateStatus extends KalturaCall
+	public class StorageProfileUpdateStatus extends BorhanCall
 	{
 		public var filterFields : String;
 		public function StorageProfileUpdateStatus( storageId : int,status : int )

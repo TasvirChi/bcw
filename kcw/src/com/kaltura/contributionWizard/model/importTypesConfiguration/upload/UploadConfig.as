@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.model.importTypesConfiguration.upload
+package com.borhan.contributionWizard.model.importTypesConfiguration.upload
 {
 	public class UploadConfig
 	{

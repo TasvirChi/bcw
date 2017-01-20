@@ -1,9 +1,9 @@
-package com.kaltura.commands.uiConf
+package com.borhan.commands.uiConf
 {
-	import com.kaltura.delegates.uiConf.UiConfDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.uiConf.UiConfDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UiConfDelete extends KalturaCall
+	public class UiConfDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UiConfDelete( id : int )

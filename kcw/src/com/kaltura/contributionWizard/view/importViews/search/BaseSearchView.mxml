@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--/*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -26,34 +26,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	creationComplete="creationCompleteHandler()"
 	width="100%" height="100%"
 	verticalScrollPolicy="off" horizontalScrollPolicy="off"
-	implements="com.kaltura.contributionWizard.view.importViews.IImportModule"
+	implements="com.borhan.contributionWizard.view.importViews.IImportModule"
 	xmlns:mx="http://www.adobe.com/2006/mxml"
-	xmlns:search="com.kaltura.contributionWizard.view.importViews.search.*"
-	xmlns:searchResultsView="com.kaltura.contributionWizard.view.importViews.search.searchResultsView.*"
-	xmlns:controller="com.kaltura.contributionWizard.view.controller.*"
+	xmlns:search="com.borhan.contributionWizard.view.importViews.search.*"
+	xmlns:searchResultsView="com.borhan.contributionWizard.view.importViews.search.searchResultsView.*"
+	xmlns:controller="com.borhan.contributionWizard.view.controller.*"
 	xmlns:filters="flash.filters.*"
-	xmlns:controls="com.kaltura.contributionWizard.view.importViews.search.controls.*" xmlns:ac="com.adobe.ac.*" xmlns:control="com.kaltura.contributionWizard.control.*">
+	xmlns:controls="com.borhan.contributionWizard.view.importViews.search.controls.*" xmlns:ac="com.adobe.ac.*" xmlns:control="com.borhan.contributionWizard.control.*">
 
 	<mx:Script>
 		<![CDATA[
 			import mx.controls.Button;
 			import com.arc90.modular.CairngormEventDispatcherFactory;
-			import com.kaltura.contributionWizard.view.resources.ResourceBundleNames;
-			import com.kaltura.contributionWizard.command.ToggleAuthMethodCommand;
+			import com.borhan.contributionWizard.view.resources.ResourceBundleNames;
+			import com.borhan.contributionWizard.command.ToggleAuthMethodCommand;
 			import mx.events.CloseEvent;
-			import com.kaltura.contributionWizard.events.AuthMethodEvent;
+			import com.borhan.contributionWizard.events.AuthMethodEvent;
 			import mx.core.IFlexDisplayObject;
 			import mx.core.Application;
 			import mx.controls.Alert;
-			import com.kaltura.contributionWizard.vo.PageSearchDirection;
-			import com.kaltura.contributionWizard.events.SearchMediaEvent;
+			import com.borhan.contributionWizard.vo.PageSearchDirection;
+			import com.borhan.contributionWizard.events.SearchMediaEvent;
 			import mx.managers.PopUpManager;
-			import com.kaltura.contributionWizard.view.events.AuthenticatedSearchViewEvent;
-			import com.kaltura.contributionWizard.events.MediaInfoEvent;
-			import com.kaltura.contributionWizard.view.events.ImportViewCompleteEvent;
+			import com.borhan.contributionWizard.view.events.AuthenticatedSearchViewEvent;
+			import com.borhan.contributionWizard.events.MediaInfoEvent;
+			import com.borhan.contributionWizard.view.events.ImportViewCompleteEvent;
 			import mx.core.UIComponent;
-			import com.kaltura.contributionWizard.view.importViews.IImportModule;
-			import com.kaltura.contributionWizard.model.WizardModelLocator;
+			import com.borhan.contributionWizard.view.importViews.IImportModule;
+			import com.borhan.contributionWizard.model.WizardModelLocator;
 			[Bindable]
 			protected var model:WizardModelLocator = WizardModelLocator.getInstance();
 

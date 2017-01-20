@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaMetadataStatus
+	public class BorhanMetadataStatus
 	{
 		public static const VALID : int = 1;
 		public static const INVALID : int = 2;

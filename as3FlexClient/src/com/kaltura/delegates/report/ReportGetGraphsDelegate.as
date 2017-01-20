@@ -1,16 +1,16 @@
-package com.kaltura.delegates.report
+package com.borhan.delegates.report
 {
-	import com.kaltura.vo.KalturaReportGraph;KalturaReportGraph;;
+	import com.borhan.vo.BorhanReportGraph;BorhanReportGraph;;
 
-	import com.kaltura.core.KClassFactory;
+	import com.borhan.core.KClassFactory;
 
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class ReportGetGraphsDelegate extends WebDelegateBase
 	{
-		public function ReportGetGraphsDelegate(call:KalturaCall, config:KalturaConfig)
+		public function ReportGetGraphsDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}
@@ -20,7 +20,7 @@ package com.kaltura.delegates.report
 			var arr : Array = new Array();
 			for( var i:int=0; i<result.result.children().length() ; i++)
 			{
-				var cls : Class = getDefinitionByName('com.kaltura.vo.'+ result.result.children()[i].objectType) as Class;
+				var cls : Class = getDefinitionByName('com.borhan.vo.'+ result.result.children()[i].objectType) as Class;
 				var obj : * = (new KClassFactory( cls )).newInstanceFromXML( XMLList(result.result.children()[i]) );
 				arr.push(obj);
 			}

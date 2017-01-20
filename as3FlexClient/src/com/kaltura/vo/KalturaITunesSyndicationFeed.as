@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseSyndicationFeed;
+	import com.borhan.vo.BorhanBaseSyndicationFeed;
 
 	[Bindable]
-	public dynamic class KalturaITunesSyndicationFeed extends KalturaBaseSyndicationFeed
+	public dynamic class BorhanITunesSyndicationFeed extends BorhanBaseSyndicationFeed
 	{
 		public var feedDescription : String;
 		public var language : String;

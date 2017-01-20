@@ -1,15 +1,15 @@
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.commands.SequenceCommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
-	import com.kaltura.contributionWizard.enums.LimitationErrorType;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.view.resources.ResourceBundleNames;
-	import com.kaltura.contributionWizard.vo.limitations.ImportTypeLimitationsVO;
-	import com.kaltura.contributionWizard.vo.limitations.LimitationError;
-	import com.kaltura.contributionWizard.vo.limitations.RangeLimitation;
-	import com.kaltura.vo.importees.ImportFileVO;
-	import com.kaltura.vo.importees.UploadStatusTypes;
+	import com.borhan.contributionWizard.enums.LimitationErrorType;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.view.resources.ResourceBundleNames;
+	import com.borhan.contributionWizard.vo.limitations.ImportTypeLimitationsVO;
+	import com.borhan.contributionWizard.vo.limitations.LimitationError;
+	import com.borhan.contributionWizard.vo.limitations.RangeLimitation;
+	import com.borhan.vo.importees.ImportFileVO;
+	import com.borhan.vo.importees.UploadStatusTypes;
 	
 	import mx.controls.Alert;
 	import mx.resources.ResourceManager;

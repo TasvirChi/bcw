@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.events.webcam
+package com.borhan.contributionWizard.events.webcam
 {
 	import com.arc90.modular.AbstractModuleEvent;
 

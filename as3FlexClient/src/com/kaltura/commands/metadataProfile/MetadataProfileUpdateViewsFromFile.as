@@ -1,10 +1,10 @@
-package com.kaltura.commands.metadataProfile
+package com.borhan.commands.metadataProfile
 {
-	import com.kaltura.vo.File;
-	import com.kaltura.delegates.metadataProfile.MetadataProfileUpdateViewsFromFileDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.File;
+	import com.borhan.delegates.metadataProfile.MetadataProfileUpdateViewsFromFileDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataProfileUpdateViewsFromFile extends KalturaCall
+	public class MetadataProfileUpdateViewsFromFile extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataProfileUpdateViewsFromFile( id : int,viewsFile : file )
@@ -17,7 +17,7 @@ package com.kaltura.commands.metadataProfile
 			var keyValArr : Array = new Array();
 			keyArr.push( 'id' );
 			valueArr.push( id );
- 			keyValArr = kalturaObject2Arrays(viewsFile,'viewsFile');
+ 			keyValArr = borhanObject2Arrays(viewsFile,'viewsFile');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

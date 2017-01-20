@@ -1,6 +1,6 @@
-package com.kaltura.contributionWizard.model
+package com.borhan.contributionWizard.model
 {
-	import com.kaltura.contributionWizard.vo.ImportScreenVO;
+	import com.borhan.contributionWizard.vo.ImportScreenVO;
 
 	[Bindable]
 	public class StartupDefaultsVO

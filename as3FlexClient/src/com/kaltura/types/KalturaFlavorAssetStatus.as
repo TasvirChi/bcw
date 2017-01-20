@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaFlavorAssetStatus
+	public class BorhanFlavorAssetStatus
 	{
 		public static const ERROR : int = -1;
 		public static const QUEUED : int = 0;

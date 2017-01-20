@@ -1,14 +1,14 @@
-package com.kaltura.commands.jobs
+package com.borhan.commands.jobs
 {
-	import com.kaltura.vo.KalturaBatchJob;
-	import com.kaltura.vo.KalturaImportJobData;
-	import com.kaltura.delegates.jobs.JobsAddImportJobDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanBatchJob;
+	import com.borhan.vo.BorhanImportJobData;
+	import com.borhan.delegates.jobs.JobsAddImportJobDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class JobsAddImportJob extends KalturaCall
+	public class JobsAddImportJob extends BorhanCall
 	{
 		public var filterFields : String;
-		public function JobsAddImportJob( job : KalturaBatchJob,data : KalturaImportJobData )
+		public function JobsAddImportJob( job : BorhanBatchJob,data : BorhanImportJobData )
 		{
 			service= 'jobs';
 			action= 'addImportJob';
@@ -16,10 +16,10 @@ package com.kaltura.commands.jobs
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(job,'job');
+ 			keyValArr = borhanObject2Arrays(job,'job');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(data,'data');
+ 			keyValArr = borhanObject2Arrays(data,'data');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

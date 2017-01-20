@@ -1,13 +1,13 @@
-package com.kaltura.commands.uiConf
+package com.borhan.commands.uiConf
 {
-	import com.kaltura.vo.KalturaUiConf;
-	import com.kaltura.delegates.uiConf.UiConfAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanUiConf;
+	import com.borhan.delegates.uiConf.UiConfAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UiConfAdd extends KalturaCall
+	public class UiConfAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function UiConfAdd( uiConf : KalturaUiConf )
+		public function UiConfAdd( uiConf : BorhanUiConf )
 		{
 			service= 'uiconf';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.uiConf
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(uiConf,'uiConf');
+ 			keyValArr = borhanObject2Arrays(uiConf,'uiConf');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

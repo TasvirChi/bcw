@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadata
+package com.borhan.commands.metadata
 {
-	import com.kaltura.delegates.metadata.MetadataInvalidateDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadata.MetadataInvalidateDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataInvalidate extends KalturaCall
+	public class MetadataInvalidate extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataInvalidate( id : int )

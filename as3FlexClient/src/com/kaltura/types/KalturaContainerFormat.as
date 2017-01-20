@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaContainerFormat
+	public class BorhanContainerFormat
 	{
 		public static const FLV : String = 'flv';
 		public static const MP4 : String = 'mp4';

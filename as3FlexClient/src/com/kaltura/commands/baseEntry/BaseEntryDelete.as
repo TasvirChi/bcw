@@ -1,9 +1,9 @@
-package com.kaltura.commands.baseEntry
+package com.borhan.commands.baseEntry
 {
-	import com.kaltura.delegates.baseEntry.BaseEntryDeleteDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.baseEntry.BaseEntryDeleteDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class BaseEntryDelete extends KalturaCall
+	public class BaseEntryDelete extends BorhanCall
 	{
 		public var filterFields : String;
 		public function BaseEntryDelete( entryId : String )

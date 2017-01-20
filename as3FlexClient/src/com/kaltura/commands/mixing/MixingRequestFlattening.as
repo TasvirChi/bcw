@@ -1,9 +1,9 @@
-package com.kaltura.commands.mixing
+package com.borhan.commands.mixing
 {
-	import com.kaltura.delegates.mixing.MixingRequestFlatteningDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.mixing.MixingRequestFlatteningDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MixingRequestFlattening extends KalturaCall
+	public class MixingRequestFlattening extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MixingRequestFlattening( entryId : String,fileFormat : String,version : int=-1 )

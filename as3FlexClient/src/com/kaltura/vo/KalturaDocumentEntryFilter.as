@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseEntryFilter;
+	import com.borhan.vo.BorhanBaseEntryFilter;
 
 	[Bindable]
-	public dynamic class KalturaDocumentEntryFilter extends KalturaBaseEntryFilter
+	public dynamic class BorhanDocumentEntryFilter extends BorhanBaseEntryFilter
 	{
 		public var documentTypeEqual : int = int.MIN_VALUE;
 		public var documentTypeIn : String;

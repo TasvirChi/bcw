@@ -1,9 +1,9 @@
-package com.kaltura.commands.jobs
+package com.borhan.commands.jobs
 {
-	import com.kaltura.delegates.jobs.JobsGetExtractMediaStatusDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.jobs.JobsGetExtractMediaStatusDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class JobsGetExtractMediaStatus extends KalturaCall
+	public class JobsGetExtractMediaStatus extends BorhanCall
 	{
 		public var filterFields : String;
 		public function JobsGetExtractMediaStatus( job_id : int )

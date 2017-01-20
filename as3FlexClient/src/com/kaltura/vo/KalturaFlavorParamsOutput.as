@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaFlavorParams;
+	import com.borhan.vo.BorhanFlavorParams;
 
 	[Bindable]
-	public dynamic class KalturaFlavorParamsOutput extends KalturaFlavorParams
+	public dynamic class BorhanFlavorParamsOutput extends BorhanFlavorParams
 	{
 		public var flavorParamsId : int = int.MIN_VALUE;
 		public var commandLinesStr : String;

@@ -1,27 +1,27 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.vo.KalturaMediaEntry;
-	import com.kaltura.vo.KalturaSearchResult;
-	import com.kaltura.delegates.media.MediaAddFromSearchResultDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanMediaEntry;
+	import com.borhan.vo.BorhanSearchResult;
+	import com.borhan.delegates.media.MediaAddFromSearchResultDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaAddFromSearchResult extends KalturaCall
+	public class MediaAddFromSearchResult extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MediaAddFromSearchResult( mediaEntry : KalturaMediaEntry=null,searchResult : KalturaSearchResult=null )
+		public function MediaAddFromSearchResult( mediaEntry : BorhanMediaEntry=null,searchResult : BorhanSearchResult=null )
 		{
-			if(mediaEntry== null)mediaEntry= new KalturaMediaEntry();
-			if(searchResult== null)searchResult= new KalturaSearchResult();
+			if(mediaEntry== null)mediaEntry= new BorhanMediaEntry();
+			if(searchResult== null)searchResult= new BorhanSearchResult();
 			service= 'media';
 			action= 'addFromSearchResult';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(mediaEntry,'mediaEntry');
+ 			keyValArr = borhanObject2Arrays(mediaEntry,'mediaEntry');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(searchResult,'searchResult');
+ 			keyValArr = borhanObject2Arrays(searchResult,'searchResult');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

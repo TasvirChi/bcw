@@ -1,9 +1,9 @@
-package com.kaltura.commands.session
+package com.borhan.commands.session
 {
-	import com.kaltura.delegates.session.SessionStartDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.session.SessionStartDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SessionStart extends KalturaCall
+	public class SessionStart extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SessionStart( secret : String,userId : String='',type : int=0,partnerId : int=-1,expiry : int=86400,privileges : String='' )

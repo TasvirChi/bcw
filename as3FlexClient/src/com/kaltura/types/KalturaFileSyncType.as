@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaFileSyncType
+	public class BorhanFileSyncType
 	{
 		public static const FILE : int = 1;
 		public static const LINK : int = 2;

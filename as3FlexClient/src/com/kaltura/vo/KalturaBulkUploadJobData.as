@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaJobData;
+	import com.borhan.vo.BorhanJobData;
 
 	[Bindable]
-	public dynamic class KalturaBulkUploadJobData extends KalturaJobData
+	public dynamic class BorhanBulkUploadJobData extends BorhanJobData
 	{
 		public var userId : int = int.MIN_VALUE;
 		public var uploadedBy : String;

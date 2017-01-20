@@ -1,8 +1,8 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaPartnerType
+	public class BorhanPartnerType
 	{
-		public static const KMC : int = 1;
+		public static const BMC : int = 1;
 		public static const WIKI : int = 100;
 		public static const WORDPRESS : int = 101;
 		public static const DRUPAL : int = 102;

@@ -1,9 +1,9 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.delegates.media.MediaGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.media.MediaGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaGet extends KalturaCall
+	public class MediaGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MediaGet( entryId : String,version : int=-1 )

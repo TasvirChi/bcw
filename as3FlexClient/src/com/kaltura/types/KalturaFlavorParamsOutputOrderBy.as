@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaFlavorParamsOutputOrderBy
+	public class BorhanFlavorParamsOutputOrderBy
 	{
 	}
 }

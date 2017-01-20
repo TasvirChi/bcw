@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaModerationFlagType
+	public class BorhanModerationFlagType
 	{
 		public static const SEXUAL_CONTENT : int = 1;
 		public static const VIOLENT_REPULSIVE : int = 2;

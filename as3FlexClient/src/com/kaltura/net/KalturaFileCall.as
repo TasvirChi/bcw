@@ -1,18 +1,18 @@
-package com.kaltura.net {
+package com.borhan.net {
 
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.errors.KalturaError;
-	import com.kaltura.events.KalturaEvent;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.errors.BorhanError;
+	import com.borhan.events.BorhanEvent;
 
 	import flash.net.URLVariables;
 	import flash.utils.ByteArray;
 
-	public class KalturaFileCall extends KalturaCall {
+	public class BorhanFileCall extends BorhanCall {
 
 		public var bytes : ByteArray;
 		public var filterFields : String;
 		
-		public function KalturaFileCall () {
+		public function BorhanFileCall () {
 			super ();
 		}
 	}

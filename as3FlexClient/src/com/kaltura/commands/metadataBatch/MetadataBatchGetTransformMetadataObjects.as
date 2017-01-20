@@ -1,15 +1,15 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.metadataBatch.MetadataBatchGetTransformMetadataObjectsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.metadataBatch.MetadataBatchGetTransformMetadataObjectsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchGetTransformMetadataObjects extends KalturaCall
+	public class MetadataBatchGetTransformMetadataObjects extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MetadataBatchGetTransformMetadataObjects( metadataProfileId : int,srcVersion : int,destVersion : int,pager : KalturaFilterPager=null )
+		public function MetadataBatchGetTransformMetadataObjects( metadataProfileId : int,srcVersion : int,destVersion : int,pager : BorhanFilterPager=null )
 		{
-			if(pager== null)pager= new KalturaFilterPager();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'metadata_metadatabatch';
 			action= 'getTransformMetadataObjects';
 
@@ -22,7 +22,7 @@ package com.kaltura.commands.metadataBatch
 			valueArr.push( srcVersion );
 			keyArr.push( 'destVersion' );
 			valueArr.push( destVersion );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

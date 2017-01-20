@@ -1,12 +1,12 @@
-package com.kaltura.delegates.systemPartner
+package com.borhan.delegates.systemPartner
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class SystemPartnerGetAdminSessionDelegate extends WebDelegateBase
 	{
-		public function SystemPartnerGetAdminSessionDelegate(call:KalturaCall, config:KalturaConfig)
+		public function SystemPartnerGetAdminSessionDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

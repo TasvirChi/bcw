@@ -1,12 +1,12 @@
-package com.kaltura.delegates.syndicationFeed
+package com.borhan.delegates.syndicationFeed
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class SyndicationFeedRequestConversionDelegate extends WebDelegateBase
 	{
-		public function SyndicationFeedRequestConversionDelegate(call:KalturaCall, config:KalturaConfig)
+		public function SyndicationFeedRequestConversionDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaEntryStatus
+	public class BorhanEntryStatus
 	{
 		public static const ERROR_IMPORTING : int = -2;
 		public static const ERROR_CONVERTING : int = -1;

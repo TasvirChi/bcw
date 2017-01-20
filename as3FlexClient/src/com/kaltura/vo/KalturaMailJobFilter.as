@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseJobFilter;
+	import com.borhan.vo.BorhanBaseJobFilter;
 
 	[Bindable]
-	public dynamic class KalturaMailJobFilter extends KalturaBaseJobFilter
+	public dynamic class BorhanMailJobFilter extends BorhanBaseJobFilter
 	{
 		override protected function setupPropertyList():void
 		{

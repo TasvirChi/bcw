@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaDocumentType
+	public class BorhanDocumentType
 	{
 		public static const DOCUMENT : int = 11;
 		public static const SWF : int = 12;

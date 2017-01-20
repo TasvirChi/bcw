@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.events
+package com.borhan.contributionWizard.events
 {
 	import com.arc90.modular.AbstractModuleEvent;
 	import com.bjorn.event.ChainEvent;

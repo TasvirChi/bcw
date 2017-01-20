@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseJobFilter;
+	import com.borhan.vo.BorhanBaseJobFilter;
 
 	[Bindable]
-	public dynamic class KalturaBatchJobFilter extends KalturaBaseJobFilter
+	public dynamic class BorhanBatchJobFilter extends BorhanBaseJobFilter
 	{
 		public var entryIdEqual : String;
 		public var jobTypeEqual : int = int.MIN_VALUE;

@@ -1,9 +1,9 @@
-package com.kaltura.commands.liveStream
+package com.borhan.commands.liveStream
 {
-	import com.kaltura.delegates.liveStream.LiveStreamUpdateOfflineThumbnailFromUrlDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.liveStream.LiveStreamUpdateOfflineThumbnailFromUrlDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class LiveStreamUpdateOfflineThumbnailFromUrl extends KalturaCall
+	public class LiveStreamUpdateOfflineThumbnailFromUrl extends BorhanCall
 	{
 		public var filterFields : String;
 		public function LiveStreamUpdateOfflineThumbnailFromUrl( entryId : String,url : String )

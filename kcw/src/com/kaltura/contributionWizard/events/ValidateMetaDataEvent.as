@@ -1,7 +1,7 @@
-package com.kaltura.contributionWizard.events
+package com.borhan.contributionWizard.events
 {
 	import com.bjorn.event.ChainEvent;
-	import com.kaltura.vo.importees.BaseImportVO;
+	import com.borhan.vo.importees.BaseImportVO;
 
 	import mx.validators.Validator;
 

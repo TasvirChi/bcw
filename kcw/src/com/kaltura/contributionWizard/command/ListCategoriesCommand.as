@@ -1,17 +1,17 @@
-package com.kaltura.contributionWizard.command {
+package com.borhan.contributionWizard.command {
 	import com.adobe_cw.adobe.cairngorm.commands.ICommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
-	import com.kaltura.commands.MultiRequest;
-	import com.kaltura.commands.category.CategoryGet;
-	import com.kaltura.commands.category.CategoryList;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.vo.CategoryVO;
-	import com.kaltura.dataStructures.HashMap;
-	import com.kaltura.errors.KalturaError;
-	import com.kaltura.events.KalturaEvent;
-	import com.kaltura.vo.KalturaCategory;
-	import com.kaltura.vo.KalturaCategoryFilter;
-	import com.kaltura.vo.KalturaCategoryListResponse;
+	import com.borhan.commands.MultiRequest;
+	import com.borhan.commands.category.CategoryGet;
+	import com.borhan.commands.category.CategoryList;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.vo.CategoryVO;
+	import com.borhan.dataStructures.HashMap;
+	import com.borhan.errors.BorhanError;
+	import com.borhan.events.BorhanEvent;
+	import com.borhan.vo.BorhanCategory;
+	import com.borhan.vo.BorhanCategoryFilter;
+	import com.borhan.vo.BorhanCategoryListResponse;
 	
 	import mx.collections.ArrayCollection;
 	import mx.collections.Sort;
@@ -42,7 +42,7 @@ package com.kaltura.contributionWizard.command {
 				}
 				
 				// get the rest of the categories
-				var filter:KalturaCategoryFilter = new KalturaCategoryFilter();
+				var filter:BorhanCategoryFilter = new BorhanCategoryFilter();
 				filter.fullNameStartsWith = "aa"; // need to add a value here so MR will process this
 				
 				var listCategories:CategoryList = new CategoryList(filter);
@@ -55,8 +55,8 @@ package com.kaltura.contributionWizard.command {
 					mr.addRequestParam("1:filter:fullNameStartsWith", "");
 				}
 				
-				mr.addEventListener(KalturaEvent.COMPLETE, result);
-				mr.addEventListener(KalturaEvent.FAILED, fault);
+				mr.addEventListener(BorhanEvent.COMPLETE, result);
+				mr.addEventListener(BorhanEvent.FAILED, fault);
 				_model.context.kc.post(mr);
 				_model.categoriesUploaded = true;
 			}
@@ -80,33 +80,33 @@ package com.kaltura.contributionWizard.command {
 		 *
 		 */
 		public function result(info:Object):void {
-			var event:KalturaEvent = info as KalturaEvent;
+			var event:BorhanEvent = info as BorhanEvent;
 			_model.loadingFlag = false;
 
-			var rootCat:KalturaCategory;
-			var kclr:KalturaCategoryListResponse;
+			var rootCat:BorhanCategory;
+			var kclr:BorhanCategoryListResponse;
 			
 			if (_model.categoriesRootId) {
 				// we will have 2 calls in MR
-				if (event.data[0] is KalturaError) {
-					showError((event.data[0] as KalturaError).errorMsg);
+				if (event.data[0] is BorhanError) {
+					showError((event.data[0] as BorhanError).errorMsg);
 					return;
 				}
-				else if (event.data[1] is KalturaError) {
-					showError((event.data[1] as KalturaError).errorMsg);
+				else if (event.data[1] is BorhanError) {
+					showError((event.data[1] as BorhanError).errorMsg);
 					return;
 				}
-				rootCat = event.data[0] as KalturaCategory;
-				kclr = event.data[1] as KalturaCategoryListResponse;
+				rootCat = event.data[0] as BorhanCategory;
+				kclr = event.data[1] as BorhanCategoryListResponse;
 			}
 			else {
 				// only one call
-				if (event.data[0] is KalturaError) {
-					showError((event.data[0] as KalturaError).errorMsg);
+				if (event.data[0] is BorhanError) {
+					showError((event.data[0] as BorhanError).errorMsg);
 					return;
 				}
 				
-				kclr = event.data[0] as KalturaCategoryListResponse;
+				kclr = event.data[0] as BorhanCategoryListResponse;
 			}
 			
 			var categories:ArrayCollection = new ArrayCollection(kclr.objects);

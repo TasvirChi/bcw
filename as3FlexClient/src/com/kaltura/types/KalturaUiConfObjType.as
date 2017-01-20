@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaUiConfObjType
+	public class BorhanUiConfObjType
 	{
 		public static const PLAYER : int = 1;
 		public static const CONTRIBUTION_WIZARD : int = 2;

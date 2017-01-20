@@ -1,13 +1,13 @@
-package com.kaltura.commands.entrySchedule
+package com.borhan.commands.entrySchedule
 {
-	import com.kaltura.vo.KalturaEntrySchedule;
-	import com.kaltura.delegates.entrySchedule.EntryScheduleAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanEntrySchedule;
+	import com.borhan.delegates.entrySchedule.EntryScheduleAddDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class EntryScheduleAdd extends KalturaCall
+	public class EntryScheduleAdd extends BorhanCall
 	{
 		public var filterFields : String;
-		public function EntryScheduleAdd( entrySchedule : KalturaEntrySchedule )
+		public function EntryScheduleAdd( entrySchedule : BorhanEntrySchedule )
 		{
 			service= 'entrySchedule';
 			action= 'add';
@@ -15,7 +15,7 @@ package com.kaltura.commands.entrySchedule
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(entrySchedule,'entrySchedule');
+ 			keyValArr = borhanObject2Arrays(entrySchedule,'entrySchedule');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

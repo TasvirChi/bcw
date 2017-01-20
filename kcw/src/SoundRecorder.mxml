@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ImportModule xmlns="com.kaltura.contributionWizard.view.importViews.*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:importees="com.kaltura.vo.importees.*" xmlns:browser="com.kaltura.contributionWizard.view.importViews.browser.*">
+<ImportModule xmlns="com.borhan.contributionWizard.view.importViews.*" xmlns:mx="http://www.adobe.com/2006/mxml" xmlns:importees="com.borhan.vo.importees.*" xmlns:browser="com.borhan.contributionWizard.view.importViews.browser.*">
 	<mx:Script>
 		<![CDATA[
-			import com.kaltura.contributionWizard.view.importViews.soundRecorder.view.SoundRecoderVIew;
+			import com.borhan.contributionWizard.view.importViews.soundRecorder.view.SoundRecoderVIew;
 			import mx.controls.Text;
-			import com.kaltura.contributionWizard.view.resources.ResourceBundleNames;
-			import com.kaltura.contributionWizard.events.ImportEvent;
+			import com.borhan.contributionWizard.view.resources.ResourceBundleNames;
+			import com.borhan.contributionWizard.events.ImportEvent;
 			import mx.controls.Alert;
-			import com.kaltura.contributionWizard.model.WizardModelLocator;
-			import com.kaltura.contributionWizard.view.events.ImportViewCompleteEvent;
+			import com.borhan.contributionWizard.model.WizardModelLocator;
+			import com.borhan.contributionWizard.view.events.ImportViewCompleteEvent;
 			
 			
 			private var _recorder:SoundRecoderVIew;

@@ -1,11 +1,11 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.delegates.media.MediaUpdateThumbnailJpegDelegate;
-	import com.kaltura.net.KalturaFileCall;
+	import com.borhan.delegates.media.MediaUpdateThumbnailJpegDelegate;
+	import com.borhan.net.BorhanFileCall;
 
 	import flash.utils.ByteArray;
 
-	public class MediaUpdateThumbnailJpeg extends KalturaFileCall
+	public class MediaUpdateThumbnailJpeg extends BorhanFileCall
 	{
 		public function MediaUpdateThumbnailJpeg( entryId : String, fileData : ByteArray )
 		{

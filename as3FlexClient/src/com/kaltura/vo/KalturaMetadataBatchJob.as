@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBatchJob;
+	import com.borhan.vo.BorhanBatchJob;
 
 	[Bindable]
-	public dynamic class KalturaMetadataBatchJob extends KalturaBatchJob
+	public dynamic class BorhanMetadataBatchJob extends BorhanBatchJob
 	{
 		override protected function setupPropertyList():void
 		{

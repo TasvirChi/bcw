@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.delegates.metadataBatch.MetadataBatchCheckFileExistsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadataBatch.MetadataBatchCheckFileExistsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchCheckFileExists extends KalturaCall
+	public class MetadataBatchCheckFileExists extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataBatchCheckFileExists( localPath : String,size : int )

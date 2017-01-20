@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaConvartableJobData;
+	import com.borhan.vo.BorhanConvartableJobData;
 
 	[Bindable]
-	public dynamic class KalturaPostConvertJobData extends KalturaConvartableJobData
+	public dynamic class BorhanPostConvertJobData extends BorhanConvartableJobData
 	{
 		public var flavorAssetId : String;
 		public var createThumb : Boolean;

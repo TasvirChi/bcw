@@ -1,12 +1,12 @@
-package com.kaltura.delegates.report
+package com.borhan.delegates.report
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class ReportGetUrlForReportAsCsvDelegate extends WebDelegateBase
 	{
-		public function ReportGetUrlForReportAsCsvDelegate(call:KalturaCall, config:KalturaConfig)
+		public function ReportGetUrlForReportAsCsvDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

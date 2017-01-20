@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaFileExistsResponse extends BaseFlexVo
+	public dynamic class BorhanFileExistsResponse extends BaseFlexVo
 	{
 		public var exists : Boolean;
 		public var sizeOk : Boolean;

@@ -1,15 +1,15 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaFlavorParams;
+	import com.borhan.vo.BorhanFlavorParams;
 
-	import com.kaltura.vo.KalturaFlavorAsset;
+	import com.borhan.vo.BorhanFlavorAsset;
 
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaFlavorAssetWithParams extends BaseFlexVo
+	public dynamic class BorhanFlavorAssetWithParams extends BaseFlexVo
 	{
-		public var flavorAsset : KalturaFlavorAsset;
-		public var flavorParams : KalturaFlavorParams;
+		public var flavorAsset : BorhanFlavorAsset;
+		public var flavorParams : BorhanFlavorParams;
 		public var entryId : String;
 		override protected function setupPropertyList():void
 		{

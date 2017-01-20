@@ -1,9 +1,9 @@
-package com.kaltura.commands.adminUser
+package com.borhan.commands.adminUser
 {
-	import com.kaltura.delegates.adminUser.AdminUserUpdatePasswordDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.adminUser.AdminUserUpdatePasswordDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class AdminUserUpdatePassword extends KalturaCall
+	public class AdminUserUpdatePassword extends BorhanCall
 	{
 		public var filterFields : String;
 		public function AdminUserUpdatePassword( email : String,password : String,newEmail : String='',newPassword : String='' )

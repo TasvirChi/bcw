@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseEntry;
+	import com.borhan.vo.BorhanBaseEntry;
 
 	[Bindable]
-	public dynamic class KalturaDataEntry extends KalturaBaseEntry
+	public dynamic class BorhanDataEntry extends BorhanBaseEntry
 	{
 		public var dataContent : String;
 		override protected function setupPropertyList():void

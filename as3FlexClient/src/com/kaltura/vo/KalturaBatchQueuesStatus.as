@@ -1,7 +1,7 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
-	public dynamic class KalturaBatchQueuesStatus extends BaseFlexVo
+	import com.borhan.vo.BaseFlexVo;
+	public dynamic class BorhanBatchQueuesStatus extends BaseFlexVo
 	{
 		public var jobType : int = int.MIN_VALUE;
 		public var size : int = int.MIN_VALUE;

@@ -1,9 +1,9 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.KalturaBaseEntryFilter;
+	import com.borhan.vo.BorhanBaseEntryFilter;
 
 	[Bindable]
-	public dynamic class KalturaPlayableEntryFilter extends KalturaBaseEntryFilter
+	public dynamic class BorhanPlayableEntryFilter extends BorhanBaseEntryFilter
 	{
 		public var durationLessThan : int = int.MIN_VALUE;
 		public var durationGreaterThan : int = int.MIN_VALUE;

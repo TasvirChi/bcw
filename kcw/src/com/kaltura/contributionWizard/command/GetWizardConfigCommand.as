@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users
+This file is part of the Borhan Collaborative Media Suite which allows users
 to do with audio, video, and animation what Wiki platfroms allow them to do with
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,19 +20,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.commands.SequenceCommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
 	import com.bjorn.event.ChainEvent;
-	import com.kaltura.contributionWizard.business.ServiceCanceller;
-	import com.kaltura.contributionWizard.business.WizardConfigDelegate;
-	import com.kaltura.contributionWizard.model.StartupDefaultsVO;
-	import com.kaltura.contributionWizard.model.WebcamModelLocator;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.contributionWizard.model.WorkflowStatesList;
-	import com.kaltura.contributionWizard.model.limitations.Utils;
-	import com.kaltura.contributionWizard.vo.UIConfigVO;
+	import com.borhan.contributionWizard.business.ServiceCanceller;
+	import com.borhan.contributionWizard.business.WizardConfigDelegate;
+	import com.borhan.contributionWizard.model.StartupDefaultsVO;
+	import com.borhan.contributionWizard.model.WebcamModelLocator;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.contributionWizard.model.WorkflowStatesList;
+	import com.borhan.contributionWizard.model.limitations.Utils;
+	import com.borhan.contributionWizard.vo.UIConfigVO;
 	
 	import mx.controls.Alert;
 	import mx.core.Application;

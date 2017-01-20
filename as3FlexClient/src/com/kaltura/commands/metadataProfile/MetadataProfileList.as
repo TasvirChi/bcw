@@ -1,27 +1,27 @@
-package com.kaltura.commands.metadataProfile
+package com.borhan.commands.metadataProfile
 {
-	import com.kaltura.vo.KalturaMetadataProfileFilter;
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.metadataProfile.MetadataProfileListDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanMetadataProfileFilter;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.metadataProfile.MetadataProfileListDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataProfileList extends KalturaCall
+	public class MetadataProfileList extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MetadataProfileList( filter : KalturaMetadataProfileFilter=null,pager : KalturaFilterPager=null )
+		public function MetadataProfileList( filter : BorhanMetadataProfileFilter=null,pager : BorhanFilterPager=null )
 		{
-			if(filter== null)filter= new KalturaMetadataProfileFilter();
-			if(pager== null)pager= new KalturaFilterPager();
+			if(filter== null)filter= new BorhanMetadataProfileFilter();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'metadata_metadataprofile';
 			action= 'list';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(filter,'filter');
+ 			keyValArr = borhanObject2Arrays(filter,'filter');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

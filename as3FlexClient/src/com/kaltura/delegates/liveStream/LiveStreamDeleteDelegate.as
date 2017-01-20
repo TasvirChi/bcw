@@ -1,12 +1,12 @@
-package com.kaltura.delegates.liveStream
+package com.borhan.delegates.liveStream
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class LiveStreamDeleteDelegate extends WebDelegateBase
 	{
-		public function LiveStreamDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function LiveStreamDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

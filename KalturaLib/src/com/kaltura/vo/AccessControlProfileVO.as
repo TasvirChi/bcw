@@ -1,20 +1,20 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
 	import com.adobe.cairngorm.vo.IValueObject;
-	import com.kaltura.vo.KalturaAccessControl;
-	import com.kaltura.vo.KalturaBaseRestriction;
-	import com.kaltura.vo.KalturaCountryRestriction;
-	import com.kaltura.vo.KalturaDirectoryRestriction;
-	import com.kaltura.vo.KalturaPreviewRestriction;
-	import com.kaltura.vo.KalturaSessionRestriction;
-	import com.kaltura.vo.KalturaSiteRestriction;
+	import com.borhan.vo.BorhanAccessControl;
+	import com.borhan.vo.BorhanBaseRestriction;
+	import com.borhan.vo.BorhanCountryRestriction;
+	import com.borhan.vo.BorhanDirectoryRestriction;
+	import com.borhan.vo.BorhanPreviewRestriction;
+	import com.borhan.vo.BorhanSessionRestriction;
+	import com.borhan.vo.BorhanSiteRestriction;
 	
 	import flash.events.Event;
 	
 	import mx.utils.ObjectProxy;
 	
 	/**
-	 * This class is a wrapper for the KalturaAccessControl VO.
+	 * This class is a wrapper for the BorhanAccessControl VO.
 	 * 
 	 * 
 	 * 
@@ -29,9 +29,9 @@ package com.kaltura.vo
 		private var _selected:Boolean = false;
 		
 		/**
-		 *  KalturaAccessControl VO, hold all the profile properties
+		 *  BorhanAccessControl VO, hold all the profile properties
 		 */		
-		public var profile:KalturaAccessControl;
+		public var profile:BorhanAccessControl;
 		
 		/**
 		 * Constructor 
@@ -39,7 +39,7 @@ package com.kaltura.vo
 		 */				
 		public function AccessControlProfileVO()
 		{
-			profile = new KalturaAccessControl();
+			profile = new BorhanAccessControl();
 		}
 		
 		/**
@@ -78,37 +78,37 @@ package com.kaltura.vo
 			newAcp.profile.id = this.profile.id;
 			newAcp.profile.isDefault = this.profile.isDefault;
 			
-			for each(var restriction:KalturaBaseRestriction in this.profile.restrictions)
+			for each(var restriction:BorhanBaseRestriction in this.profile.restrictions)
 			{
-				if(restriction is KalturaSiteRestriction)
+				if(restriction is BorhanSiteRestriction)
 				{
-					var ksr:KalturaSiteRestriction = new KalturaSiteRestriction();
-					ksr.siteRestrictionType = (restriction as KalturaSiteRestriction).siteRestrictionType;
-					ksr.siteList = (restriction as KalturaSiteRestriction).siteList;
+					var ksr:BorhanSiteRestriction = new BorhanSiteRestriction();
+					ksr.siteRestrictionType = (restriction as BorhanSiteRestriction).siteRestrictionType;
+					ksr.siteList = (restriction as BorhanSiteRestriction).siteList;
 					newAcp.profile.restrictions.push(ksr);
 				}
-				else if(restriction is KalturaCountryRestriction)
+				else if(restriction is BorhanCountryRestriction)
 				{
-					var kcr:KalturaCountryRestriction = new KalturaCountryRestriction();
-					kcr.countryRestrictionType = (restriction as KalturaCountryRestriction).countryRestrictionType;
-					kcr.countryList = (restriction as KalturaCountryRestriction).countryList;
+					var kcr:BorhanCountryRestriction = new BorhanCountryRestriction();
+					kcr.countryRestrictionType = (restriction as BorhanCountryRestriction).countryRestrictionType;
+					kcr.countryList = (restriction as BorhanCountryRestriction).countryList;
 					newAcp.profile.restrictions.push(kcr);
 				}
-				else if(restriction is KalturaPreviewRestriction)
+				else if(restriction is BorhanPreviewRestriction)
 				{
-					var kpr:KalturaPreviewRestriction = new KalturaPreviewRestriction();
-					kpr.previewLength = (restriction as KalturaPreviewRestriction).previewLength;
+					var kpr:BorhanPreviewRestriction = new BorhanPreviewRestriction();
+					kpr.previewLength = (restriction as BorhanPreviewRestriction).previewLength;
 					newAcp.profile.restrictions.push(kpr);
 				}
-				else if(restriction is KalturaSessionRestriction)
+				else if(restriction is BorhanSessionRestriction)
 				{
-					var kser:KalturaSessionRestriction = new KalturaSessionRestriction();
+					var kser:BorhanSessionRestriction = new BorhanSessionRestriction();
 					newAcp.profile.restrictions.push(kser);
 				}
-				else if(restriction is KalturaDirectoryRestriction)
+				else if(restriction is BorhanDirectoryRestriction)
 				{
-					var kdr:KalturaDirectoryRestriction = new KalturaDirectoryRestriction();
-					kdr.directoryRestrictionType = (restriction as KalturaDirectoryRestriction).directoryRestrictionType;
+					var kdr:BorhanDirectoryRestriction = new BorhanDirectoryRestriction();
+					kdr.directoryRestrictionType = (restriction as BorhanDirectoryRestriction).directoryRestrictionType;
 					newAcp.profile.restrictions.push(kdr);
 				}
 			}

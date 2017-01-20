@@ -1,8 +1,8 @@
-package com.kaltura.vo
+package com.borhan.vo
 {
-	import com.kaltura.vo.BaseFlexVo;
+	import com.borhan.vo.BaseFlexVo;
 	[Bindable]
-	public dynamic class KalturaReportTotal extends BaseFlexVo
+	public dynamic class BorhanReportTotal extends BaseFlexVo
 	{
 		public var header : String;
 		public var data : String;

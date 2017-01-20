@@ -1,30 +1,30 @@
-package com.kaltura.commands.metadataBatch
+package com.borhan.commands.metadataBatch
 {
-	import com.kaltura.vo.KalturaExclusiveLockKey;
-	import com.kaltura.vo.KalturaBatchJobFilter;
-	import com.kaltura.delegates.metadataBatch.MetadataBatchGetExclusiveAlmostDoneRemoteConvertJobsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanExclusiveLockKey;
+	import com.borhan.vo.BorhanBatchJobFilter;
+	import com.borhan.delegates.metadataBatch.MetadataBatchGetExclusiveAlmostDoneRemoteConvertJobsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataBatchGetExclusiveAlmostDoneRemoteConvertJobs extends KalturaCall
+	public class MetadataBatchGetExclusiveAlmostDoneRemoteConvertJobs extends BorhanCall
 	{
 		public var filterFields : String;
-		public function MetadataBatchGetExclusiveAlmostDoneRemoteConvertJobs( lockKey : KalturaExclusiveLockKey,maxExecutionTime : int,numberOfJobs : int,filter : KalturaBatchJobFilter=null )
+		public function MetadataBatchGetExclusiveAlmostDoneRemoteConvertJobs( lockKey : BorhanExclusiveLockKey,maxExecutionTime : int,numberOfJobs : int,filter : BorhanBatchJobFilter=null )
 		{
-			if(filter== null)filter= new KalturaBatchJobFilter();
+			if(filter== null)filter= new BorhanBatchJobFilter();
 			service= 'metadata_metadatabatch';
 			action= 'getExclusiveAlmostDoneRemoteConvertJobs';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(lockKey,'lockKey');
+ 			keyValArr = borhanObject2Arrays(lockKey,'lockKey');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			keyArr.push( 'maxExecutionTime' );
 			valueArr.push( maxExecutionTime );
 			keyArr.push( 'numberOfJobs' );
 			valueArr.push( numberOfJobs );
- 			keyValArr = kalturaObject2Arrays(filter,'filter');
+ 			keyValArr = borhanObject2Arrays(filter,'filter');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

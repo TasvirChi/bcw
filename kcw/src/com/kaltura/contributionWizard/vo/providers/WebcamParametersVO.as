@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.vo.providers
+package com.borhan.contributionWizard.vo.providers
 {
 	/**
 	 * Definitions for webcam recording

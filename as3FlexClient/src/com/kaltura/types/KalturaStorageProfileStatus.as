@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaStorageProfileStatus
+	public class BorhanStorageProfileStatus
 	{
 		public static const DISABLED : int = 1;
 		public static const AUTOMATIC : int = 2;

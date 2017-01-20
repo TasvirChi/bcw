@@ -1,9 +1,9 @@
-package com.kaltura.commands.metadata
+package com.borhan.commands.metadata
 {
-	import com.kaltura.delegates.metadata.MetadataGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.metadata.MetadataGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataGet extends KalturaCall
+	public class MetadataGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataGet( id : int )

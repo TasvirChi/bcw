@@ -1,9 +1,9 @@
-package com.kaltura.commands.entrySchedule
+package com.borhan.commands.entrySchedule
 {
-	import com.kaltura.delegates.entrySchedule.EntryScheduleGetByEntryIdDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.entrySchedule.EntryScheduleGetByEntryIdDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class EntryScheduleGetByEntryId extends KalturaCall
+	public class EntryScheduleGetByEntryId extends BorhanCall
 	{
 		public var filterFields : String;
 		public function EntryScheduleGetByEntryId( entryId : String )

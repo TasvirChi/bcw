@@ -1,11 +1,11 @@
-package com.kaltura.contributionWizard.command
+package com.borhan.contributionWizard.command
 {
 	import com.adobe_cw.adobe.cairngorm.commands.SequenceCommand;
 	import com.adobe_cw.adobe.cairngorm.control.CairngormEvent;
-	import com.kaltura.contributionWizard.events.ValidateAllMetaDataEvent;
-	import com.kaltura.contributionWizard.events.ValidateMetaDataEvent;
-	import com.kaltura.contributionWizard.model.WizardModelLocator;
-	import com.kaltura.vo.importees.BaseImportVO;
+	import com.borhan.contributionWizard.events.ValidateAllMetaDataEvent;
+	import com.borhan.contributionWizard.events.ValidateMetaDataEvent;
+	import com.borhan.contributionWizard.model.WizardModelLocator;
+	import com.borhan.vo.importees.BaseImportVO;
 
 	import mx.validators.Validator;
 

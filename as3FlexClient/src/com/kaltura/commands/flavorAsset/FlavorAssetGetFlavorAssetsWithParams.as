@@ -1,9 +1,9 @@
-package com.kaltura.commands.flavorAsset
+package com.borhan.commands.flavorAsset
 {
-	import com.kaltura.delegates.flavorAsset.FlavorAssetGetFlavorAssetsWithParamsDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.flavorAsset.FlavorAssetGetFlavorAssetsWithParamsDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class FlavorAssetGetFlavorAssetsWithParams extends KalturaCall
+	public class FlavorAssetGetFlavorAssetsWithParams extends BorhanCall
 	{
 		public var filterFields : String;
 		public function FlavorAssetGetFlavorAssetsWithParams( entryId : String )

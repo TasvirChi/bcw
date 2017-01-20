@@ -1,15 +1,15 @@
-package com.kaltura
+package com.borhan
 {
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
 	
 	import flash.events.EventDispatcher;
 
-	public class KalturaClient extends EventDispatcher
+	public class BorhanClient extends EventDispatcher
 	{	
-		protected var _currentConfig:KalturaConfig;
+		protected var _currentConfig:BorhanConfig;
 		
-		public function KalturaClient( config : KalturaConfig) 
+		public function BorhanClient( config : BorhanConfig) 
 		{
 			_currentConfig = config;
 		}
@@ -25,13 +25,13 @@ package com.kaltura
 		public function get clientTag():String { return _currentConfig.clientTag; }
 		
 		
-		public function post(call:KalturaCall):KalturaCall {
+		public function post(call:BorhanCall):BorhanCall {
 			if (_currentConfig) {
 				call.config = _currentConfig;
 				call.initialize();
 				call.execute();
 			} else {
-				throw new Error("Cannot post a call; no kaltura config has been set.");
+				throw new Error("Cannot post a call; no borhan config has been set.");
 			}
 			return call;
 		}

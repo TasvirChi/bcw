@@ -1,9 +1,9 @@
-package com.kaltura.commands.category
+package com.borhan.commands.category
 {
-	import com.kaltura.delegates.category.CategoryGetDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.category.CategoryGetDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class CategoryGet extends KalturaCall
+	public class CategoryGet extends BorhanCall
 	{
 		public var filterFields : String;
 		public function CategoryGet( id : int )

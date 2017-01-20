@@ -1,27 +1,27 @@
-package com.kaltura.commands.accessControl
+package com.borhan.commands.accessControl
 {
-	import com.kaltura.vo.KalturaAccessControlFilter;
-	import com.kaltura.vo.KalturaFilterPager;
-	import com.kaltura.delegates.accessControl.AccessControlListDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.BorhanAccessControlFilter;
+	import com.borhan.vo.BorhanFilterPager;
+	import com.borhan.delegates.accessControl.AccessControlListDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class AccessControlList extends KalturaCall
+	public class AccessControlList extends BorhanCall
 	{
 		public var filterFields : String;
-		public function AccessControlList( filter : KalturaAccessControlFilter=null,pager : KalturaFilterPager=null )
+		public function AccessControlList( filter : BorhanAccessControlFilter=null,pager : BorhanFilterPager=null )
 		{
-			if(filter== null)filter= new KalturaAccessControlFilter();
-			if(pager== null)pager= new KalturaFilterPager();
+			if(filter== null)filter= new BorhanAccessControlFilter();
+			if(pager== null)pager= new BorhanFilterPager();
 			service= 'accesscontrol';
 			action= 'list';
 
 			var keyArr : Array = new Array();
 			var valueArr : Array = new Array();
 			var keyValArr : Array = new Array();
- 			keyValArr = kalturaObject2Arrays(filter,'filter');
+ 			keyValArr = borhanObject2Arrays(filter,'filter');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
- 			keyValArr = kalturaObject2Arrays(pager,'pager');
+ 			keyValArr = borhanObject2Arrays(pager,'pager');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

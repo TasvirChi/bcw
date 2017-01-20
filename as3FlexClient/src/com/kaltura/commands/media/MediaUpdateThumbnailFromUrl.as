@@ -1,9 +1,9 @@
-package com.kaltura.commands.media
+package com.borhan.commands.media
 {
-	import com.kaltura.delegates.media.MediaUpdateThumbnailFromUrlDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.media.MediaUpdateThumbnailFromUrlDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MediaUpdateThumbnailFromUrl extends KalturaCall
+	public class MediaUpdateThumbnailFromUrl extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MediaUpdateThumbnailFromUrl( entryId : String,url : String )

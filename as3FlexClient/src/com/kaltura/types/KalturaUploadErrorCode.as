@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaUploadErrorCode
+	public class BorhanUploadErrorCode
 	{
 		public static const NO_ERROR : int = 0;
 		public static const GENERAL_ERROR : int = 1;

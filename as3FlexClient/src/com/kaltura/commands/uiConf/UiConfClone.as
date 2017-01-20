@@ -1,9 +1,9 @@
-package com.kaltura.commands.uiConf
+package com.borhan.commands.uiConf
 {
-	import com.kaltura.delegates.uiConf.UiConfCloneDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.uiConf.UiConfCloneDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class UiConfClone extends KalturaCall
+	public class UiConfClone extends BorhanCall
 	{
 		public var filterFields : String;
 		public function UiConfClone( id : int )

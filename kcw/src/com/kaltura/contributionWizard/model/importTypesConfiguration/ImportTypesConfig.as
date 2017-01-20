@@ -1,8 +1,8 @@
-package com.kaltura.contributionWizard.model.importTypesConfiguration
+package com.borhan.contributionWizard.model.importTypesConfiguration
 {
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.search.SearchConfig;
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.tagging.TaggingConfig;
-	import com.kaltura.contributionWizard.model.importTypesConfiguration.upload.UploadConfig;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.search.SearchConfig;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.tagging.TaggingConfig;
+	import com.borhan.contributionWizard.model.importTypesConfiguration.upload.UploadConfig;
 
 	[Bindable]
 	public class ImportTypesConfig

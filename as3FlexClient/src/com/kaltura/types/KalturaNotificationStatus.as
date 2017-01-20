@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaNotificationStatus
+	public class BorhanNotificationStatus
 	{
 		public static const PENDING : int = 1;
 		public static const SENT : int = 2;

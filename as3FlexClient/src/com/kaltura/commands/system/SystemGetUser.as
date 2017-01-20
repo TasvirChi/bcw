@@ -1,9 +1,9 @@
-package com.kaltura.commands.system
+package com.borhan.commands.system
 {
-	import com.kaltura.delegates.system.SystemGetUserDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.system.SystemGetUserDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class SystemGetUser extends KalturaCall
+	public class SystemGetUser extends BorhanCall
 	{
 		public var filterFields : String;
 		public function SystemGetUser( userId : int )

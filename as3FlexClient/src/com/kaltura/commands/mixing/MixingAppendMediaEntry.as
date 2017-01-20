@@ -1,9 +1,9 @@
-package com.kaltura.commands.mixing
+package com.borhan.commands.mixing
 {
-	import com.kaltura.delegates.mixing.MixingAppendMediaEntryDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.mixing.MixingAppendMediaEntryDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MixingAppendMediaEntry extends KalturaCall
+	public class MixingAppendMediaEntry extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MixingAppendMediaEntry( mixEntryId : String,mediaEntryId : String )

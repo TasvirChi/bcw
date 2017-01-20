@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaNotificationObjectType
+	public class BorhanNotificationObjectType
 	{
 		public static const ENTRY : int = 1;
 		public static const KSHOW : int = 2;

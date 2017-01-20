@@ -1,10 +1,10 @@
-package com.kaltura.commands.metadata
+package com.borhan.commands.metadata
 {
-	import com.kaltura.vo.File;
-	import com.kaltura.delegates.metadata.MetadataAddFromFileDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.vo.File;
+	import com.borhan.delegates.metadata.MetadataAddFromFileDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class MetadataAddFromFile extends KalturaCall
+	public class MetadataAddFromFile extends BorhanCall
 	{
 		public var filterFields : String;
 		public function MetadataAddFromFile( metadataProfileId : int,objectType : int,objectId : String,xmlFile : file )
@@ -21,7 +21,7 @@ package com.kaltura.commands.metadata
 			valueArr.push( objectType );
 			keyArr.push( 'objectId' );
 			valueArr.push( objectId );
- 			keyValArr = kalturaObject2Arrays(xmlFile,'xmlFile');
+ 			keyValArr = borhanObject2Arrays(xmlFile,'xmlFile');
 			keyArr = keyArr.concat( keyValArr[0] );
 			valueArr = valueArr.concat( keyValArr[1] );
 			applySchema( keyArr , valueArr );

@@ -1,12 +1,12 @@
-package com.kaltura.delegates.data
+package com.borhan.delegates.data
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class DataDeleteDelegate extends WebDelegateBase
 	{
-		public function DataDeleteDelegate(call:KalturaCall, config:KalturaConfig)
+		public function DataDeleteDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

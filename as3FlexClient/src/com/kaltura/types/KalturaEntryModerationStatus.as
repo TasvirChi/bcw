@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaEntryModerationStatus
+	public class BorhanEntryModerationStatus
 	{
 		public static const PENDING_MODERATION : int = 1;
 		public static const APPROVED : int = 2;

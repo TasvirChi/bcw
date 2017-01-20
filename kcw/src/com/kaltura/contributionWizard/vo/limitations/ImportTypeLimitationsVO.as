@@ -1,4 +1,4 @@
-package com.kaltura.contributionWizard.vo.limitations
+package com.borhan.contributionWizard.vo.limitations
 {
 	public class ImportTypeLimitationsVO
 	{

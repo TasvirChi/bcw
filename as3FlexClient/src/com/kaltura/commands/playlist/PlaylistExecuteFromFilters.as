@@ -1,9 +1,9 @@
-package com.kaltura.commands.playlist
+package com.borhan.commands.playlist
 {
-	import com.kaltura.delegates.playlist.PlaylistExecuteFromFiltersDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.playlist.PlaylistExecuteFromFiltersDelegate;
+	import com.borhan.net.BorhanCall;
 
-	public class PlaylistExecuteFromFilters extends KalturaCall
+	public class PlaylistExecuteFromFilters extends BorhanCall
 	{
 		public var filterFields : String;
 		public function PlaylistExecuteFromFilters( filters : Array,totalResults : int,detailed : String='' )

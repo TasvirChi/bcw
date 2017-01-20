@@ -2,9 +2,9 @@
 <mx:ViewStack
 	selectedIndex="{getSelectedIndex(_importStep)}"
 	xmlns:mx="http://www.adobe.com/2006/mxml"
-	xmlns:importViews="com.kaltura.contributionWizard.view.importViews.*"
-	xmlns:tagging="com.kaltura.contributionWizard.view.tagging.*"
-	xmlns:finishScreen="com.kaltura.contributionWizard.view.importViews.finishScreen.*">
+	xmlns:importViews="com.borhan.contributionWizard.view.importViews.*"
+	xmlns:tagging="com.borhan.contributionWizard.view.tagging.*"
+	xmlns:finishScreen="com.borhan.contributionWizard.view.importViews.finishScreen.*">
 
 	<mx:preinitialize>
 		<![CDATA[
@@ -14,25 +14,25 @@
 
 	<mx:Script>
 		<![CDATA[
-			import com.kaltura.contributionWizard.events.AddSearchEntriesEvent;
-			import com.kaltura.contributionWizard.events.GotoNextImportStepEvent;
-			import com.kaltura.contributionWizard.view.events.ImportViewCompleteEvent;
+			import com.borhan.contributionWizard.events.AddSearchEntriesEvent;
+			import com.borhan.contributionWizard.events.GotoNextImportStepEvent;
+			import com.borhan.contributionWizard.view.events.ImportViewCompleteEvent;
 			import mx.states.SetEventHandler;
 			import mx.binding.utils.BindingUtils;
 			import mx.core.Container;
-			import com.kaltura.contributionWizard.view.importViews.IImportStep;
-			import com.kaltura.contributionWizard.enums.KCWWorkflowState;
+			import com.borhan.contributionWizard.view.importViews.IImportStep;
+			import com.borhan.contributionWizard.enums.BCWWorkflowState;
 			import mx.core.Application;
 			import mx.controls.Alert;
-			import com.kaltura.contributionWizard.events.WorkflowEvent;
-			import com.kaltura.contributionWizard.view.importViews.alerts.TermsOfUseScreen;
-			import com.kaltura.contributionWizard.events.GotoScreenEvent;
-			import com.kaltura.contributionWizard.events.AddEntriesEvent;
+			import com.borhan.contributionWizard.events.WorkflowEvent;
+			import com.borhan.contributionWizard.view.importViews.alerts.TermsOfUseScreen;
+			import com.borhan.contributionWizard.events.GotoScreenEvent;
+			import com.borhan.contributionWizard.events.AddEntriesEvent;
 			import mx.managers.PopUpManager;
-			import com.kaltura.contributionWizard.view.events.TermsOfUseEvent;
-			import com.kaltura.contributionWizard.events.CloseWizardEvent;
-			import com.kaltura.contributionWizard.view.events.KCWViewEvent;
-			import com.kaltura.contributionWizard.model.WizardModelLocator;
+			import com.borhan.contributionWizard.view.events.TermsOfUseEvent;
+			import com.borhan.contributionWizard.events.CloseWizardEvent;
+			import com.borhan.contributionWizard.view.events.BCWViewEvent;
+			import com.borhan.contributionWizard.model.WizardModelLocator;
 
 			[Bindable]
 			private var _model:WizardModelLocator = WizardModelLocator.getInstance();
@@ -51,15 +51,15 @@
 			{
 				switch (workflowState)
 				{
-					case KCWWorkflowState.IMPORT_MEDIA:
+					case BCWWorkflowState.IMPORT_MEDIA:
 						_importStep = importTypesView;
 					break;
 
-					case KCWWorkflowState.TAGGING:
+					case BCWWorkflowState.TAGGING:
 						_importStep = taggingView;
 					break;
 
-					case KCWWorkflowState.FINISH_SCREEN:
+					case BCWWorkflowState.FINISH_SCREEN:
 						_importStep = finishScreen;
 					break;
 				}
@@ -105,11 +105,11 @@
 				{
 					if (event.target == finishScreen)
 					{
-						changeWorkflow(KCWWorkflowState.TAGGING);
+						changeWorkflow(BCWWorkflowState.TAGGING);
 					}
 					else if (event.target == taggingView)
 					{
-						changeWorkflow(KCWWorkflowState.IMPORT_MEDIA);
+						changeWorkflow(BCWWorkflowState.IMPORT_MEDIA);
 					}
 
 				}
@@ -117,11 +117,11 @@
 				{
 					if (event.target == importTypesView)
 					{
-						changeWorkflow(KCWWorkflowState.TAGGING);
+						changeWorkflow(BCWWorkflowState.TAGGING);
 					}
 					else if (event.target == taggingView)
 					{
-						changeWorkflow(KCWWorkflowState.FINISH_SCREEN);
+						changeWorkflow(BCWWorkflowState.FINISH_SCREEN);
 					}
 				} */
 

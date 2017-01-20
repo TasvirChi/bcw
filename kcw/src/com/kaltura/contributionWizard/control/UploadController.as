@@ -1,9 +1,9 @@
 /*
-This file is part of the Kaltura Collaborative Media Suite which allows users 
+This file is part of the Borhan Collaborative Media Suite which allows users 
 to do with audio, video, and animation what Wiki platfroms allow them to do with 
 text.
 
-Copyright (C) 2006-2008  Kaltura Inc.
+Copyright (C) 2006-2008  Borhan Inc.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -20,17 +20,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 @ignore
 */
-package com.kaltura.contributionWizard.control
+package com.borhan.contributionWizard.control
 {
 	import com.arc90.modular.ModuleFrontController;
-	import com.kaltura.contributionWizard.command.AddFileCommand;
-	import com.kaltura.contributionWizard.command.CancelUploadsCommand;
-	import com.kaltura.contributionWizard.command.SkipCurrentUploadCommand;
-	import com.kaltura.contributionWizard.command.UploadFilesCommand;
-	import com.kaltura.contributionWizard.command.ValidateLimitationsCommand;
-	import com.kaltura.contributionWizard.events.CancelUploadEvent;
-	import com.kaltura.contributionWizard.events.FileReferenceEvent;
-	import com.kaltura.contributionWizard.events.ValidateLimitationsEvent;
+	import com.borhan.contributionWizard.command.AddFileCommand;
+	import com.borhan.contributionWizard.command.CancelUploadsCommand;
+	import com.borhan.contributionWizard.command.SkipCurrentUploadCommand;
+	import com.borhan.contributionWizard.command.UploadFilesCommand;
+	import com.borhan.contributionWizard.command.ValidateLimitationsCommand;
+	import com.borhan.contributionWizard.events.CancelUploadEvent;
+	import com.borhan.contributionWizard.events.FileReferenceEvent;
+	import com.borhan.contributionWizard.events.ValidateLimitationsEvent;
 	
 
 	public class UploadController extends ModuleFrontController

@@ -1,12 +1,12 @@
-package com.kaltura.delegates.metadata
+package com.borhan.delegates.metadata
 {
 	import flash.utils.getDefinitionByName;
-	import com.kaltura.config.KalturaConfig;
-	import com.kaltura.net.KalturaCall;
-	import com.kaltura.delegates.WebDelegateBase;
+	import com.borhan.config.BorhanConfig;
+	import com.borhan.net.BorhanCall;
+	import com.borhan.delegates.WebDelegateBase;
 	public class MetadataInvalidateDelegate extends WebDelegateBase
 	{
-		public function MetadataInvalidateDelegate(call:KalturaCall, config:KalturaConfig)
+		public function MetadataInvalidateDelegate(call:BorhanCall, config:BorhanConfig)
 		{
 			super(call, config);
 		}

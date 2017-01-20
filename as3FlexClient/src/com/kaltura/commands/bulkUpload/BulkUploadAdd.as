@@ -1,12 +1,12 @@
-package com.kaltura.commands.bulkUpload
+package com.borhan.commands.bulkUpload
 {
-	import com.kaltura.delegates.bulkUpload.BulkUploadAddDelegate;
-	import com.kaltura.net.KalturaCall;
+	import com.borhan.delegates.bulkUpload.BulkUploadAddDelegate;
+	import com.borhan.net.BorhanCall;
 	
 	import flash.net.FileReference;
 	import flash.net.URLRequest;
 
-	public class BulkUploadAdd extends KalturaCall
+	public class BulkUploadAdd extends BorhanCall
 	{
 		public var filterFields : String;
 		private var _fr : FileReference;

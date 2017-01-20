@@ -1,6 +1,6 @@
-package com.kaltura.types
+package com.borhan.types
 {
-	public class KalturaLiveStreamEntryOrderBy
+	public class BorhanLiveStreamEntryOrderBy
 	{
 		public static const MEDIA_TYPE_ASC : String = '+mediaType';
 		public static const MEDIA_TYPE_DESC : String = '-mediaType';
